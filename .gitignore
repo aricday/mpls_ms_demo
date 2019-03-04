@@ -17,8 +17,12 @@ db/schema.rb
 *.zip
 */certs
 *.retry
-msso_config.json
 data/
+
+lac_license.json
+license.xml
+mag_license.xml
+msgw_license.xml
 
 # Xcode
 #

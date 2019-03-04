@@ -72,7 +72,7 @@ This tutorial will cover the following:
 *	[Apple Xcode](https://developer.apple.com/xcode) basic knowledge
 * 	[Docker-MAS README](https://github.com/CAAPIM/Docker-MAS/blob/master/README.md)
 *	Docker environment running
-*	Download this [repo](https://)
+*	Download this [repo](https://github.com/aricday/mpls_ms_demo)
 
 
 ### <a name="configuration"></a>Configuration:
