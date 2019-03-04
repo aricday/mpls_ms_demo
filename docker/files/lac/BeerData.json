@@ -1,0 +1,503 @@
+[
+  {
+    "ident": 2000,
+    "ts": "2017-06-27T16:37:49+00:00",
+    "exportVersion": "v4",
+    "adminSchemaVersion": "20170331",
+    "name": "Beer Data",
+    "url_name": "data",
+    "comments": "Insert comments here",
+    "status": null,
+    "is_active": true,
+    "account_ident": 1000,
+    "authprovider_ident": 1000,
+    "@metadata": {
+      "href": "http://lac.docker.local:18080/rest/abl/admin/v2/ProjectExport/2000",
+      "checksum": "A:2949f98104d8226a",
+      "nonpersistent": [
+        "exportVersion",
+        "adminSchemaVersion"
+      ]
+    },
+    "Topics": [],
+    "Rules": [
+      {
+        "ident": 2000,
+        "ts": "2017-06-27T16:52:38+00:00",
+        "entity_name": "main:beers",
+        "attribute_name": "price_comment",
+        "prop1": null,
+        "prop2": null,
+        "prop3": null,
+        "prop4": "javascript",
+        "prop5": null,
+        "rule_text1": "if (row.price > 7.00) {\n    return \"That's expensive\"\n} else {\n    return \"Fair price\"\n}",
+        "rule_text2": null,
+        "rule_text3": null,
+        "rule_text4": null,
+        "rule_text5": null,
+        "predicate": null,
+        "name": "Evaluate the price",
+        "auto_name": "Derive price_comment as if (row.price > 7.00) {\n    return \"That's expensive\"\n} else {\n    return \"Fair price\"\n}",
+        "verbs": null,
+        "comments": null,
+        "active": true,
+        "sqlable": false,
+        "jit": false,
+        "project_ident": 2000,
+        "ruletype_ident": 3,
+        "@metadata": {
+          "href": "http://lac.docker.local:18080/rest/abl/admin/v2/ProjectExport.Rules/2000",
+          "checksum": "A:53563cfbd65f5220"
+        },
+        "RuleTopics": []
+      }
+    ],
+    "ApiKeys": [
+      {
+        "ident": 2001,
+        "ts": "2017-06-27T16:37:49+00:00",
+        "name": "Admin key",
+        "description": "Created as part of this API. Feel free to change or delete this auth token.",
+        "apikey": "ca-gateway",
+        "status": "A",
+        "expiration": null,
+        "logging": "*=FINE",
+        "user_identifier": null,
+        "data": null,
+        "origin": null,
+        "project_ident": 2000,
+        "@metadata": {
+          "href": "http://lac.docker.local:18080/rest/abl/admin/v2/ProjectExport.ApiKeys/2001",
+          "checksum": "A:b1fbe9554fb3fc92"
+        }
+      }
+    ],
+    "ApiVersions": [
+      {
+        "ident": 2000,
+        "ts": "2017-06-27T16:37:49+00:00",
+        "name": "v1",
+        "comments": null,
+        "project_ident": 2000,
+        "@metadata": {
+          "href": "http://lac.docker.local:18080/rest/abl/admin/v2/ProjectExport.ApiVersions/2000",
+          "checksum": "A:d3a82fec2f248ddb"
+        },
+        "Resources": [
+          {
+            "ident": 2000,
+            "ts": "2017-06-27T16:37:52+00:00",
+            "resource_type_ident": 1,
+            "prefix": "main",
+            "table_name": "beers",
+            "name": "beers",
+            "description": null,
+            "is_collection": "Y",
+            "join_condition": null,
+            "filter": null,
+            "sorting": null,
+            "attach_path": null,
+            "caching": null,
+            "custom_class": null,
+            "code_text": null,
+            "filter_code": "",
+            "serial_filter": null,
+            "prop1": null,
+            "prop2": null,
+            "prop3": null,
+            "prop4": null,
+            "prop5": null,
+            "container_ident": null,
+            "sibling_rank": 100,
+            "combined": false,
+            "root_ident": null,
+            "apiversion_ident": 2000,
+            "@metadata": {
+              "href": "http://lac.docker.local:18080/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources/2000",
+              "checksum": "A:d97c2667793eeacd"
+            },
+            "ResourceAttributes": [
+              {
+                "ident": 2000,
+                "ts": "2017-06-27T16:37:49+00:00",
+                "name": "brewery",
+                "description": null,
+                "column_name": "brewery",
+                "format": null,
+                "formula": null,
+                "is_defined_key_part": false,
+                "resource_ident": 2000,
+                "code_type": null,
+                "@metadata": {
+                  "href": "http://lac.docker.local:18080/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources.ResourceAttributes/2000",
+                  "checksum": "A:af87da6093cdae56"
+                }
+              },
+              {
+                "ident": 2001,
+                "ts": "2017-06-27T16:37:49+00:00",
+                "name": "style",
+                "description": null,
+                "column_name": "style",
+                "format": null,
+                "formula": null,
+                "is_defined_key_part": false,
+                "resource_ident": 2000,
+                "code_type": null,
+                "@metadata": {
+                  "href": "http://lac.docker.local:18080/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources.ResourceAttributes/2001",
+                  "checksum": "A:3309335ca68c54ef"
+                }
+              },
+              {
+                "ident": 2002,
+                "ts": "2017-06-27T16:37:49+00:00",
+                "name": "price",
+                "description": null,
+                "column_name": "price",
+                "format": null,
+                "formula": null,
+                "is_defined_key_part": false,
+                "resource_ident": 2000,
+                "code_type": null,
+                "@metadata": {
+                  "href": "http://lac.docker.local:18080/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources.ResourceAttributes/2002",
+                  "checksum": "A:0d1907720b7b4927"
+                }
+              },
+              {
+                "ident": 2003,
+                "ts": "2017-06-27T16:37:49+00:00",
+                "name": "name",
+                "description": null,
+                "column_name": "name",
+                "format": null,
+                "formula": null,
+                "is_defined_key_part": false,
+                "resource_ident": 2000,
+                "code_type": null,
+                "@metadata": {
+                  "href": "http://lac.docker.local:18080/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources.ResourceAttributes/2003",
+                  "checksum": "A:2019dc844423d512"
+                }
+              },
+              {
+                "ident": 2004,
+                "ts": "2017-06-27T16:37:49+00:00",
+                "name": "created_at",
+                "description": null,
+                "column_name": "created_at",
+                "format": null,
+                "formula": null,
+                "is_defined_key_part": false,
+                "resource_ident": 2000,
+                "code_type": null,
+                "@metadata": {
+                  "href": "http://lac.docker.local:18080/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources.ResourceAttributes/2004",
+                  "checksum": "A:71fe55d8121c4f3f"
+                }
+              },
+              {
+                "ident": 2005,
+                "ts": "2017-06-27T16:37:49+00:00",
+                "name": "beer_comments_count",
+                "description": null,
+                "column_name": "beer_comments_count",
+                "format": null,
+                "formula": null,
+                "is_defined_key_part": false,
+                "resource_ident": 2000,
+                "code_type": null,
+                "@metadata": {
+                  "href": "http://lac.docker.local:18080/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources.ResourceAttributes/2005",
+                  "checksum": "A:aa9730d65db909c0"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Applications": [
+      {
+        "ident": 2000,
+        "ts": "2017-06-27T16:37:49+00:00",
+        "name": "Default app",
+        "description": null,
+        "project_ident": 2000,
+        "default_language": "eng",
+        "skin_ident": null,
+        "@metadata": {
+          "href": "http://lac.docker.local:18080/rest/abl/admin/v2/ProjectExport.Applications/2000",
+          "checksum": "A:d2fa0ff405f0c633"
+        },
+        "ApplicationOptions": [],
+        "ApplicationSkins": [],
+        "ApplicationTableSettings": [
+          {
+            "ident": 2000,
+            "ts": "2017-06-27T16:37:49+00:00",
+            "table_name": "main:beers",
+            "object_type": "table",
+            "json": "{\"name\":\"main:beers\",\"alias\":\"main:beers\",\"columnFormats\":{\"id\":{\"name\":\"id\",\"alias\":\"Id\",\"type\":\"OTHER\",\"generic_type\":\"number\",\"is_editable\":true,\"is_nullable\":false,\"mask\":null,\"maskType\":\"number\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"id\",\"width\":62.21985815602836,\"$$hashKey\":\"06A\"},\"brewery\":{\"name\":\"brewery\",\"alias\":\"Brewery\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"brewery\",\"width\":251.89007092198582,\"$$hashKey\":\"06B\"},\"style\":{\"name\":\"style\",\"alias\":\"Style\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"style\",\"width\":251.89007092198582,\"$$hashKey\":\"06C\"},\"price\":{\"name\":\"price\",\"alias\":\"Price\",\"type\":\"DECIMAL\",\"generic_type\":\"number\",\"is_editable\":true,\"is_nullable\":true,\"mask\":\"$0,0.00\",\"maskType\":\"numeric\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"price\",\"$$hashKey\":\"06D\"},\"name\":{\"name\":\"name\",\"alias\":\"Name\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"name\",\"$$hashKey\":\"06E\"},\"created_at\":{\"name\":\"created_at\",\"alias\":\"Created At\",\"type\":\"TIMESTAMP\",\"generic_type\":\"timestamp\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"timestamp\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"created_at\",\"$$hashKey\":\"06F\"},\"updated_at\":{\"name\":\"updated_at\",\"alias\":\"Updated At\",\"type\":\"TIMESTAMP\",\"generic_type\":\"timestamp\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"timestamp\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"updated_at\",\"$$hashKey\":\"06G\"}},\"gridColumns\":{\"id\":{\"name\":\"id\",\"alias\":\"Id\",\"type\":\"OTHER\",\"generic_type\":\"number\",\"is_editable\":true,\"is_nullable\":false,\"mask\":null,\"maskType\":\"number\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"id\",\"width\":62.21985815602836,\"$$hashKey\":\"06A\"},\"brewery\":{\"name\":\"brewery\",\"alias\":\"Brewery\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"brewery\",\"width\":251.89007092198582,\"$$hashKey\":\"06B\"},\"style\":{\"name\":\"style\",\"alias\":\"Style\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"style\",\"width\":251.89007092198582,\"$$hashKey\":\"06C\"}},\"scalarColumns\":{\"id\":{\"name\":\"id\",\"alias\":\"Id\",\"type\":\"OTHER\",\"generic_type\":\"number\",\"is_editable\":true,\"is_nullable\":false,\"mask\":null,\"maskType\":\"number\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"id\",\"width\":62.21985815602836,\"$$hashKey\":\"06A\"},\"brewery\":{\"name\":\"brewery\",\"alias\":\"Brewery\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"brewery\",\"width\":251.89007092198582,\"$$hashKey\":\"06B\"},\"style\":{\"name\":\"style\",\"alias\":\"Style\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"style\",\"width\":251.89007092198582,\"$$hashKey\":\"06C\"},\"price\":{\"name\":\"price\",\"alias\":\"Price\",\"type\":\"DECIMAL\",\"generic_type\":\"number\",\"is_editable\":true,\"is_nullable\":true,\"mask\":\"$0,0.00\",\"maskType\":\"numeric\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"price\",\"$$hashKey\":\"06D\"},\"name\":{\"name\":\"name\",\"alias\":\"Name\",\"type\":\"VARCHAR\",\"generic_type\":\"string\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"string\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"name\",\"$$hashKey\":\"06E\"},\"created_at\":{\"name\":\"created_at\",\"alias\":\"Created At\",\"type\":\"TIMESTAMP\",\"generic_type\":\"timestamp\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"timestamp\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"created_at\",\"$$hashKey\":\"06F\"},\"updated_at\":{\"name\":\"updated_at\",\"alias\":\"Updated At\",\"type\":\"TIMESTAMP\",\"generic_type\":\"timestamp\",\"is_editable\":true,\"is_nullable\":true,\"mask\":null,\"maskType\":\"timestamp\",\"binaryType\":null,\"extensionType\":null,\"eval\":[],\"dataSource\":\"updated_at\",\"$$hashKey\":\"06G\"}},\"parentSettings\":{},\"defaultTable\":false,\"windows\":[\"main\",\"child\",\"form\"],\"childrenSettings\":{},\"groups\":[],\"labelPlacement\":\"Left\"}",
+            "app_ident": 2000,
+            "@metadata": {
+              "href": "http://lac.docker.local:18080/rest/abl/admin/v2/ProjectExport.Applications.ApplicationTableSettings/2000",
+              "checksum": "A:7134f874ce1b346d"
+            }
+          }
+        ]
+      }
+    ],
+    "DbaseSchemas": [
+      {
+        "ident": 2000,
+        "name": "Database: data - beer",
+        "comments": "Created using Connect Wizard",
+        "url": "jdbc:mysql://mysql_beers:3306/data",
+        "catalog_name": "data",
+        "schema_name": null,
+        "user_name": "root",
+        "password": "root",
+        "salt": null,
+        "active": true,
+        "status": null,
+        "dbasetype_ident": 1,
+        "prefix": "main",
+        "datasource_name": null,
+        "schema_editable": true,
+        "role_strategy": "standard",
+        "@metadata": {
+          "href": "http://lac.docker.local:18080/rest/abl/admin/v2/ProjectExport.DbaseSchemas/2000",
+          "checksum": "A:a6f227f59f47cb0b"
+        },
+        "NonPersistentAttributes": [
+          {
+            "ident": 2000,
+            "ts": "2017-06-27T16:37:49+00:00",
+            "comments": null,
+            "table_name": "beers",
+            "attr_name": "price_comment",
+            "data_type": 12,
+            "dbaseschema_ident": 2000,
+            "@metadata": {
+              "href": "http://lac.docker.local:18080/rest/abl/admin/v2/ProjectExport.DbaseSchemas.NonPersistentAttributes/2000",
+              "checksum": "A:fc0830ff6fe8933a"
+            }
+          }
+        ],
+        "TableInfos": [],
+        "ViewInfos": []
+      }
+    ],
+    "EventHandlers": [
+      {
+        "ident": 2000,
+        "ts": "2017-06-27T16:37:49+00:00",
+        "name": "Request logs",
+        "description": null,
+        "code": "// Event handling code goes here\nvar message = req.getClientAddress() + ' [' + JSON.parse(JSON.stringify(new Date())) \n    + '] ' + '\"' + req.verb + ' ' + req.baseUrl + '\"' + ' ' + req.getHttpHeaders();\nout.println(message);\n",
+        "active": true,
+        "enabled_verbs": null,
+        "resource_name_pattern": null,
+        "eventtype_ident": 1,
+        "code_type": "Javascript",
+        "project_ident": 2000,
+        "@metadata": {
+          "href": "http://lac.docker.local:18080/rest/abl/admin/v2/ProjectExport.EventHandlers/2000",
+          "checksum": "A:3843dda6e4b414cc"
+        }
+      }
+    ],
+    "Functions": [
+      {
+        "ident": 2000,
+        "ts": "2017-06-27T16:37:49+00:00",
+        "name": "etysz",
+        "comments": "This is a skeleton function, you should most likely:\n1 - Give it a proper name (the default is a randomly generated 5-letter name)\n2 - Give it a proper comment\n3 - Change the code to do something useful",
+        "code": "// Insert your code here\nreturn {result: 'Hello'};",
+        "resource_names": "beers",
+        "return_type": "{\n  \"description\": \"This is an example of the type of data returned by this function\"\n}\n",
+        "is_active": true,
+        "project_ident": 2000,
+        "@metadata": {
+          "href": "http://lac.docker.local:18080/rest/abl/admin/v2/ProjectExport.Functions/2000",
+          "checksum": "A:e2db9ddc27876a49"
+        },
+        "FunctionParameters": []
+      }
+    ],
+    "Handlers": [],
+    "NamedFilters": [],
+    "NamedSorts": [],
+    "ProjectLibraries": [],
+    "ProjectOptions": [
+      {
+        "ident": 2000,
+        "ts": "2017-06-27T16:37:49+00:00",
+        "option_value": "http://docs30.liveapicreator.com/tutorial/northwind",
+        "project_ident": 2000,
+        "projectoptiontype_ident": 13,
+        "@metadata": {
+          "href": "http://lac.docker.local:18080/rest/abl/admin/v2/ProjectExport.ProjectOptions/2000",
+          "checksum": "A:3fa621bdd67f9c57"
+        }
+      },
+      {
+        "ident": 2001,
+        "ts": "2017-06-27T16:37:49+00:00",
+        "option_value": "true",
+        "project_ident": 2000,
+        "projectoptiontype_ident": 12,
+        "@metadata": {
+          "href": "http://lac.docker.local:18080/rest/abl/admin/v2/ProjectExport.ProjectOptions/2001",
+          "checksum": "A:856b83ae6ece52bc"
+        }
+      }
+    ],
+    "Relationships": [],
+    "Roles": [
+      {
+        "ident": 2000,
+        "ts": "2017-06-27T16:37:49+00:00",
+        "name": "API Documentation",
+        "description": "This role is special and is used when generating OpenAPI(Swagger) documentation. It is recognized by the name special name 'API Documentation' and used only for documentation calls.\n Any Resources, Tables, Views, Procedures etc. that are defined and enabled by this role are used to generate the OpenAPI(Swagger) documentation.\n If this role is assigned to a user it will NOT be used for execution permissions.\n If this role is removed or otherwise unavailable, the Swagger/OpenAPI documentation will be nothing more that a name and version.",
+        "default_table_permission": "A",
+        "default_view_permission": "R",
+        "default_apivisibility": "TVPRM",
+        "project_ident": 2000,
+        "@metadata": {
+          "href": "http://lac.docker.local:18080/rest/abl/admin/v2/ProjectExport.Roles/2000",
+          "checksum": "A:5dc1721f35ec8601"
+        },
+        "ApiKeyRoles": [],
+        "ApiVisibility": [],
+        "PermissionData": [],
+        "TablePermissions": []
+      },
+      {
+        "ident": 2001,
+        "ts": "2017-06-27T16:37:49+00:00",
+        "name": "Full access",
+        "description": "Full access to everything in this project",
+        "default_table_permission": "A",
+        "default_view_permission": "R",
+        "default_apivisibility": "TVPRM",
+        "project_ident": 2000,
+        "@metadata": {
+          "href": "http://lac.docker.local:18080/rest/abl/admin/v2/ProjectExport.Roles/2001",
+          "checksum": "A:208b2bb0ca98030d"
+        },
+        "ApiKeyRoles": [
+          {
+            "ident": 2002,
+            "ts": "2017-06-27T16:37:49+00:00",
+            "apikey_ident": 2001,
+            "role_ident": 2001,
+            "@metadata": {
+              "href": "http://lac.docker.local:18080/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/2002",
+              "checksum": "A:71332ad1c706a70a"
+            }
+          }
+        ],
+        "ApiVisibility": [],
+        "PermissionData": [],
+        "TablePermissions": []
+      },
+      {
+        "ident": 2002,
+        "ts": "2017-06-27T16:37:49+00:00",
+        "name": "Read only",
+        "description": "Read-only access to everything in this project",
+        "default_table_permission": "R",
+        "default_view_permission": "R",
+        "default_apivisibility": "TVPRM",
+        "project_ident": 2000,
+        "@metadata": {
+          "href": "http://lac.docker.local:18080/rest/abl/admin/v2/ProjectExport.Roles/2002",
+          "checksum": "A:581a21522a289174"
+        },
+        "ApiKeyRoles": [],
+        "ApiVisibility": [],
+        "PermissionData": [],
+        "TablePermissions": [
+          {
+            "ident": 2000,
+            "ts": "2017-06-27T16:37:49+00:00",
+            "name": "New permission",
+            "description": null,
+            "entity_name": "children:beer_comments",
+            "column_names": null,
+            "predicate": null,
+            "access_type": "N",
+            "role_ident": 2002,
+            "@metadata": {
+              "href": "http://lac.docker.local:18080/rest/abl/admin/v2/ProjectExport.Roles.TablePermissions/2000",
+              "checksum": "A:ce32f914887f8b85"
+            }
+          }
+        ]
+      }
+    ],
+    "Users": [
+      {
+        "ident": 2000,
+        "ts": "2017-06-27T16:37:49+00:00",
+        "name": "admin",
+        "fullname": "Admin Account with full access",
+        "email": null,
+        "status": "A",
+        "roles": "Full access",
+        "data": null,
+        "comments": null,
+        "apikey_lifespan": null,
+        "password_hash": "LNyg9t3oWfaNcw58rdu0a58yiQA00T4qodw8CNmv2o/octLy0qZimNjtpZ8Oe1ChhXR+gj27L5kvHWdJZc5fnA==",
+        "password_salt": "EY+vaIPGGX971Z2Ft2HTuIB/vZ4/pCkr8ulNqvlw",
+        "project_ident": 2000,
+        "@metadata": {
+          "href": "http://lac.docker.local:18080/rest/abl/admin/v2/ProjectExport.Users/2000",
+          "checksum": "A:dd3eb68e7e02ae51"
+        }
+      },
+      {
+        "ident": 2001,
+        "ts": "2017-06-27T16:37:49+00:00",
+        "name": "demo",
+        "fullname": "Demo Account with full access",
+        "email": null,
+        "status": "A",
+        "roles": "Full access",
+        "data": null,
+        "comments": null,
+        "apikey_lifespan": null,
+        "password_hash": "dHur31yUKeRfBfcauYrECWqGzkzmZHfZZU8AJJxq+yAiK1qAYms/AGM15eISKDmDJn0bFtM4mrxJGs0NfuEaXw==",
+        "password_salt": "Q619UbsMda7MVKbJY8/oi4HjCzr0fwM53rX2Rx0/",
+        "project_ident": 2000,
+        "@metadata": {
+          "href": "http://lac.docker.local:18080/rest/abl/admin/v2/ProjectExport.Users/2001",
+          "checksum": "A:556878c8cd5c300c"
+        }
+      },
+      {
+        "ident": 2002,
+        "ts": "2017-06-27T16:37:49+00:00",
+        "name": "guest",
+        "fullname": "Guest Account with read-only access",
+        "email": null,
+        "status": "A",
+        "roles": "Read only",
+        "data": null,
+        "comments": null,
+        "apikey_lifespan": null,
+        "password_hash": "6uXuRnPc+oW0+BllaUBaVv+iz7vKKNlZ69y8QUs0XtFl6QNfdXbTI1nEuJ10mbWBonClDEL2W4jC8HyGCKSxOw==",
+        "password_salt": "Fn8du5W3K2Y/7nYpuUWH5ERI1TWQWRHS6o4xA0g3",
+        "project_ident": 2000,
+        "@metadata": {
+          "href": "http://lac.docker.local:18080/rest/abl/admin/v2/ProjectExport.Users/2002",
+          "checksum": "A:f2e3f14fd9d06206"
+        }
+      }
+    ]
+  }
+]

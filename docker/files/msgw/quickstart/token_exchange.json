@@ -1,0 +1,25 @@
+{
+  "Service": {
+    "name": "Token Exchange Demo",
+    "gatewayUri": "/token*",
+    "httpMethods": [ "get", "post" ],
+    "policy": [
+	{
+	  "RequireOauth2Token": {
+	    "scope_required": "oob",
+	    "scope_fail": "false",
+	    "onetime": "false",
+	    "given_access_token": ""
+	  }
+	},
+        {
+          "RouteHttp" : {
+            "targetUrl" : "http://api:8000",
+            "httpMethod" : "GET",
+	    "preserveRequestPath": true,
+	    "useAuthenticationHeader": "jwt"
+          }
+        }
+      ]
+    }
+}

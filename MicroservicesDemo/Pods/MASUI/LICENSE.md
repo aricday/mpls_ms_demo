@@ -1,0 +1,47 @@
+The MIT License (MIT)
+=====================
+
+Copyright (c) 2016 CA. All rights reserved.
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the “Software”), to deal in the Software without
+restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following
+conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+
+Use of Google brands, including the Google sign-in icon/button, in ways not expressly covered
+by Google’s Sign-In Branding Guidelines [https://developers.google.com/identity/brandingguidelines][google-brand]
+is not allowed without prior written consent from Google (see the Guidelines for
+Third Party Use of Google Brand Features for more information).
+The Google sign in icon is reproduced or modified from work created and shared by Google and
+used according to the terms described in the [Creative Commons][creative-common] 3.0 Attribution License.
+
+This product includes the Facebook logo, the use and distribution of which is subject to Facebook’s terms and guidelines available at the following web addresses:
+- [facebookbrand.com][facebook-brand]
+- [facebookbrand.com/wp-content/uploads/2016/08/facebook_brandassetsguide.pdf][facebook-brand-policy]
+
+This product includes the LinkedIn logo, the use and distribution of which is subject to LinkedIn’s terms and guidelines available at the following web addresses:
+- [brand.linkedin.com][linkedin-brand]
+- [brand.linkedin.com/policies][linkedin-brand-policy]
+
+ [creative-common]: https://creativecommons.org/licenses/by/3.0/
+ [google-brand]: https://developers.google.com/identity/brandingguidelines
+ [linkedin-brand]: https://brand.linkedin.com
+ [linkedin-brand-policy]: https://brand.linkedin.com/policies
+ [facebook-brand]: https://facebookbrand.com
+ [facebook-brand-policy]: https://facebookbrand.com/wp-content/uploads/2016/08/facebook_brandassetsguide.pdf

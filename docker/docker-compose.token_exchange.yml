@@ -1,0 +1,33 @@
+################################################################################
+##
+##  Purpose: Define a miroservice for retrieving beer data from two separate
+##    databases. Define a microservice for validting a JWT and exchanging tokens
+##    Protect both MS with a MSGW and leverage MAS as the OAuth hub.
+##
+##  Email: aric.day@ca.com
+##
+################################################################################
+version: '3'
+services:
+  api:
+    build:
+      context: ./files/api/
+      dockerfile: Dockerfile
+    image: aricday/jwt_api
+    environment:
+      - SERVICE_NAME=api
+      - SERVICE_TAGS=ssg-proxy
+      - MSGW_HOSTNAME=msgw
+    # volumes:
+    #   - ${PWD}/files/api/requirements.txt:/app/requirements.txt:rw
+  api2:
+    build:
+      context: ./files/api/
+      dockerfile: Dockerfile
+    image: aricday/jwt_api
+    environment:
+      - SERVICE_NAME=api2
+      - SERVICE_TAGS=ssg-proxy
+      - MSGW_HOSTNAME=msgw
+    #deploy:
+      #endpoint_mode: dnsrr

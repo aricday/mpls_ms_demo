@@ -1,0 +1,16 @@
+[
+  {
+    "_id": "a8db3a1a7f2d4a5e802321ec8f7f852f",
+    "name": "Joe Smith",
+    "email": "jsmith@gmail.com",
+    "age": 40,
+    "admin": false
+  },
+  {
+    "_id": "3a70eef0d2464d629dfd3d7c1b11cb70",
+    "name": "Jen Ford",
+    "email": "jford@gmail.com",
+    "age": 45,
+    "admin": true
+  }
+]

@@ -1,0 +1,6 @@
+framework module Pods_MicroservicesDemo {
+  umbrella header "Pods-MicroservicesDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,41 @@
+{
+  "Service": {
+    "name": "Beer Data Demo",
+    "gatewayUri": "/beers*",
+    "httpMethods": [ "get", "patch", "post", "delete" ],
+    "policy": [
+  {
+    "RequireOauth2Token": {
+      "scope_required": "mas_storage",
+      "scope_fail": "false",
+      "onetime": "false",
+      "given_access_token": ""
+    }
+  },
+  {
+  "RateLimit": {
+    "MaxRequestsPerSecond": 2,
+    "HardLimit": true,
+    "CounterName": "RateLimit-${request.clientId}-b0938b7ad6ff"
+    }
+  },
+  {
+          "ConsulLookup" : {
+            "consul.agentAddr": "http://consul.:8500",
+            "pathPrefix": "/rest/default/data/v1/main:beers",
+            "routingStrategy": "roundRobin",
+            "serviceName": "lac",
+            "scheme": "http://"
+          }
+      },
+        {
+          "RouteHttp" : {
+            "targetUrl" : "${service.baseUrl}",
+            "httpMethod" : "${request.http.method}",
+      "preserveRequestPath": true,
+      "useAuthenticationHeader": "jwt"
+          }
+        }
+      ]
+    }
+}

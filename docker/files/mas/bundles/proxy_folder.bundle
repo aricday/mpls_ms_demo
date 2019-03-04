@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<l7:Bundle xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management">
+    <l7:References>
+        <l7:Item>
+            <l7:Name>proxy</l7:Name>
+            <l7:Id>c2dd871c34d73387a0aeca49d89d8ca9</l7:Id>
+            <l7:Type>FOLDER</l7:Type>
+            <l7:TimeStamp>2017-07-10T19:03:34.203Z</l7:TimeStamp>
+            <l7:Resource>
+                <l7:Folder folderId="0000000000000000ffffffffffffec76" id="c2dd871c34d73387a0aeca49d89d8ca9" version="0">
+                    <l7:Name>proxy</l7:Name>
+                </l7:Folder>
+            </l7:Resource>
+        </l7:Item>
+        <l7:Item>
+            <l7:Name>SSL</l7:Name>
+            <l7:Id>00000000000000000000000000000002:SSL</l7:Id>
+            <l7:Type>SSG_KEY_ENTRY</l7:Type>
+            <l7:TimeStamp>2017-07-10T19:03:34.475Z</l7:TimeStamp>
+            <l7:Resource>
+                <l7:PrivateKey alias="SSL" id="00000000000000000000000000000002:SSL" keystoreId="00000000000000000000000000000002">
+                    <l7:CertificateChain>
+                        <l7:CertificateData>
+                            <l7:IssuerName>CN=mas.docker.local</l7:IssuerName>
+                            <l7:SerialNumber>9830121966467924271</l7:SerialNumber>
+                            <l7:SubjectName>CN=mas.docker.local</l7:SubjectName>
+                            <l7:Encoded>MIIFJjCCAw6gAwIBAgIJAIhrm9imFcEvMA0GCSqGSIb3DQEBBQUAMBsxGTAXBgNVBAMMEG1hcy5kb2NrZXIubG9jYWwwHhcNMTcwNzA2MTkxOTEwWhcNMTkwNzA2MTkxOTEwWjAbMRkwFwYDVQQDDBBtYXMuZG9ja2VyLmxvY2FsMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA3h8BYvPsnCXz0juXMSGiHz2fct8qpIhHzRxc44LmY17gYWI9A+cpi30qFrFEHXT0YpYm2ed6T7bprfW1RpcW40q5gujhLukMFQlmnutzKNe0AowrDoDNKIpCGlJImb72nNRyF8kML0ANDLDoC1vztUM4esMh+fPUyaIoA23GVmobnUtr5H865s4bKbUArTSPIr5GPkhGTAOx05lBq+tX8P0RcyXPdahWoDmooWrseByyslebPD4q9UagKQxbPRZEVZjzZC6k/LJZa9+OY4n1F8tfEuMB5SKlrNBKqj1dcqVElNzCLAp+lR9FYYYz+r9VB/6qwkMguWed+koVuvhfRZWIavFJHARiVPwn5R68Q25sQkxNwUHE6/PwEHUxe4biKIHg/HgLMa6Mb8BhlifYz6M5W3T/ro9SNeid5hGNa77svNYl+i9lZEPfDDAfa5lTAILVCB4d5CvfoT9XZYei/2agIqyhWbKDUQv9Y05MR2agcSQQ0HPAUmhvOdzjpHx6RVJ4MSnvz51iXrrAGGPgaaxaxT+7sNJ4zisHVNd2aE5o8/e3EGDgSy7pttEE+VBD3kKXcAHNZqV8/kHjBBQb4kPGQqfQiWmlZBYZ+jpORJgK0U4dZxZLuXBUTd6qOnc9oOCtuaeUWtyevB1w7/eL3XKY5O3FR9/GMsFmX7Y4qA8CAwEAAaNtMGswGwYDVR0RBBQwEoIQbWFzLmRvY2tlci5sb2NhbDAdBgNVHQ4EFgQUsGqxJDURn0ol94M4SAjKa8iW5VowHwYDVR0jBBgwFoAUsGqxJDURn0ol94M4SAjKa8iW5VowDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOCAgEAKvwYZmKDJj6+A7roClEV4UUYLgO3AkOxZahBRIEXbwBSPKvvhHAXe3Vnh+yYsmy3Laq4Lsiehk5boGZ62Az5neljFENSkbr0RQLmE3nGSuuG6wvMVnIjRSC2FR2TD7AkXSxLvFhbZTcPAf6HWEdLlosmVPy6SiffuZk/qOTDsEzJQxEAJ9diV0/0FpR2BtRoJVrPtNPu8XIwLDVuVmCXHpkvFbEbnN1qk7yziooF2VJQ19WOGBIGdiD09S1KSxf37VMtKrrdVZVLxY12Hr7F0Qs6CoLrpe2j07+nBglbxONOrimkCyhXAOy1nUOsvcNEUJPcSo3wU4snlQpG7rdOacmu6HCKIDaxRkAFZwdvLn8BuMDbMfF9xiHLz3CNAqayuXuKv8v+KiKSBZ35it0y9bV2hlGGi+Z7D+wPYoNitzBVuKSvUTcj8+lTMcKy6qD4Axmt/6rrUpLeKJtANvGuHjJt2k6mXuPKJMkd5lmHesOVxCLtfjAWGVJ8jKdjlRh3ldZved7PUJLmVdc3WN174A4ifkVVnJDncYklR85l3Qv6/lnjcRAnVISaCuiQjZ5p7dQ3HcQuXNkrSq3GiCeIaRzvHbyZb+1Jrl82sGD9U5jpMQVyMo3UbCzFZxWFBfLYLLQwmB+yds1UR7I0wjUSVACq8Zr7ZH05R2ChjMEq98M=</l7:Encoded>
+                        </l7:CertificateData>
+                    </l7:CertificateChain>
+                    <l7:Properties>
+                        <l7:Property key="keyAlgorithm">
+                            <l7:StringValue>RSA</l7:StringValue>
+                        </l7:Property>
+                        <l7:Property key="keyData">
+                            <l7:StringValue algorithm="RSA" bundleKey="$L7C2$1bead,PBIZyPPkv5LYOWn4rpSiCiSPjCq+F2J0bkSJItKIrQQ=$IFrZckQdaugkhQO8I1iGqv2M/L0XXBGHMa9CqB2MD/IHYPmJx85kpsYPX4RjlXJQlheGCT5vT6UtwDAmWSTILeELFAH7YjMYaGkGKk8nHXKNv0ssYn3wUCBHA4J6qZHZ">$L7C2$1,xXPyKnoBbe0MEZWGMDOcduO5fzzpf/amTB6EqzOXHPg=$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</l7:StringValue>
+                        </l7:Property>
+                        <l7:Property key="specialPurposes">
+                            <l7:StringValue>Default SSL Key</l7:StringValue>
+                        </l7:Property>
+                    </l7:Properties>
+                </l7:PrivateKey>
+            </l7:Resource>
+        </l7:Item>
+        <l7:Item>
+            <l7:Name>Proxy</l7:Name>
+            <l7:Id>c2dd871c34d73387a0aeca49d89d8ce9</l7:Id>
+            <l7:Type>SERVICE</l7:Type>
+            <l7:TimeStamp>2017-07-10T19:03:34.551Z</l7:TimeStamp>
+            <l7:Resource>
+                <l7:Service id="c2dd871c34d73387a0aeca49d89d8ce9" version="2">
+                    <l7:ServiceDetail folderId="c2dd871c34d73387a0aeca49d89d8ca9" id="c2dd871c34d73387a0aeca49d89d8ce9" version="2">
+                        <l7:Name>Proxy</l7:Name>
+                        <l7:Enabled>true</l7:Enabled>
+                        <l7:ServiceMappings>
+                            <l7:HttpMapping>
+                                <l7:UrlPattern>/*</l7:UrlPattern>
+                                <l7:Verbs>
+                                    <l7:Verb>GET</l7:Verb>
+                                    <l7:Verb>POST</l7:Verb>
+                                    <l7:Verb>PUT</l7:Verb>
+                                    <l7:Verb>PATCH</l7:Verb>
+                                    <l7:Verb>DELETE</l7:Verb>
+                                    <l7:Verb>HEAD</l7:Verb>
+                                    <l7:Verb>OPTIONS</l7:Verb>
+                                    <l7:Verb>OTHER</l7:Verb>
+                                </l7:Verbs>
+                            </l7:HttpMapping>
+                        </l7:ServiceMappings>
+                        <l7:Properties>
+                            <l7:Property key="internal">
+                                <l7:BooleanValue>false</l7:BooleanValue>
+                            </l7:Property>
+                            <l7:Property key="policyRevision">
+                                <l7:LongValue>3</l7:LongValue>
+                            </l7:Property>
+                            <l7:Property key="soap">
+                                <l7:BooleanValue>false</l7:BooleanValue>
+                            </l7:Property>
+                            <l7:Property key="tracingEnabled">
+                                <l7:BooleanValue>false</l7:BooleanValue>
+                            </l7:Property>
+                            <l7:Property key="wssProcessingEnabled">
+                                <l7:BooleanValue>false</l7:BooleanValue>
+                            </l7:Property>
+                        </l7:Properties>
+                    </l7:ServiceDetail>
+                    <l7:Resources>
+                        <l7:ResourceSet tag="policy">
+                            <l7:Resource type="policy" version="2">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;wsp:Policy xmlns:L7p="http://www.layer7tech.com/ws/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy"&gt;
+    &lt;wsp:All wsp:Usage="Required"&gt;
+        &lt;L7p:AuditDetailAssertion&gt;
+            &lt;L7p:Detail stringValueReference="inline"&gt;&lt;![CDATA[${request.tcp.remoteIP} [${gateway.time.local}] "${request.http.method} ${request.url}"
+Authorization: ${request.http.header.authorization}]]&gt;&lt;/L7p:Detail&gt;
+            &lt;L7p:LoggingOnly booleanValue="true"/&gt;
+        &lt;/L7p:AuditDetailAssertion&gt;
+        &lt;L7p:SslAssertion/&gt;
+        &lt;L7p:CustomizeErrorResponse&gt;
+            &lt;L7p:Content stringValueReference="inline"&gt;&lt;![CDATA[{
+  "error": "${error}",
+  "current_time": "${gateway.time.local}"
+}]]&gt;&lt;/L7p:Content&gt;
+            &lt;L7p:ContentType stringValue="application/json; charset=UTF-8"/&gt;
+            &lt;L7p:ExtraHeaders nameValuePairArray="included"/&gt;
+            &lt;L7p:HttpStatus stringValue="${status}"/&gt;
+        &lt;/L7p:CustomizeErrorResponse&gt;
+        &lt;L7p:SetVariable&gt;
+            &lt;L7p:Base64Expression stringValue="aHR0cHM6Ly9tc2d3Ojg0NDMke3JlcXVlc3QudXJsLnBhdGh9JHtyZXF1ZXN0LnVybC5xdWVyeX0="/&gt;
+            &lt;L7p:VariableToSet stringValue="targetUrl"/&gt;
+        &lt;/L7p:SetVariable&gt;
+        &lt;L7p:SetVariable&gt;
+            &lt;L7p:Base64Expression stringValue="JHtyZXF1ZXN0Lmh0dHAuaGVhZGVyLlgtYm9keS1iYXNlNjR9"/&gt;
+            &lt;L7p:VariableToSet stringValue="bodyBase64Header"/&gt;
+        &lt;/L7p:SetVariable&gt;
+        &lt;wsp:OneOrMore wsp:Usage="Required"&gt;
+            &lt;L7p:ComparisonAssertion&gt;
+                &lt;L7p:CaseSensitive booleanValue="false"/&gt;
+                &lt;L7p:Expression1 stringValue="${bodyBase64Header}"/&gt;
+                &lt;L7p:Expression2 stringValue=""/&gt;
+                &lt;L7p:Operator operator="EMPTY"/&gt;
+                &lt;L7p:Predicates predicates="included"&gt;
+                    &lt;L7p:item binary="included"&gt;
+                        &lt;L7p:CaseSensitive booleanValue="false"/&gt;
+                        &lt;L7p:Operator operator="EMPTY"/&gt;
+                        &lt;L7p:RightValue stringValue=""/&gt;
+                    &lt;/L7p:item&gt;
+                &lt;/L7p:Predicates&gt;
+            &lt;/L7p:ComparisonAssertion&gt;
+            &lt;wsp:All wsp:Usage="Required"&gt;
+                &lt;L7p:EvaluateJsonPathExpression&gt;
+                    &lt;L7p:Expression stringValue="$.body-base64"/&gt;
+                &lt;/L7p:EvaluateJsonPathExpression&gt;
+                &lt;L7p:EncodeDecode&gt;
+                    &lt;L7p:SourceVariableName stringValue="jsonPath.result"/&gt;
+                    &lt;L7p:TargetDataType variableDataType="string"/&gt;
+                    &lt;L7p:TargetVariableName stringValue="jsonBody"/&gt;
+                    &lt;L7p:TransformType transformType="BASE64_DECODE"/&gt;
+                &lt;/L7p:EncodeDecode&gt;
+                &lt;L7p:AuditDetailAssertion&gt;
+                    &lt;L7p:Detail stringValue="jsonBody: ${jsonBody}"/&gt;
+                    &lt;L7p:LoggingOnly booleanValue="true"/&gt;
+                &lt;/L7p:AuditDetailAssertion&gt;
+                &lt;L7p:SetVariable&gt;
+                    &lt;L7p:Base64Expression stringValue="JHtqc29uQm9keX0="/&gt;
+                    &lt;L7p:ContentType stringValue="application/json; charset=utf-8"/&gt;
+                    &lt;L7p:DataType variableDataType="message"/&gt;
+                    &lt;L7p:VariableToSet stringValue="request"/&gt;
+                &lt;/L7p:SetVariable&gt;
+            &lt;/wsp:All&gt;
+            &lt;L7p:assertionComment&gt;
+                &lt;L7p:Properties mapValue="included"&gt;
+                    &lt;L7p:entry&gt;
+                        &lt;L7p:key stringValue="LEFT.COMMENT"/&gt;
+                        &lt;L7p:value stringValue="Decode Body"/&gt;
+                    &lt;/L7p:entry&gt;
+                    &lt;L7p:entry&gt;
+                        &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                        &lt;L7p:value stringValue="// Check if X-body-base64 exists and base64 decode"/&gt;
+                    &lt;/L7p:entry&gt;
+                &lt;/L7p:Properties&gt;
+            &lt;/L7p:assertionComment&gt;
+        &lt;/wsp:OneOrMore&gt;
+        &lt;wsp:OneOrMore wsp:Usage="Required"&gt;
+            &lt;L7p:HttpRoutingAssertion&gt;
+                &lt;L7p:FailOnErrorStatus booleanValue="false"/&gt;
+                &lt;L7p:ProtectedServiceUrl stringValue="${targetUrl}"/&gt;
+                &lt;L7p:ProxyPassword stringValueNull="null"/&gt;
+                &lt;L7p:ProxyUsername stringValueNull="null"/&gt;
+                &lt;L7p:RequestHeaderRules httpPassthroughRuleSet="included"&gt;
+                    &lt;L7p:Rules httpPassthroughRules="included"&gt;
+                        &lt;L7p:item httpPassthroughRule="included"&gt;
+                            &lt;L7p:Name stringValue="Authorization"/&gt;
+                        &lt;/L7p:item&gt;
+                    &lt;/L7p:Rules&gt;
+                &lt;/L7p:RequestHeaderRules&gt;
+                &lt;L7p:RequestParamRules httpPassthroughRuleSet="included"&gt;
+                    &lt;L7p:ForwardAll booleanValue="true"/&gt;
+                    &lt;L7p:Rules httpPassthroughRules="included"/&gt;
+                &lt;/L7p:RequestParamRules&gt;
+                &lt;L7p:ResponseHeaderRules httpPassthroughRuleSet="included"&gt;
+                    &lt;L7p:ForwardAll booleanValue="true"/&gt;
+                    &lt;L7p:Rules httpPassthroughRules="included"&gt;
+                        &lt;L7p:item httpPassthroughRule="included"&gt;
+                            &lt;L7p:Name stringValue="Set-Cookie"/&gt;
+                        &lt;/L7p:item&gt;
+                    &lt;/L7p:Rules&gt;
+                &lt;/L7p:ResponseHeaderRules&gt;
+            &lt;/L7p:HttpRoutingAssertion&gt;
+            &lt;wsp:All wsp:Usage="Required"&gt;
+                &lt;L7p:SetVariable&gt;
+                    &lt;L7p:Base64Expression stringValue="NTAw"/&gt;
+                    &lt;L7p:VariableToSet stringValue="status"/&gt;
+                &lt;/L7p:SetVariable&gt;
+                &lt;L7p:SetVariable&gt;
+                    &lt;L7p:Base64Expression stringValue="Um91dGluZyBlcnJvciB0byAnJHt0YXJnZXRVcmx9JzogJyR7aHR0cFJvdXRpbmcucmVhc29uQ29kZX0n"/&gt;
+                    &lt;L7p:VariableToSet stringValue="error"/&gt;
+                &lt;/L7p:SetVariable&gt;
+                &lt;L7p:RaiseError/&gt;
+            &lt;/wsp:All&gt;
+        &lt;/wsp:OneOrMore&gt;
+    &lt;/wsp:All&gt;
+&lt;/wsp:Policy&gt;
+</l7:Resource>
+                        </l7:ResourceSet>
+                    </l7:Resources>
+                </l7:Service>
+            </l7:Resource>
+        </l7:Item>
+    </l7:References>
+    <l7:Mappings>
+        <l7:Mapping action="NewOrExisting" srcId="0000000000000000ffffffffffffec76" srcUri="https://mas.docker.local:8443/restman/1.0/folders/0000000000000000ffffffffffffec76" type="FOLDER">
+            <l7:Properties>
+                <l7:Property key="FailOnNew">
+                    <l7:BooleanValue>true</l7:BooleanValue>
+                </l7:Property>
+            </l7:Properties>
+        </l7:Mapping>
+        <l7:Mapping action="NewOrExisting" srcId="c2dd871c34d73387a0aeca49d89d8ca9" srcUri="https://mas.docker.local:8443/restman/1.0/folders/c2dd871c34d73387a0aeca49d89d8ca9" type="FOLDER"/>
+        <l7:Mapping action="NewOrExisting" srcId="00000000000000000000000000000002:SSL" srcUri="https://mas.docker.local:8443/restman/1.0/privateKeys/00000000000000000000000000000002:SSL" type="SSG_KEY_ENTRY"/>
+        <l7:Mapping action="NewOrExisting" srcId="c2dd871c34d73387a0aeca49d89d8ce9" srcUri="https://mas.docker.local:8443/restman/1.0/services/c2dd871c34d73387a0aeca49d89d8ce9" type="SERVICE"/>
+    </l7:Mappings>
+</l7:Bundle>

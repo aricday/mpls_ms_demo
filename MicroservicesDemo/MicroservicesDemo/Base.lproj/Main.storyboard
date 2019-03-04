@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="MicroservicesDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Microservices Demo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mu1-Ic-bTb">
+                                <rect key="frame" x="75" y="200" width="224" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="LWR-DA-fqz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Mu1-Ic-bTb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="180" id="3HC-nH-Aom"/>
+                            <constraint firstItem="Mu1-Ic-bTb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f8H-hN-0Ps"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-646" y="-111"/>
+        </scene>
+        <!--Beers Navigation Controller-->
+        <scene sceneID="pPe-bL-IQE">
+            <objects>
+                <navigationController title="Beers Navigation Controller" id="x3R-lV-Ofw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Beers" image="beer glass icon" selectedImage="beer glass icon" id="dMI-jp-Ohi"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="smy-O5-jiG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="JGW-kl-zBL" kind="relationship" relationship="rootViewController" id="Ln5-yV-Bnk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CoD-R5-XJX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1039" y="-713"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="0VP-EF-g5b">
+            <objects>
+                <viewController title="Profile View Controller" id="plP-4z-2DH" customClass="ProfileViewController" customModule="MicroservicesDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lip-1S-nxe"/>
+                        <viewControllerLayoutGuide type="bottom" id="tq2-dU-cK2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lmb-T2-CDK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="YPp-mp-ura">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" red="0.0026387006509999999" green="0.03730293363" blue="0.1120425239" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="618" id="etN-qJ-qhs"/>
+                                </constraints>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BWb-Kv-hIO">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0026387006509999999" green="0.03730293363" blue="0.1120425239" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <navigationItem title="Profile" id="D5e-lg-efG">
+                                        <barButtonItem key="rightBarButtonItem" image="logout" id="JgF-P3-okv">
+                                            <connections>
+                                                <action selector="logout:" destination="plP-4z-2DH" id="ihI-hD-flE"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YPp-mp-ura" firstAttribute="bottom" secondItem="tq2-dU-cK2" secondAttribute="top" id="8V6-hQ-kCA"/>
+                            <constraint firstItem="YPp-mp-ura" firstAttribute="leading" secondItem="lmb-T2-CDK" secondAttribute="leading" id="VKZ-vN-GYv"/>
+                            <constraint firstAttribute="trailing" secondItem="YPp-mp-ura" secondAttribute="trailing" id="iHo-ki-NrC"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="Settings-icon_50_30x30" id="BQb-pq-RLk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3z0-V7-hQj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1064.8" y="215.44227886056973"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="q9K-aK-eTK">
+            <objects>
+                <tabBarController storyboardIdentifier="mainTabBarController" id="c2Z-cz-Xvq" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Qmk-M2-qSZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="x3R-lV-Ofw" kind="relationship" relationship="viewControllers" id="gvd-If-Ugs"/>
+                        <segue destination="plP-4z-2DH" kind="relationship" relationship="viewControllers" id="nJY-ab-f3r"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="czU-Tc-pYu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111" y="-111"/>
+        </scene>
+        <!--Beers Table View Controller-->
+        <scene sceneID="8Rd-9h-T4E">
+            <objects>
+                <tableViewController id="JGW-kl-zBL" userLabel="Beers Table View Controller" customClass="BeersTableViewController" customModule="MicroservicesDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="91" sectionHeaderHeight="28" sectionFooterHeight="28" id="nnN-yU-emp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cellBeers" rowHeight="80" id="hVe-vW-zjh" userLabel="BeerList" customClass="BeersTableViewCell" customModule="MicroservicesDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hVe-vW-zjh" id="17K-dy-2fO">
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="80"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4mk-Yh-4xN" userLabel="Beer Name">
+                                            <rect key="frame" x="41" y="9" width="217" height="21"/>
+                                            <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="15"/>
+                                            <color key="textColor" red="0.0026387006509999999" green="0.03730293363" blue="0.1120425239" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Style" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z9z-Cy-FFg" userLabel="Beer Style">
+                                            <rect key="frame" x="41" y="30" width="217" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="CRl-UP-dUG"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27M-b8-bfE" userLabel="Beer Price">
+                                            <rect key="frame" x="41" y="62" width="217" height="10"/>
+                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Updated At" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Rp-A7-9uP">
+                                            <rect key="frame" x="266" y="8" width="68" height="12"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="68" id="775-zI-175"/>
+                                                <constraint firstAttribute="height" constant="12" id="Dnv-vv-UK2"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qhu-AO-i5O" userLabel="Beer Image">
+                                            <rect key="frame" x="8" y="7" width="25" height="25"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beer Likes" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nup-SS-p7X">
+                                            <rect key="frame" x="266" y="62" width="68" height="12"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="68" id="Cpt-Ic-xJV"/>
+                                                <constraint firstAttribute="height" constant="12" id="swX-4V-Zfz"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="27M-b8-bfE" firstAttribute="top" secondItem="Z9z-Cy-FFg" secondAttribute="bottom" constant="11" id="2Jh-iv-hcQ"/>
+                                        <constraint firstItem="9Rp-A7-9uP" firstAttribute="trailing" secondItem="17K-dy-2fO" secondAttribute="trailingMargin" id="6xU-kE-5h7"/>
+                                        <constraint firstItem="9Rp-A7-9uP" firstAttribute="trailing" secondItem="Z9z-Cy-FFg" secondAttribute="trailing" constant="76" id="CGd-HE-eZj"/>
+                                        <constraint firstItem="Z9z-Cy-FFg" firstAttribute="leading" secondItem="27M-b8-bfE" secondAttribute="leading" id="DrS-F5-cI4"/>
+                                        <constraint firstItem="nup-SS-p7X" firstAttribute="leading" secondItem="9Rp-A7-9uP" secondAttribute="leading" id="DvR-c6-Yes"/>
+                                        <constraint firstItem="Z9z-Cy-FFg" firstAttribute="leading" secondItem="17K-dy-2fO" secondAttribute="leadingMargin" constant="33" id="JxR-Am-EYL"/>
+                                        <constraint firstItem="4mk-Yh-4xN" firstAttribute="top" secondItem="9Rp-A7-9uP" secondAttribute="top" constant="1" id="NbP-6q-ekq"/>
+                                        <constraint firstItem="4mk-Yh-4xN" firstAttribute="top" secondItem="17K-dy-2fO" secondAttribute="topMargin" constant="1" id="UMf-Yz-Rka"/>
+                                        <constraint firstItem="nup-SS-p7X" firstAttribute="top" secondItem="27M-b8-bfE" secondAttribute="top" id="aWL-Ah-O9f"/>
+                                        <constraint firstItem="qhu-AO-i5O" firstAttribute="centerY" secondItem="4mk-Yh-4xN" secondAttribute="centerY" id="bEm-j9-Pp2"/>
+                                        <constraint firstItem="27M-b8-bfE" firstAttribute="bottom" secondItem="17K-dy-2fO" secondAttribute="bottomMargin" id="bml-74-k0V"/>
+                                        <constraint firstItem="Z9z-Cy-FFg" firstAttribute="top" secondItem="4mk-Yh-4xN" secondAttribute="bottom" id="cZe-BO-eUG"/>
+                                        <constraint firstItem="qhu-AO-i5O" firstAttribute="top" secondItem="17K-dy-2fO" secondAttribute="topMargin" constant="-1" id="eos-4b-tXB"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="4mk-Yh-4xN" secondAttribute="trailing" constant="76" id="nCv-hj-HZh"/>
+                                        <constraint firstItem="Z9z-Cy-FFg" firstAttribute="trailing" secondItem="27M-b8-bfE" secondAttribute="trailing" id="pvn-D7-au9"/>
+                                        <constraint firstItem="qhu-AO-i5O" firstAttribute="leading" secondItem="17K-dy-2fO" secondAttribute="leadingMargin" id="rhz-kZ-3NQ"/>
+                                        <constraint firstItem="Z9z-Cy-FFg" firstAttribute="top" secondItem="9Rp-A7-9uP" secondAttribute="bottom" constant="10" id="tOb-Y6-8dl"/>
+                                        <constraint firstItem="4mk-Yh-4xN" firstAttribute="leading" secondItem="qhu-AO-i5O" secondAttribute="trailing" constant="8" symbolic="YES" id="xzj-pV-e0Q"/>
+                                        <constraint firstItem="4mk-Yh-4xN" firstAttribute="leading" secondItem="Z9z-Cy-FFg" secondAttribute="leading" id="z6f-hc-v1a"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="beerImage" destination="qhu-AO-i5O" id="ARs-7M-foQ"/>
+                                    <outlet property="beerLikes" destination="nup-SS-p7X" id="FsP-8S-TPo"/>
+                                    <outlet property="beerName" destination="4mk-Yh-4xN" id="CBS-QB-nBt"/>
+                                    <outlet property="beerPrice" destination="27M-b8-bfE" id="JEl-cN-C6K"/>
+                                    <outlet property="beerStyle" destination="Z9z-Cy-FFg" id="gWg-Xs-2PS"/>
+                                    <outlet property="beerUpdatedAt" destination="9Rp-A7-9uP" id="uDF-y7-xAI"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="JGW-kl-zBL" id="zym-GT-OcD"/>
+                            <outlet property="delegate" destination="JGW-kl-zBL" id="sMq-J8-adP"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Beers" id="0ox-Kw-vyo">
+                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="WjS-aN-Arm">
+                            <connections>
+                                <action selector="refreshAction:" destination="JGW-kl-zBL" id="Ldx-gK-EF4"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="beer glass icon" id="E9D-Cq-w4o">
+                            <connections>
+                                <segue destination="2x9-4i-Jnd" kind="show" id="wgT-gl-1Dn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="GVL-g3-Vuy">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <attributedString key="attributedTitle"/>
+                    </refreshControl>
+                    <connections>
+                        <outlet property="BeersTableView" destination="nnN-yU-emp" id="ODr-lo-pTZ"/>
+                        <outlet property="refresh" destination="WjS-aN-Arm" id="iKd-rV-3pG"/>
+                        <segue destination="cJz-oI-hN7" kind="show" identifier="showBeerDetails" id="hLh-B8-P2K"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XVK-AJ-fb4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1904.8" y="-714.69265367316348"/>
+        </scene>
+        <!--Beer Details-->
+        <scene sceneID="NZx-xm-AfX">
+            <objects>
+                <viewController id="cJz-oI-hN7" userLabel="Beer Details" customClass="BeerDetailsViewController" customModule="MicroservicesDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cQ0-m9-59a"/>
+                        <viewControllerLayoutGuide type="bottom" id="KAb-fv-JnM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gfd-18-VhL" userLabel="Beers Detail View">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="uq0-As-T2y">
+                                <rect key="frame" x="0.0" y="24" width="375" height="618"/>
+                                <color key="backgroundColor" red="0.0026387006509999999" green="0.03730293363" blue="0.1120425239" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="618" id="Mwt-61-Qdz"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Brewery" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7lV-vL-Oqk">
+                                <rect key="frame" x="16" y="98" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c3p-G7-jvb">
+                                <rect key="frame" x="16" y="136" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Style" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MPU-Xn-vh1" userLabel="Beer Style">
+                                <rect key="frame" x="16" y="174" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Price" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0jj-ed-gEg">
+                                <rect key="frame" x="16" y="212" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Price Comment" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MpJ-eg-FNV" userLabel="Beer Price Comment">
+                                <rect key="frame" x="16" y="250" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="c3p-G7-jvb" firstAttribute="trailing" secondItem="MPU-Xn-vh1" secondAttribute="trailing" id="0vh-j0-3Bu"/>
+                            <constraint firstItem="c3p-G7-jvb" firstAttribute="top" secondItem="7lV-vL-Oqk" secondAttribute="bottom" constant="8" symbolic="YES" id="5Mj-xN-aQt"/>
+                            <constraint firstItem="uq0-As-T2y" firstAttribute="centerY" secondItem="gfd-18-VhL" secondAttribute="centerY" id="6uq-dG-jtg"/>
+                            <constraint firstItem="MpJ-eg-FNV" firstAttribute="top" secondItem="0jj-ed-gEg" secondAttribute="bottom" constant="8" symbolic="YES" id="7bb-0X-RKK"/>
+                            <constraint firstItem="0jj-ed-gEg" firstAttribute="trailing" secondItem="MpJ-eg-FNV" secondAttribute="trailing" id="AG7-5P-htI"/>
+                            <constraint firstItem="7lV-vL-Oqk" firstAttribute="leading" secondItem="gfd-18-VhL" secondAttribute="leadingMargin" id="GhC-Fu-aXj"/>
+                            <constraint firstItem="7lV-vL-Oqk" firstAttribute="leading" secondItem="c3p-G7-jvb" secondAttribute="leading" id="KTf-WO-OE4"/>
+                            <constraint firstItem="MPU-Xn-vh1" firstAttribute="trailing" secondItem="0jj-ed-gEg" secondAttribute="trailing" id="OE7-20-UfL"/>
+                            <constraint firstItem="0jj-ed-gEg" firstAttribute="leading" secondItem="MpJ-eg-FNV" secondAttribute="leading" id="Wgj-jc-11h"/>
+                            <constraint firstItem="uq0-As-T2y" firstAttribute="centerX" secondItem="MpJ-eg-FNV" secondAttribute="centerX" id="Z5e-iC-NcH"/>
+                            <constraint firstItem="c3p-G7-jvb" firstAttribute="leading" secondItem="MPU-Xn-vh1" secondAttribute="leading" id="gWa-aq-EtX"/>
+                            <constraint firstItem="0jj-ed-gEg" firstAttribute="top" secondItem="MPU-Xn-vh1" secondAttribute="bottom" constant="8" symbolic="YES" id="l12-94-V0d"/>
+                            <constraint firstItem="7lV-vL-Oqk" firstAttribute="top" secondItem="cQ0-m9-59a" secondAttribute="bottom" constant="34" id="orm-FP-OcA"/>
+                            <constraint firstItem="7lV-vL-Oqk" firstAttribute="trailing" secondItem="c3p-G7-jvb" secondAttribute="trailing" id="pli-w1-Zwh"/>
+                            <constraint firstItem="7lV-vL-Oqk" firstAttribute="trailing" secondItem="gfd-18-VhL" secondAttribute="trailingMargin" id="uIS-0A-BKH"/>
+                            <constraint firstItem="MPU-Xn-vh1" firstAttribute="top" secondItem="c3p-G7-jvb" secondAttribute="bottom" constant="8" symbolic="YES" id="wrT-Po-SdV"/>
+                            <constraint firstItem="MPU-Xn-vh1" firstAttribute="leading" secondItem="0jj-ed-gEg" secondAttribute="leading" id="ww2-9o-4h1"/>
+                            <constraint firstItem="uq0-As-T2y" firstAttribute="leading" secondItem="gfd-18-VhL" secondAttribute="leading" id="z8m-8U-Gf8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="beerBrewery" destination="7lV-vL-Oqk" id="4q3-61-bbQ"/>
+                        <outlet property="beerName" destination="c3p-G7-jvb" id="3GI-sR-8OB"/>
+                        <outlet property="beerPrice" destination="0jj-ed-gEg" id="fpp-XB-b7Y"/>
+                        <outlet property="beerPriceComment" destination="MpJ-eg-FNV" id="AT5-bP-Vx0"/>
+                        <outlet property="beerStyle" destination="MPU-Xn-vh1" id="yOE-Bm-pLJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RsW-1O-6yT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2726" y="-714"/>
+        </scene>
+        <!--Add Beer-->
+        <scene sceneID="ZRO-zN-7bF">
+            <objects>
+                <viewController id="2x9-4i-Jnd" userLabel="Add Beer" customClass="AddBeerViewController" customModule="MicroservicesDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kp9-Bv-s6B"/>
+                        <viewControllerLayoutGuide type="bottom" id="KaX-0F-cjz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WS9-KM-ozB" userLabel="Beers Detail View">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="5Q6-LF-0UZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" red="0.0026387006509999999" green="0.03730293363" blue="0.1120425239" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="618" id="4oj-YB-B1r"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oFI-Br-vJi">
+                                <rect key="frame" x="16" y="98" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="l6v-MK-8Dg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Style" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zYN-N8-to0" userLabel="Beer Style">
+                                <rect key="frame" x="16" y="136" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="I7p-e9-rlG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Price" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eWy-gI-zeh">
+                                <rect key="frame" x="16" y="211" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="TCR-UW-MWf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Brewery" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lEs-P8-vL9">
+                                <rect key="frame" x="16" y="174" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3dU-hC-711"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rTI-ZF-wPd">
+                                <rect key="frame" x="100" y="412" width="174" height="42"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onSubmit:" destination="2x9-4i-Jnd" eventType="touchUpInside" id="aKw-Hm-4cI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oFI-Br-vJi" firstAttribute="trailing" secondItem="zYN-N8-to0" secondAttribute="trailing" id="A9H-5Z-J7M"/>
+                            <constraint firstItem="5Q6-LF-0UZ" firstAttribute="leading" secondItem="WS9-KM-ozB" secondAttribute="leading" id="AHF-9M-cek"/>
+                            <constraint firstItem="eWy-gI-zeh" firstAttribute="leading" secondItem="rTI-ZF-wPd" secondAttribute="leading" constant="-84" id="DgY-x2-nJ4"/>
+                            <constraint firstItem="zYN-N8-to0" firstAttribute="top" secondItem="oFI-Br-vJi" secondAttribute="bottom" constant="8" symbolic="YES" id="S0A-OY-9lT"/>
+                            <constraint firstItem="rTI-ZF-wPd" firstAttribute="top" secondItem="eWy-gI-zeh" secondAttribute="bottom" constant="171" id="U9T-pN-fKA"/>
+                            <constraint firstItem="oFI-Br-vJi" firstAttribute="trailing" secondItem="WS9-KM-ozB" secondAttribute="trailingMargin" id="UNo-N1-TZh"/>
+                            <constraint firstItem="5Q6-LF-0UZ" firstAttribute="centerX" secondItem="lEs-P8-vL9" secondAttribute="centerX" id="VOu-6u-E0h"/>
+                            <constraint firstItem="oFI-Br-vJi" firstAttribute="leading" secondItem="WS9-KM-ozB" secondAttribute="leadingMargin" id="Wal-4Q-ktg"/>
+                            <constraint firstItem="oFI-Br-vJi" firstAttribute="leading" secondItem="zYN-N8-to0" secondAttribute="leading" id="ZUL-ab-uH9"/>
+                            <constraint firstItem="KaX-0F-cjz" firstAttribute="top" secondItem="rTI-ZF-wPd" secondAttribute="bottom" constant="164" id="bWo-sV-Ztt"/>
+                            <constraint firstItem="lEs-P8-vL9" firstAttribute="trailing" secondItem="eWy-gI-zeh" secondAttribute="trailing" id="eMS-qR-SQe"/>
+                            <constraint firstItem="5Q6-LF-0UZ" firstAttribute="bottom" secondItem="KaX-0F-cjz" secondAttribute="top" id="fcg-ah-D8z"/>
+                            <constraint firstItem="zYN-N8-to0" firstAttribute="leading" secondItem="lEs-P8-vL9" secondAttribute="leading" id="hZx-Cv-tH8"/>
+                            <constraint firstItem="eWy-gI-zeh" firstAttribute="top" secondItem="lEs-P8-vL9" secondAttribute="bottom" constant="7" id="ipx-P5-4jg"/>
+                            <constraint firstItem="lEs-P8-vL9" firstAttribute="leading" secondItem="eWy-gI-zeh" secondAttribute="leading" id="o49-6f-5Zu"/>
+                            <constraint firstItem="oFI-Br-vJi" firstAttribute="top" secondItem="kp9-Bv-s6B" secondAttribute="bottom" constant="34" id="ql2-j1-2KC"/>
+                            <constraint firstItem="lEs-P8-vL9" firstAttribute="top" secondItem="zYN-N8-to0" secondAttribute="bottom" constant="8" symbolic="YES" id="v0d-CT-Lmt"/>
+                            <constraint firstItem="zYN-N8-to0" firstAttribute="trailing" secondItem="lEs-P8-vL9" secondAttribute="trailing" id="xye-BE-oXO"/>
+                            <constraint firstItem="eWy-gI-zeh" firstAttribute="trailing" secondItem="rTI-ZF-wPd" secondAttribute="trailing" constant="85" id="zzY-IV-2Tb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="beerBrewery" destination="lEs-P8-vL9" id="vNA-W1-5bU"/>
+                        <outlet property="beerName" destination="oFI-Br-vJi" id="oUs-9B-VI2"/>
+                        <outlet property="beerPrice" destination="eWy-gI-zeh" id="KTd-aE-2kN"/>
+                        <outlet property="beerStyle" destination="zYN-N8-to0" id="srQ-xM-pLx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="09z-qg-rPE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2708" y="-1409.1454272863568"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Settings-icon_50_30x30" width="25" height="25"/>
+        <image name="background" width="1000" height="667"/>
+        <image name="beer glass icon" width="25" height="25"/>
+        <image name="logout" width="25" height="25"/>
+    </resources>
+</document>
