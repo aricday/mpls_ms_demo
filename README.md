@@ -1,9 +1,12 @@
-# Microservices Demo (MSD): Microservice creation, discovery, consumption, and enforcement 
+# Mobile to Microservice Demo: Microservice creation, discovery, consumption, and enforcement 
 
 The folder structure contains the iOS app and Docker application. Navigate to the [Docker README](docker) to get started.
 
-## Microservices Architecture
-![Microservices Architecture](images/microservices_architecture.png)
+## Mobile to Microservice Architecture
+![Mobile to Microservice Architecture](images/microservices_architecture.png)
+
+## token_exchange Architecture
+![token_exchange Architecture](images/token_exchange.png)
 
 ## iOS Splash Screen
 <p align="center">

@@ -18,7 +18,7 @@ db/schema.rb
 */certs
 *.retry
 data/
-
+msso_config.json
 lac_license.json
 license.xml
 mag_license.xml
