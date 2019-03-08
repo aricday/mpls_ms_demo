@@ -5,7 +5,7 @@ The folder structure contains the iOS app and Docker application. Navigate to th
 ## Mobile to Microservice Architecture
 ![Mobile to Microservice Architecture](images/microservices_architecture.png)
 
-## token_exchange Architecture
+## token_bridge architecture
 ![token_exchange Architecture](images/token_exchange.png)
 
 ## iOS Splash Screen
