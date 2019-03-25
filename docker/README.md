@@ -62,15 +62,15 @@ This tutorial will cover the following:
 
 ## <a name="prerequisites"></a>Prerequisites:
 
-*	[Mobile API Gateway](https://docops.ca.com/ca-mobile-api-gateway/4-0/en) basic knowledge
-*	[Mobile App Services](https://docops.ca.com/ca-mobile-app-services/1-4/en) basic knowledge
-*	[Mobile Developer Console](https://docops.ca.com/ca-mobile-developer-console/1-0/en) basic knowledge
-*	[Live API Creator](https://docops.ca.com/ca-live-api-creator/3-2/en) basic knowledge
+*	[Mobile API Gateway](https://docops.ca.com/ca-mobile-api-gateway/4-2/en) basic knowledge
+*	[Mobile App Services](https://docops.ca.com/ca-mobile-api-gateway/4-2/en/install-mobile-app-services) basic knowledge
+*	[Mobile Developer Console](https://docops.ca.com/ca-mobile-api-gateway/4-2/en/install-the-mobile-developer-console/install-ca-mobile-developer-console) basic knowledge
+*	[Live API Creator](https://docops.ca.com/ca-live-api-creator/5-1/en) basic knowledge
 *	[Docker](https://www.docker.com) basic knowledge
 *	[Docker Compose](https://www.docker.com/products/docker-compose) basic knowledge
 *	[Consul](https://www.consul.io/) basic knowledge
 *	[Apple Xcode](https://developer.apple.com/xcode) basic knowledge
-* 	[Docker-MAS README](https://github.com/CAAPIM/Docker-MAS/blob/master/README.md)
+* 	[Docker-MAS](https://hub.docker.com/r/caapimcollab/mobile-app-services)
 *	Docker environment running
 *	Download this [repo](https://github.com/aricday/mpls_ms_demo)
 
@@ -106,7 +106,7 @@ export OTK_HOSTNAME=${MAS_HOSTNAME}
 
 Start the main application via the **make** command. The default option is the *run-beers* command (docker-compose -f docker-compose.yml -f docker-compose.beers.yml up -d). You can tail the logs in this terminal via *make log-beers* or open a new one (docker-compose -f docker-compose.yml -f docker-compose.beers.yml logs -f)
 
-	make
+	make run-all
 
 Once the application is ready, you should be able to login to the MAS developer console, view the MGW Quickstart documentation, LAC interface, and Consul interface. The MAS, MGW, and LAC require and administrator for authentication, username/password: **admin/password** for MAS/MGW and **admin/Password1** for LAC
 
@@ -137,9 +137,6 @@ The Quickstart template language provides a JSON syntax language to protect and 
     "gatewayUri": "/beers*",
     "httpMethods": [ "get", "post", "delete" ],
     "policy": [
-      	{
-       	    "Cors" : {}
-      	},
 	{
 	  "RequireOauth2Token": {
 	    "scope_required": "mas_storage",
