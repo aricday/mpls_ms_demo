@@ -1,12 +1,12 @@
 PODS:
-  - MASFoundation (1.6.00)
-  - MASUI (1.6.00):
-    - MASFoundation (= 1.6.00)
+  - MASFoundation (1.9.10)
+  - MASUI (1.9.10):
+    - MASFoundation (= 1.9.10)
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
-  - MASFoundation (~> 1.6)
-  - MASUI (~> 1.6)
+  - MASFoundation (~> 1.9)
+  - MASUI (~> 1.9)
   - SVProgressHUD (~> 2.1)
 
 SPEC REPOS:
@@ -16,10 +16,10 @@ SPEC REPOS:
     - SVProgressHUD
 
 SPEC CHECKSUMS:
-  MASFoundation: 329c2490cead2d6db8725fdd3bb64d11cd5296d6
-  MASUI: ccfe368eacc40e4f1b59134fdba399b0d9049ca7
+  MASFoundation: 3f8354c19f67fea99c8b6d5f22892febaf224ad5
+  MASUI: 286430a8d7ef6e3a9af6e87139bf0286ffe94ced
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: fdce54536cdf169da67dd245612ff5dcab831e92
+PODFILE CHECKSUM: 8a730039a3ed1b5d342433c933fc2bd95d5ba7f0
 
 COCOAPODS: 1.5.3

@@ -5,8 +5,8 @@ use_frameworks!
 
 target 'MicroservicesDemo' do
 
-pod 'MASFoundation', '~> 1.6'
-pod 'MASUI', '~> 1.6'
+pod 'MASFoundation', '~> 1.9'
+pod 'MASUI', '~> 1.9'
 pod 'SVProgressHUD', '~> 2.1'
 
 end
