@@ -188,7 +188,7 @@ We need a valid OAuth token to access the protected resource. Let's consume the 
 
 ### <a name="consumption"></a>Consumption:
 
-Now that the MS is protected by the MGW, let's levage a simple mobile application to consume the MS via OAuth tokens. Navigate to the [MAS Developer Console](https://mas.docker.local) and login with the admin credentials. Create a new application, select the iOS platform, and download the **msso_config.json**. Open the [MicroservicesDemo.xcworkspace](../MicroservicesDemo/MicroservicesDemo.xcworkspace) in Xcode <~ 8.3.x and place the **msso_config.json** file into the project. The *Supporting Files* folder is typically where I drop it. Build the iOS mobile application and run the simluator in iOS <~ 10.x. Login to the mobile application and you can now see the Beers from the Beer data API you created!. 
+Now that the MS is protected by the MGW, let's levage a simple mobile application to consume the MS via OAuth tokens. Navigate to the [MAS Developer Console](https://mas.docker.local) and login with the admin credentials. Create a new application, select the iOS platform, and download the **msso_config.json**. Open the [MicroservicesDemo.xcworkspace](../MicroservicesDemo/MicroservicesDemo.xcworkspace) in Xcode <~ 9.4.x and place the **msso_config.json** file into the project. The *Supporting Files* folder is typically where I drop it. Build the iOS mobile application and run the simluator in iOS <~ 11.x. Login to the mobile application and you can now see the Beers from the Beer data API you created!. 
 
 
 ### <a name="security"></a>Security:
