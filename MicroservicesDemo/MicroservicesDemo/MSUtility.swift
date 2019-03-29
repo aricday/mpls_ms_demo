@@ -2,8 +2,7 @@
 //  MSUtility.swift
 //  MicroservicesDemo
 //
-//  Created by Christopher Page on 6/27/17.
-//  Copyright © 2016 Christopher Page. All rights reserved.
+//  Copyright © 2019 Broadcom. All rights reserved.
 //
 
 import Foundation

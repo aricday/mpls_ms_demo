@@ -2,8 +2,7 @@
 //  ProfileViewController.swift
 //  MicroservicesDemo
 //
-//  Created by Christopher Page on 6/29/17.
-//  Copyright © 2017 CA Technologies. All rights reserved.
+//  Copyright © 2019 CA Technologies. All rights reserved.
 //
 
 import UIKit
