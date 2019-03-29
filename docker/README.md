@@ -202,6 +202,34 @@ Since we added Rate Limiting in our [Quickstart Beer Data example](files/msgw/qu
 
 The Token Exchange Python service returns some basic host information (hostname, ip_address) and the coresponding request headers. The [Quickstart Token Exchange example](files/msgw/quickstart/token_exchange.json) is leveraging the MGW's 'RequireOauth2Token' to validate an OAuth Bearer access token with the OAuth hub of the MAS/OTK instance. CORS and Ratelimiting are also included to proteect the MS. The Quickstart JSON file is below:
 
+```
+{
+  "Service": {
+    "name": "Token Exchange Demo",
+    "gatewayUri": "/token*",
+    "httpMethods": [ "get", "post" ],
+    "policy": [
+  {
+    "RequireOauth2Token": {
+      "scope_required": "oob",
+      "scope_fail": "false",
+      "onetime": "false",
+      "given_access_token": ""
+    }
+  },
+        {
+          "RouteHttp" : {
+            "targetUrl" : "http://api:8000",
+            "httpMethod" : "GET",
+      "preserveRequestPath": true,
+      "useAuthenticationHeader": "jwt"
+          }
+        }
+      ]
+    }
+}
+```
+
 Create the Token Exchange demo service:
 
 	curl -k -4 -i -u 'admin:password' https://msgw.docker.local:9443/quickstart/1.0/services --data @files/msgw/quickstart/token_exchange.json
