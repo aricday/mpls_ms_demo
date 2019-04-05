@@ -72,6 +72,7 @@ services:
       - ${PWD}/files/mas/liquibase/mag-testdata.xml:/db/liquibase/mag-testdata.xml
       - ${PWD}/files/mas/liquibase/mas-identity-testdata.xml:/db/liquibase/mas-identity-testdata.xml
       - ${PWD}/files/mas/bundles/proxy_folder.bundle:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/bundle/proxy_folder.bundle
+      - ${PWD}/files/mas/bundles/andriod_service.bundle:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/bundle/andriod_service.bundle
       - ${PWD}/files/mas/provision/add-otk-user.sh:/opt/docker/rc.d/after-start/add-otk-user.sh:rw
       - ${PWD}/files/mas/provision/x-add-otk-user.sh:/opt/docker/rc.d/after-start/x-add-otk-user.sh:rw
       # these are in MAS until MSGW quickstart load is added
