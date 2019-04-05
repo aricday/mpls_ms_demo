@@ -6,7 +6,7 @@ This tutorial will cover the following:
 *	[Creation](#creation) - How LAC can create a RESTful microservice (MS) from a relational datastore (MySQL)
 *	[Security](#security) - How the MGW enforces OAuth security and rate limiting for the MS
 *	[Discovery](#discovery) - How the MGW enables programmatic discovery through service registry (Consul) via Quickstart templates
-* 	[Consumption](#consumption) - How the MAS provides mobile application MS consumption through developer console and SDKs
+* 	[Consumption](#iosconsumption) - How the MAS provides mobile application MS consumption through developer console and SDKs
 
 [Bonus section](#bonus)
 
@@ -186,15 +186,28 @@ Try to access the Beer Data service with Basic Auth (failure)
 We need a valid OAuth token to access the protected resource. Let's consume the new MS via a Mobile client. You can also use curl in the [Bonus](#bonus) section below.
 
 
-### <a name="consumption"></a>Consumption:
+### <a name="iosconsumption"></a>iOS_Consumption:
 
-Now that the MS is protected by the MGW, let's levage a simple mobile application to consume the MS via OAuth tokens. Navigate to the [MAS Developer Console](https://mas.docker.local) and login with the admin credentials. Create a new application, select the iOS platform, and download the **msso_config.json**. Open the [MicroservicesDemo.xcworkspace](../MicroservicesDemo/MicroservicesDemo.xcworkspace) in Xcode <~ 9.4.x and place the **msso_config.json** file into the project. The *Supporting Files* folder is typically where I drop it. Build the iOS mobile application and run the simluator in iOS <~ 11.x. Login to the mobile application and you can now see the Beers from the Beer data API you created!. 
+Now that the MS is protected by the MGW, let's levage a simple mobile application to consume the MS via OAuth tokens. Navigate to the [MAS Developer Console](https://mas.docker.local) and login with the admin credentials. Create a new application, select the iOS platform, and download the **msso_config.json**. Open the [MicroservicesDemo.xcworkspace](../MicroservicesDemo/MicroservicesDemo.xcworkspace) in Xcode <~ 9.4.x and place the **msso_config.json** file into the project. The *Supporting Files* folder is typically where I drop it. Build the iOS mobile application and run the simluator in iOS <~ 11.x. Login to the mobile application and you can now see the Beers from the Beer data API you created!. Try adding a new Beer and show the data in the database.  That was fast and easy!!
 
+### <a name="andriodconsumption"></a>Andriod_Consumption:
+
+Now that the MS is protected by the MGW, let's levage a simple mobile application to consume the MS via OAuth tokens. Navigate to the [MAS Developer Console](https://mas.docker.local) and login with the admin credentials. Create a new application, select the Andriod platform, and download the **msso_config.json**. Open the [AndriodDemo.assets](../AndriodBeerDemo/MASSessionUnlockSample) in Studio <~ 3.2 and place the **msso_config.json** file into the project assets. Using AVD Manager Tools, create an AVD and map the gateway hostname in /system/etc/hosts if this is a local build without DNS resolution.
+
+```
+$ cd ~/Library/Android/sdk/
+$ vi hosts (add local ifconfig IP for mas.docker.local)
+$ ./tools/emulator -avd Pixel2xl -writable-system &
+$ adb root
+$ adb remount
+$ adb push hosts /system/etc
+```
+
+Login to the mobile application and you can now see the Beers from the Beer data API you created!. 
 
 ### <a name="security"></a>Security:
 
-Since we added Rate Limiting in our [Quickstart Beer Data example](files/msgw/quickstart/beer_data.json), you can hit refresh a few times on the Beer list table to trigger the limit. Try adding a new Beer and show the data in the database. Remove the data and refresh. All done. That was easy!
-
+Since we added Rate Limiting in our [Quickstart Beer Data example](files/msgw/quickstart/beer_data.json), you can hit refresh a few times on the Beer list table to trigger the limit.
 
 ## <a name="bonus"></a>Bonus section:
 
@@ -323,3 +336,12 @@ Export custom RouteHttp if JWT payload has been modified and update if existing 
 
 	curl -i -4 -k -X POST -H 'Content-Type: application/x-www-form-urlencoded' --data-urlencode 'grant_type=urn:ietf:params:oauth:grant-type:token-exchange' --data-urlencode 'subject_token_type=urn:ietf:params:oauth:token-type:jwt' --data-urlencode 'subject_token=eyJhbGciOiJFUzI1NiIsImtpZCI6IjE2In0.eyJhdWQiOiJodHRwczovL2FzLmV4YW1wbGUuY29tIiwiaXNzIjoiaHR0cHM6Ly9vcmlnaW5hbC1pc3N1ZXIuZXhhbXBsZS5uZXQiLCJleHAiOjE0NDE5MTA2MDAsIm5iZiI6MTQ0MTkwOTAwMCwic3ViIjoiYmNAZXhhbXBsZS5uZXQiLCJzY3AiOlsib3JkZXJzIiwicHJvZmlsZSIsImhpc3RvcnkiXX0.JDe7fZ267iIRXwbFmOugyCt5dmGoy6EeuzNQ3MqDek5cCUlyPhQC6cz9laKjK1bnjMQbLJqWix6ZdBI0isjsTA' https://msgw.docker.local:9443/auth/oauth/v2/token/exchange --data-urlencode 'audience=abc.com333' --data 'debug=true'
 
+## <a name="Teardown"></a>Teardown:
+
+### <a name="clean-all"></a>clean-all: 
+
+Stop the application stack via the **make** command. The default option is the *clean* command (source .custom.env; docker-compose -f docker-compose.yml stop && docker-compose -f docker-compose.yml rm -f && docker volume prune -f).  For full removal, please use *clean-all* (clean-beers clean-token_exchange).
+
+```
+  make clean-all
+```
