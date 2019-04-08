@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <l7:Bundle xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management">
     <l7:References>
         <l7:Item>
@@ -3871,7 +3871,7 @@ Lyui4IeqDyqOJE/xexkT4syaN1tm1MlTaEagRjsWDAgAOw==</l7:StringValue>
             &lt;L7p:Comment stringValue="**"/&gt;
         &lt;/L7p:CommentAssertion&gt;
         &lt;L7p:CommentAssertion&gt;
-            &lt;L7p:Comment stringValue="**  Email: Christopher.Page@ca.com"/&gt;
+            &lt;L7p:Comment stringValue="**  Email: Aric.Day@broadcom.com"/&gt;
         &lt;/L7p:CommentAssertion&gt;
         &lt;L7p:CommentAssertion&gt;
             &lt;L7p:Comment stringValue="**  Purpose: This service provides simple impersonation and delegation for token exchange"/&gt;
