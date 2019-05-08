@@ -8,7 +8,7 @@ cryptography==2.5
 Flask==0.12.3
 idna==2.5
 itsdangerous==0.24
-Jinja2==2.9.6
+Jinja2==2.10.1
 MarkupSafe==1.0
 packaging==16.8
 pycparser==2.17
@@ -17,5 +17,5 @@ pyparsing==2.2.0
 requests==2.20.0
 simplejson==3.10.0
 six==1.10.0
-urllib3==1.24.1
+urllib3==1.24.2
 Werkzeug==0.12.2
