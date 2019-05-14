@@ -28,14 +28,12 @@ services:
       - ${PWD}/config/lac_license.json:/usr/local/tomcat/bin/lac_license.json
       - ${PWD}/files/lac/import_data.sh:/usr/local/tomcat/bin/import_data.sh
       - ${PWD}/files/lac/StartLiveAPICreator.sh:/usr/local/tomcat/bin/StartLiveAPICreator.sh
-    deploy:
-      placement:
-        constraints:
-          - node.role == manager
   lac:
     build:
       context: ./files/lac
       dockerfile: Dockerfile
+    # ports:
+    # - "80:8080"
     environment:
       - SERVICE_NAME=lac
       - SERVICE_TAGS=ssg-proxy
@@ -61,10 +59,6 @@ services:
       - MYSQL_USER=lac_admin
       - MYSQL_PASSWORD=CAdemo123
     restart: always
-    deploy:
-      resources:
-        limits:
-          memory: 256m
   mysql_beers:
     image: mysql:5.7.9
     environment:
@@ -72,16 +66,4 @@ services:
       - MYSQL_ROOT_PASSWORD=root
     volumes:
       - ${PWD}/files/mysql_beers:/docker-entrypoint-initdb.d
-    restart: always
-    deploy:
-      resources:
-        limits:
-          memory: 256m
-  mysql_beer_comments:
-    image: mysql:5.7.9
-    environment:
-      - SERVICE_IGNORE=yes
-      - MYSQL_ROOT_PASSWORD=root
-    volumes:
-      - ${PWD}/files/mysql_beer_comments:/docker-entrypoint-initdb.d
     restart: always
