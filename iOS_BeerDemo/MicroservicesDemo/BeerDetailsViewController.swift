@@ -28,16 +28,16 @@ class BeerDetailsViewController: UIViewController {
     
     self.navigationItem.title = "Details"
     
-    print("\(beer)")
-    self.beerBrewery.attributedPlaceholder = NSAttributedString(string: "Brewery", attributes: [NSForegroundColorAttributeName : UIColor.lightGray])
+    print("\(String(describing: beer))")
+    self.beerBrewery.attributedPlaceholder = NSAttributedString(string: "Brewery", attributes: convertToOptionalNSAttributedStringKeyDictionary([convertFromNSAttributedStringKey(NSAttributedString.Key.foregroundColor) : UIColor.lightGray]))
     self.beerBrewery.textColor = UIColor.white
-    self.beerName.attributedPlaceholder = NSAttributedString(string: "Name", attributes: [NSForegroundColorAttributeName : UIColor.lightGray])
+    self.beerName.attributedPlaceholder = NSAttributedString(string: "Name", attributes: convertToOptionalNSAttributedStringKeyDictionary([convertFromNSAttributedStringKey(NSAttributedString.Key.foregroundColor) : UIColor.lightGray]))
     self.beerName.textColor = UIColor.white
-    self.beerStyle.attributedPlaceholder = NSAttributedString(string: "Style", attributes: [NSForegroundColorAttributeName : UIColor.lightGray])
+    self.beerStyle.attributedPlaceholder = NSAttributedString(string: "Style", attributes: convertToOptionalNSAttributedStringKeyDictionary([convertFromNSAttributedStringKey(NSAttributedString.Key.foregroundColor) : UIColor.lightGray]))
     self.beerStyle.textColor = UIColor.white
-    self.beerPrice.attributedPlaceholder = NSAttributedString(string: "Price", attributes: [NSForegroundColorAttributeName : UIColor.lightGray])
+    self.beerPrice.attributedPlaceholder = NSAttributedString(string: "Price", attributes: convertToOptionalNSAttributedStringKeyDictionary([convertFromNSAttributedStringKey(NSAttributedString.Key.foregroundColor) : UIColor.lightGray]))
     self.beerPrice.textColor = UIColor.white
-    self.beerPrice.attributedPlaceholder = NSAttributedString(string: "Price Comment", attributes: [NSForegroundColorAttributeName : UIColor.lightGray])
+    self.beerPrice.attributedPlaceholder = NSAttributedString(string: "Price Comment", attributes: convertToOptionalNSAttributedStringKeyDictionary([convertFromNSAttributedStringKey(NSAttributedString.Key.foregroundColor) : UIColor.lightGray]))
     self.beerPriceComment.textColor = UIColor.white
     // values
     self.beerBrewery.text = (beer.value(forKey: "brewery") as? String) ?? "unknown"
@@ -63,4 +63,15 @@ class BeerDetailsViewController: UIViewController {
    }
    */
   
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToOptionalNSAttributedStringKeyDictionary(_ input: [String: Any]?) -> [NSAttributedString.Key: Any]? {
+	guard let input = input else { return nil }
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (NSAttributedString.Key(rawValue: key), value)})
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromNSAttributedStringKey(_ input: NSAttributedString.Key) -> String {
+	return input.rawValue
 }

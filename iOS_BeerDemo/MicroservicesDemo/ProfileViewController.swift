@@ -40,12 +40,14 @@ class ProfileViewController: UIViewController {
     
     if (MASUser.current() != nil) {
       let user = MASUser.current()?.userName
-      
+
       if (MASUser.current()?.isAuthenticated)! {
-        MASUser.current()?.logout(completion: { (completed: Bool, error: Error?) in
+        MASUser.current()?.logout(false, completion: { (completed: Bool, error: Error?) in
           if (error != nil) {
             //Something went wrong
             print("Error during user logout: \(error?.localizedDescription ?? "unknown")")
+            let controller:UIViewController = LoginViewController()
+            self.present(controller, animated: true, completion: nil)
           } else {
             //No errors
             print("User \(user ?? "unknown") logged out - Showing the LoginViewController")
@@ -55,8 +57,11 @@ class ProfileViewController: UIViewController {
           }
         })
       }
-      
+
     }
+    
+    
+    
     
   }
 }

@@ -13,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   var window: UIWindow?
   
-  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
     
     // Sets the default color of the background of the UITabBar
@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Sets the default not selected color for unselected items
     UITabBar.appearance().unselectedItemTintColor = Common.Constants.themeNotSelectedColor
     // Sets the default not selected color for unselected items text
-    UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: Common.Constants.themeNotSelectedColor], for: .normal)
+    UITabBarItem.appearance().setTitleTextAttributes(convertToOptionalNSAttributedStringKeyDictionary([convertFromNSAttributedStringKey(NSAttributedString.Key.foregroundColor): Common.Constants.themeNotSelectedColor]), for: .normal)
     
     // Sets the default color of the background of the UINavigationBar
     UINavigationBar.appearance().barTintColor = Common.Constants.themeColor
@@ -32,10 +32,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Sets the default not selected color for unselected items
     
     // Sets the default not selected color for unselected items text
-    UINavigationBar.appearance().titleTextAttributes = [
+    UINavigationBar.appearance().titleTextAttributes = convertToOptionalNSAttributedStringKeyDictionary([
 //      NSFontAttributeName: UIFont(name: "Pacifico", size: 20)!,
-      NSForegroundColorAttributeName: Common.Constants.themeNotSelectedColor,
-      ]
+      NSAttributedString.Key.foregroundColor.rawValue: Common.Constants.themeNotSelectedColor,
+      ])
 //    
     // Sets the default color of the UITextField and rounded corners using UITextfield extension
     UITextField.appearance().backgroundColor = .clear
@@ -125,7 +125,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 extension UIButton {
-  dynamic var borderColor: UIColor? {
+  @objc dynamic var borderColor: UIColor? {
     get {
       if let cgColor = layer.borderColor {
         return UIColor(cgColor: cgColor)
@@ -134,18 +134,18 @@ extension UIButton {
     }
     set { layer.borderColor = newValue?.cgColor }
   }
-  dynamic var borderWidth: CGFloat {
+  @objc dynamic var borderWidth: CGFloat {
     get { return layer.borderWidth }
     set { layer.borderWidth = newValue }
   }
-  dynamic var cornerRadius: CGFloat {
+  @objc dynamic var cornerRadius: CGFloat {
     get { return layer.cornerRadius }
     set { layer.cornerRadius = newValue }
   }
 }
 
 extension UITextField {
-  dynamic var borderColor: UIColor? {
+  @objc dynamic var borderColor: UIColor? {
     get {
       if let cgColor = layer.borderColor {
         return UIColor(cgColor: cgColor)
@@ -154,14 +154,25 @@ extension UITextField {
     }
     set { layer.borderColor = newValue?.cgColor }
   }
-  dynamic var borderWidth: CGFloat {
+  @objc dynamic var borderWidth: CGFloat {
     get { return layer.borderWidth }
     set { layer.borderWidth = newValue }
   }
-  dynamic var cornerRadius: CGFloat {
+  @objc dynamic var cornerRadius: CGFloat {
     get { return layer.cornerRadius }
     set { layer.cornerRadius = newValue }
   }
 }
 
 
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToOptionalNSAttributedStringKeyDictionary(_ input: [String: Any]?) -> [NSAttributedString.Key: Any]? {
+	guard let input = input else { return nil }
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (NSAttributedString.Key(rawValue: key), value)})
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromNSAttributedStringKey(_ input: NSAttributedString.Key) -> String {
+	return input.rawValue
+}

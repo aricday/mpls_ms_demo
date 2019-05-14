@@ -34,7 +34,7 @@ class LoginViewController: UIViewController {
     // catch the player notification and loop the video from the start
     NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime, object: player.currentItem, queue: nil, using: { (_) in
       DispatchQueue.main.async {
-        player.seek(to: kCMTimeZero)
+        player.seek(to: CMTime.zero)
         player.play()
       }
     })
@@ -101,10 +101,10 @@ class LoginViewController: UIViewController {
         print (error.debugDescription)
         
         // create the alert
-        let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: UIAlertControllerStyle.alert)
+        let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: UIAlertController.Style.alert)
         
         // add an action (button)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
         
         // show the alert
         self.present(alert, animated: true, completion: nil)
@@ -135,10 +135,10 @@ class LoginViewController: UIViewController {
         
         print(error.debugDescription)
         // create the alert
-        let alert = UIAlertController(title: "Error", message: message, preferredStyle: UIAlertControllerStyle.alert)
+        let alert = UIAlertController(title: "Error", message: message, preferredStyle: UIAlertController.Style.alert)
         
         // add an action (button)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
         
         // show the alert
         self.present(alert, animated: true, completion: nil)
@@ -161,14 +161,14 @@ class LoginViewController: UIViewController {
   //
   // MAS Reset
   //
-  func resetButtonAction(_ sender: Any) {
+  @objc func resetButtonAction(_ sender: Any) {
     print("Reset pressed")
 
     if (MASDevice.current()?.isRegistered)! {
       // prompt for confirmation
       let alert = UIAlertController(title: "Reset Device", message: "Certificate and tokens will be purged on device:\n" +
         "name:\(MASDevice.current()!.name)\n" +
-        "identifier:\(MASDevice.current()!.identifier)", preferredStyle: UIAlertControllerStyle.alert)
+        "identifier:\(MASDevice.current()!.identifier)", preferredStyle: UIAlertController.Style.alert)
       
       alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
         if (MASDevice.current()?.isRegistered)! {

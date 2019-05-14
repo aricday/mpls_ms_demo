@@ -25,7 +25,7 @@ class BeersTableViewController: UITableViewController {
     super.viewDidLoad()
     
     self.refreshControl!.attributedTitle = NSAttributedString(string: "Pull to refresh")
-    self.refreshControl!.addTarget(self, action: #selector(BeersTableViewController.didRefreshControl), for: UIControlEvents.valueChanged)
+    self.refreshControl!.addTarget(self, action: #selector(BeersTableViewController.didRefreshControl), for: UIControl.Event.valueChanged)
     
     self.getBeerList()
     
@@ -63,10 +63,10 @@ class BeersTableViewController: UITableViewController {
         
         print(error.debugDescription)
         // create the alert
-        let alert = UIAlertController(title: "Error", message: message, preferredStyle: UIAlertControllerStyle.alert)
+        let alert = UIAlertController(title: "Error", message: message, preferredStyle: UIAlertController.Style.alert)
         
         // add an action (button)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
         
         // show the alert
         self.present(alert, animated: true, completion: nil)
@@ -79,14 +79,14 @@ class BeersTableViewController: UITableViewController {
         //  print(response?[MASResponseInfoBodyInfoKey]! as Any)
         if let jsonArray = response?[MASResponseInfoBodyInfoKey] as? NSArray {
           //          print(jsonArray)
-          self.BeerList = jsonArray.mutableCopy() as! NSMutableArray
+            self.BeerList = (jsonArray.mutableCopy() as! NSMutableArray)
           self.BeersTableView.reloadData()
           
         } else {
-          let alert = UIAlertController(title: "Error", message: "Wrong data format", preferredStyle: UIAlertControllerStyle.alert)
+          let alert = UIAlertController(title: "Error", message: "Wrong data format", preferredStyle: UIAlertController.Style.alert)
           
           // add an action (button)
-          alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+          alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
           
           // show the alert
           self.present(alert, animated: true, completion: nil)
@@ -100,7 +100,7 @@ class BeersTableViewController: UITableViewController {
   }
   
   // refresh view
-  func didRefreshControl(sender:AnyObject)
+  @objc func didRefreshControl(sender:AnyObject)
   {
     // Updating your data here...
     print("refreshing")
@@ -180,7 +180,7 @@ class BeersTableViewController: UITableViewController {
   }
   
   // Override to support editing the table view.
-  override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+  override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
     if editingStyle == .delete {
       print("deleting")
       if let beerToDelete = self.BeerList[indexPath.row] as? NSDictionary {
@@ -237,7 +237,7 @@ class BeersTableViewController: UITableViewController {
         print("Need to pull data from the cell to next controller")
         let rowSelected = (sender as! IndexPath).row
         let controller = segue.destination as! BeerDetailsViewController
-        controller.beer = self.BeerList.object(at: rowSelected) as! NSDictionary
+        controller.beer = (self.BeerList.object(at: rowSelected) as! NSDictionary)
         //      case "showAddBeer":
       //        let controller = segue.destination as! AddBeerViewController
       default:
@@ -309,10 +309,10 @@ class BeersTableViewController: UITableViewController {
           
           print(error.debugDescription)
           // create the alert
-          let alert = UIAlertController(title: "Error", message: message, preferredStyle: UIAlertControllerStyle.alert)
+          let alert = UIAlertController(title: "Error", message: message, preferredStyle: UIAlertController.Style.alert)
           
           // add an action (button)
-          alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+          alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
           
           // show the alert
           self.present(alert, animated: true, completion: nil)
@@ -340,7 +340,7 @@ class BeersTableViewController: UITableViewController {
   func confirmDelete(beer: NSDictionary) {
     let beerName = beer.value(forKey: "name") as! String
     // beer.value(forKey: "@metadata") does not work
-    let alert = UIAlertController(title: "Are you sure you want to remove?\n\(beerName)", message: nil, preferredStyle: UIAlertControllerStyle.actionSheet)
+    let alert = UIAlertController(title: "Are you sure you want to remove?\n\(beerName)", message: nil, preferredStyle: UIAlertController.Style.actionSheet)
     
     alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: handleDeleteBeer))
     alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: cancelDeleteBeer))
@@ -408,10 +408,10 @@ class BeersTableViewController: UITableViewController {
         
         print(error.debugDescription)
         // create the alert
-        let alert = UIAlertController(title: "Error", message: message, preferredStyle: UIAlertControllerStyle.alert)
+        let alert = UIAlertController(title: "Error", message: message, preferredStyle: UIAlertController.Style.alert)
         
         // add an action (button)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
         
         // show the alert
         self.present(alert, animated: true, completion: nil)

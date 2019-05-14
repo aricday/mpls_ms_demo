@@ -23,13 +23,13 @@ class AddBeerViewController: UIViewController, UITextFieldDelegate {
     self.navigationItem.title = "Add Beer"
 
     self.beerPrice.delegate = self
-    self.beerPrice.attributedPlaceholder = NSAttributedString(string: "Price", attributes: [NSForegroundColorAttributeName : UIColor.lightGray])
+    self.beerPrice.attributedPlaceholder = NSAttributedString(string: "Price", attributes: convertToOptionalNSAttributedStringKeyDictionary([convertFromNSAttributedStringKey(NSAttributedString.Key.foregroundColor) : UIColor.lightGray]))
     self.beerPrice.textColor = UIColor.white
-    self.beerBrewery.attributedPlaceholder = NSAttributedString(string: "Brewery", attributes: [NSForegroundColorAttributeName : UIColor.lightGray])
+    self.beerBrewery.attributedPlaceholder = NSAttributedString(string: "Brewery", attributes: convertToOptionalNSAttributedStringKeyDictionary([convertFromNSAttributedStringKey(NSAttributedString.Key.foregroundColor) : UIColor.lightGray]))
     self.beerBrewery.textColor = UIColor.white
-    self.beerName.attributedPlaceholder = NSAttributedString(string: "Name", attributes: [NSForegroundColorAttributeName : UIColor.lightGray])
+    self.beerName.attributedPlaceholder = NSAttributedString(string: "Name", attributes: convertToOptionalNSAttributedStringKeyDictionary([convertFromNSAttributedStringKey(NSAttributedString.Key.foregroundColor) : UIColor.lightGray]))
     self.beerName.textColor = UIColor.white
-    self.beerStyle.attributedPlaceholder = NSAttributedString(string: "Style", attributes: [NSForegroundColorAttributeName : UIColor.lightGray])
+    self.beerStyle.attributedPlaceholder = NSAttributedString(string: "Style", attributes: convertToOptionalNSAttributedStringKeyDictionary([convertFromNSAttributedStringKey(NSAttributedString.Key.foregroundColor) : UIColor.lightGray]))
     self.beerStyle.textColor = UIColor.white
     
     // Uncomment the following line to preserve selection between presentations
@@ -47,10 +47,10 @@ class AddBeerViewController: UIViewController, UITextFieldDelegate {
   @IBAction func onSubmit(_ sender: Any) {
     print("submit pressed")
     if self.beerName.text == "" {
-      let alert = UIAlertController(title: "Error", message: "At least the 'Name' is required'", preferredStyle: UIAlertControllerStyle.alert)
+      let alert = UIAlertController(title: "Error", message: "At least the 'Name' is required'", preferredStyle: UIAlertController.Style.alert)
       
       // add an action (button)
-      alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+      alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
       
       // show the alert
       self.present(alert, animated: true, completion: nil)
@@ -108,10 +108,10 @@ class AddBeerViewController: UIViewController, UITextFieldDelegate {
         
         print(error.debugDescription)
         // create the alert
-        let alert = UIAlertController(title: "Error", message: message, preferredStyle: UIAlertControllerStyle.alert)
+        let alert = UIAlertController(title: "Error", message: message, preferredStyle: UIAlertController.Style.alert)
         
         // add an action (button)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
         
         // show the alert
         self.present(alert, animated: true, completion: nil)
@@ -150,4 +150,15 @@ class AddBeerViewController: UIViewController, UITextFieldDelegate {
    }
    */
   
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToOptionalNSAttributedStringKeyDictionary(_ input: [String: Any]?) -> [NSAttributedString.Key: Any]? {
+	guard let input = input else { return nil }
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (NSAttributedString.Key(rawValue: key), value)})
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromNSAttributedStringKey(_ input: NSAttributedString.Key) -> String {
+	return input.rawValue
 }

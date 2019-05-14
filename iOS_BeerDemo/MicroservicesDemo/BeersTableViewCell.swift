@@ -36,7 +36,7 @@ class BeersTableViewCell: UITableViewCell {
     // Configure the view for the selected state
   }
   
-  func tapAction() {
+  @objc func tapAction() {
     
     if tapCounter == 0 {
       DispatchQueue.global(qos: .background).async {
