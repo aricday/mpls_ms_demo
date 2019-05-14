@@ -53,7 +53,7 @@
                         <l7:Enabled>true</l7:Enabled>
                         <l7:ServiceMappings>
                             <l7:HttpMapping>
-                                <l7:UrlPattern>/*</l7:UrlPattern>
+                                <l7:UrlPattern>/beer*</l7:UrlPattern>
                                 <l7:Verbs>
                                     <l7:Verb>GET</l7:Verb>
                                     <l7:Verb>POST</l7:Verb>

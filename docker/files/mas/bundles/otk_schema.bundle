@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+      <l7:Bundle xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management">
+         <l7:References>
+            <l7:Item>
+               <l7:Name>#OTK Storage Configuration</l7:Name>
+               <l7:Id>24e6fd7c5b6fb3a96690246c8ac49304</l7:Id>
+               <l7:Type>POLICY</l7:Type>
+               <l7:TimeStamp>2019-05-14T16:27:20.749Z</l7:TimeStamp>
+               <l7:Resource>
+                  <l7:Policy guid="cfa7239a-60e4-483a-9d45-c364f2fb673d" id="24e6fd7c5b6fb3a96690246c8ac49304" version="1">
+                     <l7:PolicyDetail folderId="161861da3a78c5dcdc62696d16914781" guid="cfa7239a-60e4-483a-9d45-c364f2fb673d" id="24e6fd7c5b6fb3a96690246c8ac49304" version="1">
+                        <l7:Name>#OTK Storage Configuration</l7:Name>
+                        <l7:PolicyType>Include</l7:PolicyType>
+                        <l7:Properties>
+                           <l7:Property key="revision">
+                              <l7:LongValue>2</l7:LongValue>
+                           </l7:Property>
+                           <l7:Property key="soap">
+                              <l7:BooleanValue>false</l7:BooleanValue>
+                           </l7:Property>
+                        </l7:Properties>
+                     </l7:PolicyDetail>
+                     <l7:Resources>
+                        <l7:ResourceSet tag="policy">
+                           <l7:Resource type="policy"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<wsp:Policy xmlns:L7p="http://www.layer7tech.com/ws/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy">
+    <wsp:All wsp:Usage="Required">
+        <L7p:CommentAssertion>
+            <L7p:Comment stringValue="Target Configuration Policy: &quot;OTK Storage Configuration&quot;"/>
+        </L7p:CommentAssertion>
+        <L7p:CommentAssertion>
+            <L7p:Comment stringValue="=== Set custom values for Context Variables below ==="/>
+        </L7p:CommentAssertion>
+        <L7p:CommentAssertion>
+            <L7p:Comment stringValue="=== Add any new Context Variables or extensions below ==="/>
+        </L7p:CommentAssertion>
+        <L7p:SetVariable>
+            <L7p:AssertionComment assertionComment="included">
+                <L7p:Properties mapValue="included">
+                    <L7p:entry>
+                        <L7p:key stringValue="RIGHT.COMMENT"/>
+                        <L7p:value stringValue="Set to true if you are using mysql/oracle and separate schemas for otk and mag"/>
+                    </L7p:entry>
+                </L7p:Properties>
+            </L7p:AssertionComment>
+            <L7p:Base64Expression stringValue="dHJ1ZQ=="/>
+            <L7p:VariableToSet stringValue="separate_schemas"/>
+        </L7p:SetVariable>
+    </wsp:All>
+</wsp:Policy>]]></l7:Resource>
+                        </l7:ResourceSet>
+                     </l7:Resources>
+                  </l7:Policy>
+               </l7:Resource>
+            </l7:Item>
+         </l7:References>
+         <l7:Mappings>
+            <l7:Mapping action="NewOrExisting" srcId="161861da3a78c5dcdc62696d16914781" srcUri="https://mas.docker.local:8443/restman/1.0/folders/161861da3a78c5dcdc62696d16914781" type="FOLDER">
+               <l7:Properties>
+                  <l7:Property key="FailOnNew">
+                     <l7:BooleanValue>true</l7:BooleanValue>
+                  </l7:Property>
+               </l7:Properties>
+            </l7:Mapping>
+            <l7:Mapping action="NewOrUpdate" srcId="24e6fd7c5b6fb3a96690246c8ac49304" srcUri="https://mas.docker.local:8443/restman/1.0/policies/24e6fd7c5b6fb3a96690246c8ac49304" type="POLICY"/>
+         </l7:Mappings>
+      </l7:Bundle>

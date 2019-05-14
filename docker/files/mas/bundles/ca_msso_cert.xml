@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<l7:TrustedCertificate xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management">
+    <l7:Name>ca_msso</l7:Name>
+                        <l7:CertificateData>
+                            <l7:IssuerName>CN=ca_msso</l7:IssuerName>
+                            <l7:SubjectName>CN=ca_msso</l7:SubjectName>
+                            <l7:Encoded>ENCODED_CERT</l7:Encoded>
+                        </l7:CertificateData>
+                        <l7:Properties>
+                            <l7:Property key="revocationCheckingEnabled">
+                                <l7:BooleanValue>true</l7:BooleanValue>
+                            </l7:Property>
+                            <l7:Property key="trustAnchor">
+                                <l7:BooleanValue>true</l7:BooleanValue>
+                            </l7:Property>
+                            <l7:Property key="trustedAsSamlAttestingEntity">
+                                <l7:BooleanValue>true</l7:BooleanValue>
+                            </l7:Property>
+                            <l7:Property key="trustedAsSamlIssuer">
+                                <l7:BooleanValue>true</l7:BooleanValue>
+                            </l7:Property>
+                            <l7:Property key="trustedForSigningClientCerts">
+                                <l7:BooleanValue>true</l7:BooleanValue>
+                            </l7:Property>
+                            <l7:Property key="trustedForSigningServerCerts">
+                                <l7:BooleanValue>true</l7:BooleanValue>
+                            </l7:Property>
+                            <l7:Property key="trustedForSsl">
+                                <l7:BooleanValue>true</l7:BooleanValue>
+                            </l7:Property>
+                            <l7:Property key="verifyHostname">
+                                <l7:BooleanValue>false</l7:BooleanValue>
+                            </l7:Property>
+                        </l7:Properties>
+</l7:TrustedCertificate>

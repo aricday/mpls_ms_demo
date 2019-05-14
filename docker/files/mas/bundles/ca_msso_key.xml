@@ -1,0 +1,14 @@
+<l7:PrivateKeyCreationContext xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management">
+    <l7:Dn>CN=ca_msso</l7:Dn>
+    <l7:Properties>
+        <l7:Property key="rsaKeySize">
+            <l7:IntegerValue>2048</l7:IntegerValue>
+        </l7:Property>
+        <l7:Property key="daysUntilExpiry">
+            <l7:IntegerValue>1825</l7:IntegerValue>
+        </l7:Property>
+        <l7:Property key="caCapable">
+            <l7:BooleanValue>true</l7:BooleanValue>
+        </l7:Property>
+    </l7:Properties>
+</l7:PrivateKeyCreationContext>

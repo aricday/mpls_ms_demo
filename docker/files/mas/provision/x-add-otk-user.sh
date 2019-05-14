@@ -59,7 +59,7 @@ import_cmd="$add_cmd $hostname:$port \"$username\" \"$password\" \"$fip_name\" \
 import_user()
 {
 	#curl -H "Authorization: CALiveAPICreator e315ecb50cae07c799cfdc7a2567db4e:1" -H "Content-type: application/json" --data-binary @myExport.json -X POST http://localhost:8080/rest/abl/admin/v2/ProjectExport
-	echo "Importing OTK: '${fip_name}'..."
+	echo "Importing MSGW Cert: '${fip_name}'..."
 	#echo $import_cmd
 	eval $import_cmd
 	echo "Finished importing"

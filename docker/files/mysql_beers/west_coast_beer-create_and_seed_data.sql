@@ -13,11 +13,9 @@ INSERT INTO `data`.`beers`
 	(brewery, style, price, name)
 VALUES
 	('New Belgium Brewing', 'Red Ale - American Amber / Red', 4.50, 'Fat Tire'),
-	('Lagunitas Brewing Company', 'Pale Wheat Ale - American', 6.50, 'Little Sumpin\' Sumpin\' Ale'),
-	('Lagunitas Brewing Company', 'IPA - Imperical / Double', 6.90, 'Lagunitas Sucks'),
-	('Lagunitas Brewing Company', 'Strong Ale - American', 7.50, 'Undercover Investigation Shut-Down Ale'),
+	('Lagunitas Brewing Company', 'Pale Wheat Ale - American', 6.50, 'Little Sumpin'),
+	('Lagunitas Brewing Company', 'IPA - Imperical / Double', 6.90, 'Lagunitas IPA'),
 	('Ballast Point Brewing Company', 'IPA - American', 6.95, 'Grapefruit Sculpin'),
 	('Ballast Point Brewing Company', 'IPA - American', 6.95, 'Pineapple Sculpin'),
 	('Russian River Brewing Company', 'IPA - Imperial / Double', 6.95, 'Pliny the Elder'),
-	('Stone Brewing', 'IPA - Session / India Session Ale', 5.95, 'Stone Go To IPA'),
-	('Firestone Walker Brewing Company', 'IPA - Session / India Session Ale', 5.95, 'Easy Jack')
+	('Aric Brewing', 'Hefeweizen', 5.95, 'AricDay Hefe'),

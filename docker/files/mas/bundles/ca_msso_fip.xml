@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<l7:IdentityProvider xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management">
+<l7:Name>CA_MSSO Identity Provider</l7:Name>
+<l7:IdentityProviderType>Federated</l7:IdentityProviderType>
+<l7:Properties>
+    <l7:Property key="certificateValidation">
+        <l7:StringValue>Validate Certificate Path</l7:StringValue>
+    </l7:Property>
+    <l7:Property key="enableCredentialType.saml">
+        <l7:BooleanValue>false</l7:BooleanValue>
+    </l7:Property>
+    <l7:Property key="enableCredentialType.x509">
+        <l7:BooleanValue>true</l7:BooleanValue>
+    </l7:Property>
+</l7:Properties>
+<l7:Extension>
+    <l7:FederatedIdentityProviderDetail>
+        <l7:CertificateReferences resourceUri="http://ns.l7tech.com/2010/04/gateway-management/trustedCertificates">
+            <l7:Reference id="CERT_ID"/>
+        </l7:CertificateReferences>
+    </l7:FederatedIdentityProviderDetail>
+</l7:Extension>
+</l7:IdentityProvider>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<l7:Bundle xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management">
+    <l7:References>
+        <l7:Item>
+            <l7:Name>OAuth SAML Identity Provider</l7:Name>
+            <l7:Id>54655f9363701acf4e2c01f0c22dcdbb</l7:Id>
+            <l7:Type>ID_PROVIDER_CONFIG</l7:Type>
+            <l7:Resource>
+                <l7:IdentityProvider id="54655f9363701acf4e2c01f0c22dcdbb" version="0">
+                    <l7:Name>OAuth SAML Identity Provider</l7:Name>
+                    <l7:IdentityProviderType>Federated</l7:IdentityProviderType>
+                    <l7:Properties>
+                        <l7:Property key="certificateValidation">
+                            <l7:StringValue>Validate Certificate Path</l7:StringValue>
+                        </l7:Property>
+                        <l7:Property key="enableCredentialType.saml">
+                            <l7:BooleanValue>true</l7:BooleanValue>
+                        </l7:Property>
+                        <l7:Property key="enableCredentialType.x509">
+                            <l7:BooleanValue>false</l7:BooleanValue>
+                        </l7:Property>
+                    </l7:Properties>
+                    <l7:Extension>
+                        <l7:FederatedIdentityProviderDetail>
+                        <l7:CertificateReferences resourceUri="http://ns.l7tech.com/2010/04/gateway-management/trustedCertificates">
+                            <l7:Reference id="c454659e9b36ca131e659443e21d2e22"/>
+                        </l7:CertificateReferences>
+                        </l7:FederatedIdentityProviderDetail>
+                    </l7:Extension>
+                </l7:IdentityProvider>
+            </l7:Resource>
+          </l7:Item>
+    </l7:References>
+    <l7:Mappings>
+        <l7:Mapping action="NewOrExisting" srcId="54655f9363701acf4e2c01f0c22dcdbb" type="ID_PROVIDER_CONFIG" />
+    </l7:Mappings>
+</l7:Bundle>

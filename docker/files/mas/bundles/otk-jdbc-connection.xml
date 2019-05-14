@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<l7:Bundle xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management">
+    <l7:References>
+        <l7:Item>
+            <l7:Name>OAuth</l7:Name>
+            <l7:Id>175ace8f404dd47c8cefe0a762271542</l7:Id>
+            <l7:Type>JDBC_CONNECTION</l7:Type>
+            <l7:TimeStamp>2018-03-01T19:44:11.429Z</l7:TimeStamp>
+            <l7:Resource>
+                <l7:JDBCConnection id="175ace8f404dd47c8cefe0a762271542" version="0">
+                    <l7:Name>OAuth</l7:Name>
+                    <l7:Enabled>true</l7:Enabled>
+                    <l7:Properties>
+                        <l7:Property key="maximumPoolSize">
+                            <l7:IntegerValue>15</l7:IntegerValue>
+                        </l7:Property>
+                        <l7:Property key="minimumPoolSize">
+                            <l7:IntegerValue>3</l7:IntegerValue>
+                        </l7:Property>
+                    </l7:Properties>
+                    <l7:Extension>
+                        <l7:DriverClass>com.l7tech.jdbc.mysql.MySQLDriver</l7:DriverClass>
+                        <l7:JdbcUrl>OTK_DATABASE_JDBC_URL</l7:JdbcUrl>
+                        <l7:ConnectionProperties>
+                            <l7:Property key="EnableCancelTimeout">
+                                <l7:StringValue>true</l7:StringValue>
+                            </l7:Property>
+                            <l7:Property key="password">
+                                <l7:StringValue>OTK_DATABASE_PASSWORD</l7:StringValue>
+                            </l7:Property>
+                            <l7:Property key="user">
+                                <l7:StringValue>OTK_DATABASE_USER</l7:StringValue>
+                            </l7:Property>
+                        </l7:ConnectionProperties>
+                    </l7:Extension>
+                </l7:JDBCConnection>
+            </l7:Resource>
+        </l7:Item>
+	</l7:References>
+    <l7:Mappings>
+        <l7:Mapping action="NewOrExisting" srcId="175ace8f404dd47c8cefe0a762271542" srcUri="https://ssg93b.apim.ca:8443/restman/1.0/jdbcConnections/175ace8f404dd47c8cefe0a762271542" type="JDBC_CONNECTION"/>
+    </l7:Mappings>	
+</l7:Bundle>

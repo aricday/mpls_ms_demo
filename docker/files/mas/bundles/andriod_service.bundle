@@ -17777,7 +17777,7 @@ Authorization: ${request.http.header.authorization}]]&gt;&lt;/L7p:Detail&gt;
                 </l7:Mapping>
                 <l7:Mapping action="NewOrExisting" srcId="e001cfd0c1c1ffaa18e187b5e72fc9d0" srcUri="https://mas.docker.local:8443/restman/1.0/policies/e001cfd0c1c1ffaa18e187b5e72fc9d0" type="POLICY"/>
                 <l7:Mapping action="NewOrExisting" srcId="e001cfd0c1c1ffaa18e187b5e72fcac5" srcUri="https://mas.docker.local:8443/restman/1.0/encapsulatedAssertions/e001cfd0c1c1ffaa18e187b5e72fcac5" type="ENCAPSULATED_ASSERTION"/>
-                <l7:Mapping action="NewOrExisting" srcId="cbeedf1e2650e80f4d660a7fdb8fea13" srcUri="https://mas.docker.local:8443/restman/1.0/jdbcConnections/cbeedf1e2650e80f4d660a7fdb8fea13" type="JDBC_CONNECTION"/>
+                <l7:Mapping action="Ignore" srcId="cbeedf1e2650e80f4d660a7fdb8fea13" srcUri="https://mas.docker.local:8443/restman/1.0/jdbcConnections/cbeedf1e2650e80f4d660a7fdb8fea13" type="JDBC_CONNECTION"/>
                 <l7:Mapping action="NewOrExisting" srcId="cbeedf1e2650e80f4d660a7fdb8fef1f" srcUri="https://mas.docker.local:8443/restman/1.0/folders/cbeedf1e2650e80f4d660a7fdb8fef1f" type="FOLDER">
                     <l7:Properties>
                         <l7:Property key="FailOnNew">
@@ -17829,7 +17829,7 @@ Authorization: ${request.http.header.authorization}]]&gt;&lt;/L7p:Detail&gt;
                 </l7:Mapping>
                 <l7:Mapping action="NewOrExisting" srcId="e001cfd0c1c1ffaa18e187b5e72fd86a" srcUri="https://mas.docker.local:8443/restman/1.0/policies/e001cfd0c1c1ffaa18e187b5e72fd86a" type="POLICY"/>
                 <l7:Mapping action="NewOrExisting" srcId="e001cfd0c1c1ffaa18e187b5e72fdaa0" srcUri="https://mas.docker.local:8443/restman/1.0/encapsulatedAssertions/e001cfd0c1c1ffaa18e187b5e72fdaa0" type="ENCAPSULATED_ASSERTION"/>
-                <l7:Mapping action="NewOrExisting" srcId="4432207d16a1b505e8a6ed59993eaa24" srcUri="https://mas.docker.local:8443/restman/1.0/jdbcConnections/4432207d16a1b505e8a6ed59993eaa24" type="JDBC_CONNECTION"/>
+                <l7:Mapping action="Ignore" srcId="4432207d16a1b505e8a6ed59993eaa24" srcUri="https://mas.docker.local:8443/restman/1.0/jdbcConnections/4432207d16a1b505e8a6ed59993eaa24" type="JDBC_CONNECTION"/>
                 <l7:Mapping action="NewOrExisting" srcId="e001cfd0c1c1ffaa18e187b5e72fcbcd" srcUri="https://mas.docker.local:8443/restman/1.0/folders/e001cfd0c1c1ffaa18e187b5e72fcbcd" type="FOLDER">
                     <l7:Properties>
                         <l7:Property key="FailOnNew">

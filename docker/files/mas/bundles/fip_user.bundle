@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<l7:Bundle xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management">
+    <l7:References>
+        <l7:Item>
+            <l7:Name>Gateway as a Client Identity Provider</l7:Name>
+            <l7:Id>ada77b26afbc26b56accc9c84c0e3dfd</l7:Id>
+            <l7:Type>ID_PROVIDER_CONFIG</l7:Type>
+            <l7:Resource>
+                <l7:IdentityProvider id="ada77b26afbc26b56accc9c84c0e3dfd" version="0">
+                    <l7:Name>Gateway as a Client Identity Provider</l7:Name>
+                    <l7:IdentityProviderType>Federated</l7:IdentityProviderType>
+                    <l7:Properties>
+                        <l7:Property key="certificateValidation">
+                            <l7:StringValue>Validate Certificate Path</l7:StringValue>
+                        </l7:Property>
+                        <l7:Property key="enableCredentialType.saml">
+                            <l7:BooleanValue>false</l7:BooleanValue>
+                        </l7:Property>
+                        <l7:Property key="enableCredentialType.x509">
+                            <l7:BooleanValue>true</l7:BooleanValue>
+                        </l7:Property>
+                    </l7:Properties>
+                </l7:IdentityProvider>
+            </l7:Resource>
+          </l7:Item>
+        <l7:Item>
+            <l7:Name>mas.docker.local</l7:Name>
+            <l7:Id>131584f1efb61d9b104013b81f3fb56e</l7:Id>
+            <l7:Type>USER</l7:Type>
+            <l7:Resource>
+                <l7:User providerId="ada77b26afbc26b56accc9c84c0e3dfd" id="131584f1efb61d9b104013b81f3fb56e">
+                    <l7:Login>mas.docker.local</l7:Login>
+                    <l7:SubjectDn>CN=mas.docker.local</l7:SubjectDn>
+                    <l7:Properties>
+                        <l7:Property key="name">
+                            <l7:StringValue>mas.docker.local</l7:StringValue>
+                        </l7:Property>
+                    </l7:Properties>
+                    <l7:Extension>
+                        <l7:CertificateData>
+                            <l7:IssuerName>CN=mas.docker.local</l7:IssuerName>
+                            <l7:SubjectName>CN=mas.docker.local</l7:SubjectName>
+                            <l7:Encoded> MIIFJjCCAw6gAwIBAgIJAIhrm9imFcEvMA0GCSqGSIb3DQEBBQUAMBsxGTAXBgNV BAMMEG1hcy5kb2NrZXIubG9jYWwwHhcNMTcwNzA2MTkxOTEwWhcNMTkwNzA2MTkx OTEwWjAbMRkwFwYDVQQDDBBtYXMuZG9ja2VyLmxvY2FsMIICIjANBgkqhkiG9w0B AQEFAAOCAg8AMIICCgKCAgEA3h8BYvPsnCXz0juXMSGiHz2fct8qpIhHzRxc44Lm Y17gYWI9A+cpi30qFrFEHXT0YpYm2ed6T7bprfW1RpcW40q5gujhLukMFQlmnutz KNe0AowrDoDNKIpCGlJImb72nNRyF8kML0ANDLDoC1vztUM4esMh+fPUyaIoA23G VmobnUtr5H865s4bKbUArTSPIr5GPkhGTAOx05lBq+tX8P0RcyXPdahWoDmooWrs eByyslebPD4q9UagKQxbPRZEVZjzZC6k/LJZa9+OY4n1F8tfEuMB5SKlrNBKqj1d cqVElNzCLAp+lR9FYYYz+r9VB/6qwkMguWed+koVuvhfRZWIavFJHARiVPwn5R68 Q25sQkxNwUHE6/PwEHUxe4biKIHg/HgLMa6Mb8BhlifYz6M5W3T/ro9SNeid5hGN a77svNYl+i9lZEPfDDAfa5lTAILVCB4d5CvfoT9XZYei/2agIqyhWbKDUQv9Y05M R2agcSQQ0HPAUmhvOdzjpHx6RVJ4MSnvz51iXrrAGGPgaaxaxT+7sNJ4zisHVNd2 aE5o8/e3EGDgSy7pttEE+VBD3kKXcAHNZqV8/kHjBBQb4kPGQqfQiWmlZBYZ+jpO RJgK0U4dZxZLuXBUTd6qOnc9oOCtuaeUWtyevB1w7/eL3XKY5O3FR9/GMsFmX7Y4 qA8CAwEAAaNtMGswGwYDVR0RBBQwEoIQbWFzLmRvY2tlci5sb2NhbDAdBgNVHQ4E FgQUsGqxJDURn0ol94M4SAjKa8iW5VowHwYDVR0jBBgwFoAUsGqxJDURn0ol94M4 SAjKa8iW5VowDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOCAgEAKvwYZmKD Jj6+A7roClEV4UUYLgO3AkOxZahBRIEXbwBSPKvvhHAXe3Vnh+yYsmy3Laq4Lsie hk5boGZ62Az5neljFENSkbr0RQLmE3nGSuuG6wvMVnIjRSC2FR2TD7AkXSxLvFhb ZTcPAf6HWEdLlosmVPy6SiffuZk/qOTDsEzJQxEAJ9diV0/0FpR2BtRoJVrPtNPu 8XIwLDVuVmCXHpkvFbEbnN1qk7yziooF2VJQ19WOGBIGdiD09S1KSxf37VMtKrrd VZVLxY12Hr7F0Qs6CoLrpe2j07+nBglbxONOrimkCyhXAOy1nUOsvcNEUJPcSo3w U4snlQpG7rdOacmu6HCKIDaxRkAFZwdvLn8BuMDbMfF9xiHLz3CNAqayuXuKv8v+ KiKSBZ35it0y9bV2hlGGi+Z7D+wPYoNitzBVuKSvUTcj8+lTMcKy6qD4Axmt/6rr UpLeKJtANvGuHjJt2k6mXuPKJMkd5lmHesOVxCLtfjAWGVJ8jKdjlRh3ldZved7P UJLmVdc3WN174A4ifkVVnJDncYklR85l3Qv6/lnjcRAnVISaCuiQjZ5p7dQ3HcQu XNkrSq3GiCeIaRzvHbyZb+1Jrl82sGD9U5jpMQVyMo3UbCzFZxWFBfLYLLQwmB+y ds1UR7I0wjUSVACq8Zr7ZH05R2ChjMEq98M=  </l7:Encoded>
+                        </l7:CertificateData>
+                    </l7:Extension>
+                </l7:User>
+            </l7:Resource>
+        </l7:Item>
+    </l7:References>
+    <l7:Mappings>
+        <l7:Mapping action="NewOrExisting" srcId="ada77b26afbc26b56accc9c84c0e3dfd" type="ID_PROVIDER_CONFIG" />
+        <l7:Mapping action="NewOrExisting" srcId="131584f1efb61d9b104013b81f3fb56e" type="USER"/>
+    </l7:Mappings>
+</l7:Bundle>

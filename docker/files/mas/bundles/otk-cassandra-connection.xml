@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<l7:Bundle xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management">
+    <l7:References>
+        <l7:Item>
+            <l7:Name>OAuth_Cassandra</l7:Name>
+            <l7:Id>8e7af8f5fe78af7719574812da0b3c8e</l7:Id>
+            <l7:Type>CASSANDRA_CONFIGURATION</l7:Type>
+            <l7:TimeStamp>2018-03-01T20:09:52.503Z</l7:TimeStamp>
+            <l7:Resource>
+                <l7:CassandraConnection id="8e7af8f5fe78af7719574812da0b3c8e" version="0">
+                    <l7:Name>OAuth_Cassandra</l7:Name>
+                    <l7:Keyspace>OTK_CASSANDRA_KEYSPACE</l7:Keyspace>
+                    <l7:ContactPoint>OTK_CASSANDRA_CONTACTPOINT</l7:ContactPoint>
+                    <l7:Port>OTK_CASSANDRA_PORT</l7:Port>
+                    <l7:Username/>
+                    <l7:Compression>NONE</l7:Compression>
+                    <l7:Ssl>false</l7:Ssl>
+                    <l7:Enabled>true</l7:Enabled>
+                    <l7:Properties/>
+                </l7:CassandraConnection>
+            </l7:Resource>
+        </l7:Item>
+    </l7:References>
+    <l7:Mappings>
+        <l7:Mapping action="NewOrExisting" srcId="8e7af8f5fe78af7719574812da0b3c8e" srcUri="https://ssg93b.apim.ca:8443/restman/1.0/cassandraConnections/8e7af8f5fe78af7719574812da0b3c8e" type="CASSANDRA_CONFIGURATION"/>
+    </l7:Mappings>
+</l7:Bundle>
