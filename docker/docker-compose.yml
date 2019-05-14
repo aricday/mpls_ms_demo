@@ -1,17 +1,8 @@
-################################################################################
-##
-##  Purpose: Define a miroservice for retrieving beer data from two separate
-##    databases. Define a microservice for validting a JWT and exchanging tokens
-##    Protect both MS with a MSGW and leverage MAS as the OAuth hub.
-##
-##  Email: aric.day@ca.com
-##
-################################################################################
 version: '3'
 services:
   consul:
     command: "agent -server -ui -bootstrap -client 0.0.0.0"
-    image: consul:0.8.5
+    image: consul:1.2.2
     environment:
       - CONSUL_BIND_INTERFACE=eth0
       - SERVICE_IGNORE=yes
@@ -36,74 +27,56 @@ services:
      - ${PWD}/files/mdc/docker-entrypoint.sh:/docker-entrypoint.sh:rw
      - ${PWD}/config/certs/mas.cert.pem:/etc/nginx/ssl/dev-console.crt
      - ${PWD}/config/certs/mas.key:/etc/nginx/ssl/dev-console.key
-    deploy:
-      placement:
-        constraints:
-          - node.role == manager
-  mysqldb:
-    image: mysql:5.5
-    environment:
-      - SERVICE_IGNORE=yes
-      - MYSQL_USER=db_admin
-      - MYSQL_PASSWORD
-      - MYSQL_DATABASE=otk_db
-      - MYSQL_ROOT_PASSWORD=CAdemo123
-    volumes:
-      - mysql-data:/var/lib/mysql
-      - ${PWD}/files/mysql/scripts/startup/:/docker-entrypoint-initdb.d/
-      - ${PWD}/files/mysql/config/my.cnf:/etc/mysql/conf.d/my.cnf
-    restart: always
-    deploy:
-      resources:
-        limits:
-          memory: 256m
   mas:
-    image: caapimcollab/mobile-app-services:4.0.00-CR01
+    image: aricday/mas:4.2
+    build:
+      context: ./files/mas
+      dockerfile: Dockerfile
+    hostname: mas.docker.local   
     ports:
       - "8080:8080"
-      - ${MAS_PORT}:8443
-      - "8883:8883"
-    hostname: ${MAS_HOSTNAME}
+      - "8443:8443"
     volumes:
-      - /opt/docker/rc.d/bootstrap/restman
-      - /opt/docker/rc.d/bootstrap/policyman
-      - ${PWD}/files/mas/liquibase/otk-testdata.xml:/db/liquibase/otk-testdata.xml
-      - ${PWD}/files/mas/liquibase/mag-otk-testdata.xml:/db/liquibase/mag-otk-testdata.xml
-      - ${PWD}/files/mas/liquibase/mag-testdata.xml:/db/liquibase/mag-testdata.xml
-      - ${PWD}/files/mas/liquibase/mas-identity-testdata.xml:/db/liquibase/mas-identity-testdata.xml
-      - ${PWD}/files/mas/bundles/proxy_folder.bundle:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/bundle/proxy_folder.bundle
-      - ${PWD}/files/mas/bundles/andriod_service.bundle:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/bundle/andriod_service.bundle
-      - ${PWD}/files/mas/provision/add-otk-user.sh:/opt/docker/rc.d/after-start/add-otk-user.sh:rw
-      - ${PWD}/files/mas/provision/x-add-otk-user.sh:/opt/docker/rc.d/after-start/x-add-otk-user.sh:rw
-      # these are in MAS until MSGW quickstart load is added
-      - ${PWD}/files/msgw/provision/x-add-quickstart-templates.sh:/opt/docker/rc.d/after-start/x-add-quickstart-templates.sh:rw
-      - ${PWD}/files/msgw/quickstart/beer_data.json:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/quickstart/beer_data.json
+      - /opt/SecureSpan/Gateway/node/default/etc/bootstrap/services/restman
+      - ${PWD}/config/license.xml:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/license/license.xml
       - ${PWD}/config/mag_license.xml:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/license/mag_license.xml
-    env_file:
-      - ${PWD}/.env
-    # override the env_file defaults with shell environment variables
+      - ${PWD}/files/mas/bundles/andriod_service.bundle:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/bundle/03_andriod_service.bundle
+      - ${PWD}/files/mas/bundles/saml_service.bundle:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/bundle/02_saml_service.bundle
+      - ${PWD}/files/mas/bundles/proxy_folder.bundle:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/bundle/04_proxy_folder.bundle
+      - ${PWD}/files/mas/bundles/otk_schema.bundle:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/bundle/05_otk_schema.bundle
+      # these are in MAS until MSGW quickstart load is added
+      - ${PWD}/files/msgw/provision/x-add-quickstart-templates.sh:/opt/docker/rc.d/after-start/z-add-quickstart-templates.sh:rw
+      - ${PWD}/files/msgw/quickstart/beer_data.json:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/quickstart/beer_data.json
+    environment:
+      SERVICE_IGNORE: "yes"
+      SSG_CLUSTER_HOST: "mas.docker.local"
+      SSG_CLUSTER_PASSWORD: "7layer"
+      SSG_DATABASE_USER: "gateway"
+      SSG_DATABASE_PASSWORD: "7layer"
+      SSG_DATABASE_JDBC_URL: "jdbc:mysql://mysql:3306/ssg?useSSL=false"
+      SSG_ADMIN_USERNAME: "admin"
+      SSG_ADMIN_PASSWORD: "password"
+      ACCEPT_LICENSE: "true"
+      SSG_SSL_KEY: "${MAS_SSL_KEY_B64}"
+      SSG_SSL_KEY_PASS: "${MAS_SSL_KEY_PASS}"
+      MSGW_SSL_PUBLIC_CERT_B64:
+      SSG_JVM_HEAP: "6g"
+      EXTRA_JAVA_ARGS: "-XX:ParallelGCThreads=4"
+  mysql:
+    image: mysql:5.7
     environment:
       - SERVICE_IGNORE=yes
-      - HOSTNAME=${MAS_HOSTNAME}
-      - MAS_HOSTNAME   
-      - MDC_HOSTNAME    
-      - OTK_HOSTNAME
-      - SSG_LICENSE
-      - SSG_SSL_KEY=${MAS_SSL_KEY_B64}
-      - SSG_SSL_KEY_PASS=${MAS_SSL_KEY_PASS}
-      - BUNDLE_TEMPLATE_HOSTNAME   
-      - BUNDLE_TEMPLATE_OTK_HOSTNAME    
-      - BUNDLE_TEMPLATE_DEV_CONSOLE_CALLBACK    
-      - BUNDLE_TEMPLATE_HOSTNAME_ENCODED
-      - BUNDLE_TEMPLATE_PROTOCOL_HOSTNAME_ENCODED
-      - ADD_TEST_CLIENTS=true
-      - MSGW_SSL_PUBLIC_CERT_B64
-    deploy:
-      placement:
-        constraints:
-          - node.role == manager
+      - MYSQL_ROOT_PASSWORD=7layer
+    command:
+      - "--character-set-server=utf8"
+      - "--innodb_log_buffer_size=32M"
+      - "--innodb_log_file_size=80M"
+      - "--max_allowed_packet=10M"
+    volumes:
+      - mag-otk-data:/var/lib/mysql
+      # - ${PWD}/files/mas/data:/var/lib/mysql
+      - ${PWD}/files/mas/dbinit:/docker-entrypoint-initdb.d    
   msgw:
-    #image: caapimcollab/microgateway:beta1
     image: caapim/microgateway:latest
     ports:
       - "9443:9443"
@@ -112,7 +85,6 @@ services:
       - ${PWD}/files/msgw/bundles/RouteHttp.bundle:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/bundle/RouteHttp.bundle
       - ${PWD}/files/msgw/bundles/consul.bundle:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/bundle/consul.bundle
       - ${PWD}/config/msgw_license.xml:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/license/license.xml
-      #- ${PWD}/config/license.xml:/opt/SecureSpan/Gateway/node/default/etc/bootstrap/license/license.xml
     environment:
       - SERVICE_IGNORE=yes
       - SSG_ADMIN_USERNAME=admin
@@ -144,9 +116,5 @@ services:
       - OTK_SERVER_SSL_PORT=${MAS_PORT}
       - OTK_CERTIFICATE=${MAS_SSL_PUBLIC_CERT_B64}
       - OTK_CERT_VERIFY_HOSTNAME=false
-    deploy:
-      resources:
-        limits:
-          memory: 2048m
 volumes:
-  mysql-data:
+  mag-otk-data:
