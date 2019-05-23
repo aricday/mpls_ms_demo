@@ -39,8 +39,8 @@ values ('5edc4a38-75ec-4617-8854-1a71ff1e0a2e', '5005a669-0295-4602-be7d-6a75342
 INSERT INTO oauth_client (client_ident, name, description, organization, registered_by, type, custom)
 VALUES ('TestClient2.0', 'OAuth2Client', 'OAuth 2.0 test client hosted on the ssg', 'CA Technologies Inc.', 'admin', 'confidential', '{}');
 
-INSERT INTO oauth_client_key (client_key, secret, status, created_by, client_ident, client_name, callback, custom)
-VALUES ('54f0c455-4d80-421f-82ca-9194df24859d', 'a0f2742f-31c7-436f-9802-b7015b8fd8e6', 'ENABLED', 'admin', 'TestClient2.0', 'OAuth2Client', 'https://mas.docker.local:8443/oauth/v2/client/authcode?auth=done,https://mas.docker.local:8443/oauth/v2/client/implicit?auth=done', '{}');
+INSERT INTO oauth_client_key (client_key, secret, status, created_by, client_ident, client_name, scope, callback, custom)
+VALUES ('54f0c455-4d80-421f-82ca-9194df24859d', 'a0f2742f-31c7-436f-9802-b7015b8fd8e6', 'ENABLED', 'admin', 'TestClient2.0', 'OAuth2Client', 'mas_storage oob', 'https://mas.docker.local:8443/oauth/v2/client/authcode?auth=done,https://mas.docker.local:8443/oauth/v2/client/implicit?auth=done', '{}');
 --
 --
 -- Create MDC client
