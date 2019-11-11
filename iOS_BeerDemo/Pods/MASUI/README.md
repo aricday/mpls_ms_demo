@@ -61,6 +61,7 @@ For manual install, you add the Mobile SDK to your Xcode project. Note that you 
 
 ```
 #import <MASFoundation/MASFoundation.h>
+#import <MASProximity/MASProximity.h>
 #import <MASUI/MASUI.h>
 ```
 
@@ -75,7 +76,7 @@ The MASUI library contains graphic and xib files to speed up development time. T
 
 ### User Login Dialog
 
-<p style="text-align:center"><img src="http://mas.ca.com/docs/ios/1.3.00/guides/images/SocialLogin.png" width="300"></p>
+<p style="text-align:center"><img src="http://mas.ca.com/docs/ios/2.0.00/guides/images/SocialLogin.png" width="300"></p>
 
 To use the user login dialog, drag and drop `MASUI.framework` and `MASUIResources.bundle` into your project.  After the MASUI library is added to the project, MASFoundation automatically detects the presence of the MASUI library and processes the user login as needed.
 
@@ -236,8 +237,8 @@ The social login feature is included in the user login dialog (described in the 
 
 ### Session Lock Screen
 
-<p style="text-align:center"><img src="http://mas.ca.com/docs/ios/1.3.00/guides/images/SessionLock.png" width="300"></p>
-<p style="text-align:center"><img src="http://mas.ca.com/docs/ios/1.3.00/guides/images/SessionLock-default.png" width="300"></p>
+<p style="text-align:center"><img src="http://mas.ca.com/docs/ios/2.0.00/guides/images/SessionLock.png" width="300"></p>
+<p style="text-align:center"><img src="http://mas.ca.com/docs/ios/2.0.00/guides/images/SessionLock-default.png" width="300"></p>
 
 Session lock screen is provided by simply dropping the MASUI.framework and MASUIResource.bundle into your project.  MASFoundation detects the presence of the MASUI library and presents the session lock screen upon the API call.
 
@@ -271,7 +272,7 @@ To use the One Time Password dialogs, drag and drop the MASUI.framework and MASU
 
 #### OTP Delivery Channel Dialog   
 
-<p style="text-align:center"><img src="http://mas.ca.com/docs/ios/1.3.00/guides/images/DeliveryChannel.png" width="300"></p>
+<p style="text-align:center"><img src="http://mas.ca.com/docs/ios/2.0.00/guides/images/DeliveryChannel.png" width="300"></p>
   
 
 MASUI provides the following method to enable or disable the OTP Delivery Channel dialog.         
@@ -290,7 +291,7 @@ If MASUI is disabled to handle the OTP authentication, MASOTPChannelSelectionBlo
 
 #### One Time Password Dialog
 
-<p style="text-align:center"><img src="http://mas.ca.com/docs/ios/1.3.00/guides/images/OTP.png" width="300"></p>
+<p style="text-align:center"><img src="http://mas.ca.com/docs/ios/2.0.00/guides/images/OTP.png" width="300"></p>
 
 MASUI provides the following method to enable or disable the One Time Password dialog.
 
@@ -307,17 +308,15 @@ If MASUI is disabled to handle the OTP authentication, MASOTPCredentialsBlock is
 
 ## License
 
-Copyright (c) 2016 CA. All rights reserved.
+Copyright (c) 2019 Broadcom. All Rights Reserved.
+The term "Broadcom" refers to Broadcom Inc. and/or its subsidiaries.
 
 This software may be modified and distributed under the terms
 of the MIT license. See the [LICENSE][license-link] file for details.
 
  [mag]: https://docops.ca.com/mag
- [mas.ca.com]: http://mas.ca.com/
- [get-started]: http://mas.ca.com/get-started/
- [docs]: http://mas.ca.com/docs/
- [blog]: http://mas.ca.com/blog/
- [videos]: https://www.ca.com/us/developers/mas/videos.html
+ [get-started]: http://techdocs.broadcom.com/content/broadcom/techdocs/us/en/ca-enterprise-software/layer7-api-management/mobile-sdk-for-ca-mobile-api-gateway/2-0.html
+ [docs]: http://techdocs.broadcom.com/content/broadcom/techdocs/us/en/ca-enterprise-software/layer7-api-management/mobile-sdk-for-ca-mobile-api-gateway/2-0.html
  [StackOverflow]: http://stackoverflow.com/questions/tagged/massdk
  [download]: https://github.com/CAAPIM/iOS-MAS-UI/archive/master.zip
  [contributing]: https://github.com/CAAPIM/iOS-MAS-UI/blob/develop/CONTRIBUTING.md

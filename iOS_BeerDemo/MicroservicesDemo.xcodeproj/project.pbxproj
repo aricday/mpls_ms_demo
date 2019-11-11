@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		35B9A5052379D72A00CB2CCD /* msso_config.json in Resources */ = {isa = PBXBuildFile; fileRef = 35B9A5042379D72A00CB2CCD /* msso_config.json */; };
+		35152FE8237A08CF00273970 /* msso_config.json in Resources */ = {isa = PBXBuildFile; fileRef = 35152FE7237A08CF00273970 /* msso_config.json */; };
 		4EACDF1B7D9F5972E1E73313 /* Pods_MicroservicesDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC05C0879AA7B4BE10546344 /* Pods_MicroservicesDemo.framework */; };
 		CD01ADDC1EC234F8002AE443 /* BeersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD01ADDB1EC234F8002AE443 /* BeersTableViewController.swift */; };
 		CD01ADE21EC23921002AE443 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD01ADE11EC23921002AE443 /* Common.swift */; };
@@ -27,7 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		35B9A5042379D72A00CB2CCD /* msso_config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = msso_config.json; path = ../../../../../Downloads/msso_config.json; sourceTree = "<group>"; };
+		35152FE7237A08CF00273970 /* msso_config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = msso_config.json; path = Assets.xcassets/msso_config.json; sourceTree = "<group>"; };
 		9219301B505967FA5A82EDD7 /* Pods-MicroservicesDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicroservicesDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MicroservicesDemo/Pods-MicroservicesDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		A9A0049984ED9799689679D3 /* Pods-MicroservicesDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicroservicesDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MicroservicesDemo/Pods-MicroservicesDemo.release.xcconfig"; sourceTree = "<group>"; };
 		CC05C0879AA7B4BE10546344 /* Pods_MicroservicesDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MicroservicesDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +130,7 @@
 			children = (
 				CD0C93F51EBB910B0005B636 /* Main.storyboard */,
 				CD0C93FD1EBB910B0005B636 /* LaunchScreen.storyboard */,
+				35152FE7237A08CF00273970 /* msso_config.json */,
 				CD0C93FB1EBB910B0005B636 /* Assets.xcassets */,
 				D505061D1EFC51DA008720BD /* LoginAnimation.mp4 */,
 				D50AC4F61EFC4F6B0046374E /* MicroservicesDemo.entitlements */,
@@ -142,7 +143,6 @@
 			children = (
 				D5C4463D1F031A8E00E31142 /* MSUtility.swift */,
 				CD01ADE11EC23921002AE443 /* Common.swift */,
-				35B9A5042379D72A00CB2CCD /* msso_config.json */,
 				D534AD3A1EFC3C94008E9381 /* MicroservicesDemo-Bridging-Header.h */,
 				CD0C94001EBB910B0005B636 /* Info.plist */,
 				D55E5EBE1F12FDDA0017F7BA /* Extensions.swift */,
@@ -222,7 +222,7 @@
 			files = (
 				CD0C93FF1EBB910B0005B636 /* LaunchScreen.storyboard in Resources */,
 				CD0C93FC1EBB910B0005B636 /* Assets.xcassets in Resources */,
-				35B9A5052379D72A00CB2CCD /* msso_config.json in Resources */,
+				35152FE8237A08CF00273970 /* msso_config.json in Resources */,
 				D505061E1EFC51DA008720BD /* LoginAnimation.mp4 in Resources */,
 				CD0C93F71EBB910B0005B636 /* Main.storyboard in Resources */,
 			);
@@ -257,12 +257,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MicroservicesDemo/Pods-MicroservicesDemo-frameworks.sh",
 				"${PODS_ROOT}/MASFoundation/MASFoundation.framework",
+				"${PODS_ROOT}/MASProximity/MASProximity.framework",
 				"${PODS_ROOT}/MASUI/MASUI.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MASFoundation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MASProximity.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MASUI.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 			);
@@ -379,7 +381,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -435,7 +437,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "MicroservicesDemo-Bridging-Header.h";

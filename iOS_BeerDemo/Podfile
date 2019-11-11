@@ -1,12 +1,12 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-platform :ios, '10.0'
+platform :ios, '12.0'
 use_frameworks!
 
 target 'MicroservicesDemo' do
 
-pod 'MASFoundation', '~> 1.9'
-pod 'MASUI', '~> 1.9'
+pod 'MASFoundation', '~> 2.0'
+pod 'MASUI', '~> 2.0'
 pod 'SVProgressHUD', '~> 2.1'
 
 end
