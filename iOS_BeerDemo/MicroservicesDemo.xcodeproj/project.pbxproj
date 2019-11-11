@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35B9A5052379D72A00CB2CCD /* msso_config.json in Resources */ = {isa = PBXBuildFile; fileRef = 35B9A5042379D72A00CB2CCD /* msso_config.json */; };
 		4EACDF1B7D9F5972E1E73313 /* Pods_MicroservicesDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC05C0879AA7B4BE10546344 /* Pods_MicroservicesDemo.framework */; };
-		8C3BAA121ED5DA5B00752E9B /* msso_config.json in Resources */ = {isa = PBXBuildFile; fileRef = 8C3BAA111ED5DA5B00752E9B /* msso_config.json */; };
 		CD01ADDC1EC234F8002AE443 /* BeersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD01ADDB1EC234F8002AE443 /* BeersTableViewController.swift */; };
 		CD01ADE21EC23921002AE443 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD01ADE11EC23921002AE443 /* Common.swift */; };
 		CD01ADE81EC279D2002AE443 /* BeerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD01ADE71EC279D2002AE443 /* BeerDetailsViewController.swift */; };
@@ -27,7 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8C3BAA111ED5DA5B00752E9B /* msso_config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = msso_config.json; path = ../msso_config.json; sourceTree = "<group>"; };
+		35B9A5042379D72A00CB2CCD /* msso_config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = msso_config.json; path = ../../../../../Downloads/msso_config.json; sourceTree = "<group>"; };
 		9219301B505967FA5A82EDD7 /* Pods-MicroservicesDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicroservicesDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MicroservicesDemo/Pods-MicroservicesDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		A9A0049984ED9799689679D3 /* Pods-MicroservicesDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicroservicesDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MicroservicesDemo/Pods-MicroservicesDemo.release.xcconfig"; sourceTree = "<group>"; };
 		CC05C0879AA7B4BE10546344 /* Pods_MicroservicesDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MicroservicesDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,9 +142,9 @@
 			children = (
 				D5C4463D1F031A8E00E31142 /* MSUtility.swift */,
 				CD01ADE11EC23921002AE443 /* Common.swift */,
+				35B9A5042379D72A00CB2CCD /* msso_config.json */,
 				D534AD3A1EFC3C94008E9381 /* MicroservicesDemo-Bridging-Header.h */,
 				CD0C94001EBB910B0005B636 /* Info.plist */,
-				8C3BAA111ED5DA5B00752E9B /* msso_config.json */,
 				D55E5EBE1F12FDDA0017F7BA /* Extensions.swift */,
 			);
 			name = "Supporting Files";
@@ -180,13 +180,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "CA Technologies";
 				TargetAttributes = {
 					CD0C93ED1EBB910B0005B636 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = RJ33FB49T2;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1120;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -201,6 +201,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -221,7 +222,7 @@
 			files = (
 				CD0C93FF1EBB910B0005B636 /* LaunchScreen.storyboard in Resources */,
 				CD0C93FC1EBB910B0005B636 /* Assets.xcassets in Resources */,
-				8C3BAA121ED5DA5B00752E9B /* msso_config.json in Resources */,
+				35B9A5052379D72A00CB2CCD /* msso_config.json in Resources */,
 				D505061E1EFC51DA008720BD /* LoginAnimation.mp4 in Resources */,
 				CD0C93F71EBB910B0005B636 /* Main.storyboard in Resources */,
 			);
@@ -254,7 +255,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MicroservicesDemo/Pods-MicroservicesDemo-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-MicroservicesDemo/Pods-MicroservicesDemo-frameworks.sh",
 				"${PODS_ROOT}/MASFoundation/MASFoundation.framework",
 				"${PODS_ROOT}/MASUI/MASUI.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
@@ -267,7 +268,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MicroservicesDemo/Pods-MicroservicesDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MicroservicesDemo/Pods-MicroservicesDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CD3B8F641EC948CE003A11D5 /* Increment Build */ = {
@@ -330,21 +331,30 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -369,7 +379,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -385,21 +395,30 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -416,7 +435,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "MicroservicesDemo-Bridging-Header.h";
@@ -452,7 +471,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "MicroservicesDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -480,7 +499,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "MicroservicesDemo-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
