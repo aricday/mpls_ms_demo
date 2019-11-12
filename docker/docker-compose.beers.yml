@@ -22,7 +22,8 @@ services:
       - RDS_DB_NAME=lac_admin
       - RDS_USERNAME=lac_admin
       - RDS_PASSWORD=CAdemo123
-      - ca_accept_license=enu
+      - CA_ACCEPT_LICENSE=ENU
+      - LAC_DEFAULT_LICENSE_FILE=/usr/local/tomcat/bin/lac_license.json
     volumes:
       - ${PWD}/files/lac/BeerData.json:/usr/local/tomcat/bin/BeerData.json
       - ${PWD}/config/lac_license.json:/usr/local/tomcat/bin/lac_license.json
@@ -42,9 +43,8 @@ services:
       - RDS_DB_NAME=lac_admin
       - RDS_USERNAME=lac_admin
       - RDS_PASSWORD=CAdemo123
-      - CATALINA_OPTS=--add-modules java.xml.bind $CATALINA_OPTS
-      - ca_accept_license=enu
-      - ESPRESSO_FORCE_DATASOURCE=true
+      - CA_ACCEPT_LICENSE=ENU
+      - LAC_DEFAULT_LICENSE_FILE=/usr/local/tomcat/bin/lac_license.json
     volumes:
       - ${PWD}/files/lac/BeerData.json:/usr/local/tomcat/bin/BeerData.json
       - ${PWD}/config/lac_license.json:/usr/local/tomcat/bin/lac_license.json
