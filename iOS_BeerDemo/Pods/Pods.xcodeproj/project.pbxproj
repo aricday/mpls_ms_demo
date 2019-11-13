@@ -17,6 +17,7 @@
 				096FD1FE571E5C2BA64FA1B61EEF01EA /* PBXTargetDependency */,
 			);
 			name = MASUI;
+			productName = MASUI;
 		};
 		4EE183B38F69AB778C06A35C2F66B4D9 /* MASFoundation */ = {
 			isa = PBXAggregateTarget;
@@ -26,6 +27,7 @@
 			dependencies = (
 			);
 			name = MASFoundation;
+			productName = MASFoundation;
 		};
 		BE355C033EB5425EDC28D990A3414DD2 /* MASProximity */ = {
 			isa = PBXAggregateTarget;
@@ -36,6 +38,7 @@
 				9D1920639F5B3BDCBBD64968C19394C3 /* PBXTargetDependency */,
 			);
 			name = MASProximity;
+			productName = MASProximity;
 		};
 /* End PBXAggregateTarget section */
 
@@ -130,7 +133,7 @@
 		90CC7D32EDCCC934C1EF3FF13EA9F66A /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
 		92C61E57DD44536D9D0F0F2AAAE6BDE5 /* Pods-MicroservicesDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MicroservicesDemo-umbrella.h"; sourceTree = "<group>"; };
 		99E4C6CEF9AEAD720CE6FAB87683B323 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A625D972A692705772FBB68A7A45F4D5 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
 		AC2F7A42B54A5D1130008477A462D5F5 /* MASFoundation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MASFoundation.xcconfig; sourceTree = "<group>"; };
 		AFEB013A974B85F3D2FC9E87F66191A8 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
@@ -141,11 +144,11 @@
 		CD03C2B689B95660E8959501BE26DA36 /* Pods-MicroservicesDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MicroservicesDemo.release.xcconfig"; sourceTree = "<group>"; };
 		D3620D253570C4E21C8FDA9515C439CC /* MASFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MASFoundation.framework; sourceTree = "<group>"; };
 		D8B2C79BAB65583B7044CF7321D4A33A /* MASProximity.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MASProximity.xcconfig; sourceTree = "<group>"; };
-		E97D43C46A45EE515A4DA3AF94398441 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SVProgressHUD.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E97D43C46A45EE515A4DA3AF94398441 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		F3D23DACFB3E6B880A0A239CD35B464B /* Pods-MicroservicesDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MicroservicesDemo-Info.plist"; sourceTree = "<group>"; };
 		FC968BD60811CC322C4989995597AC8F /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
-		FDAE1F5698CF3F5017E125E6D2600ADF /* Pods_MicroservicesDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MicroservicesDemo.framework; path = "Pods-MicroservicesDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDAE1F5698CF3F5017E125E6D2600ADF /* Pods_MicroservicesDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MicroservicesDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,7 +178,6 @@
 				0F3A80568083EA1BD006F22368BB2374 /* Frameworks */,
 				CAEFD0CFB09972B74A7A2256A35F6853 /* Support Files */,
 			);
-			name = MASUI;
 			path = MASUI;
 			sourceTree = "<group>";
 		};
@@ -209,7 +211,6 @@
 				892DD507550B4A2735C2AF1D5926C615 /* Resources */,
 				6EEE81BEB17AD76C5A0D6D4D5D1FECF8 /* Support Files */,
 			);
-			name = SVProgressHUD;
 			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
@@ -266,7 +267,6 @@
 				833499B8E11C408158928544BA8283DC /* Frameworks */,
 				A43FCE266417CD53F811964593BAAFEF /* Support Files */,
 			);
-			name = MASProximity;
 			path = MASProximity;
 			sourceTree = "<group>";
 		};
@@ -322,7 +322,6 @@
 				7345C04EE72F16A5A18C2E598E949283 /* Frameworks */,
 				BE6F4EFB3CB33048577EDD9BA3595CCE /* Support Files */,
 			);
-			name = MASFoundation;
 			path = MASFoundation;
 			sourceTree = "<group>";
 		};
@@ -436,7 +435,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1120;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -444,6 +443,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = FBB1091BD7924E733127A114147E336F /* Products */;
@@ -550,7 +550,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D8B2C79BAB65583B7044CF7321D4A33A /* MASProximity.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -629,7 +628,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5EEF4BFD76FDC60D41505E2A797D02DA /* MASUI.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -644,7 +642,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7F268DF4668EBFBE90E5FD1F36DE6235 /* SVProgressHUD.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -676,7 +673,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7F268DF4668EBFBE90E5FD1F36DE6235 /* SVProgressHUD.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -709,7 +705,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AC2F7A42B54A5D1130008477A462D5F5 /* MASFoundation.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -723,7 +718,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5EEF4BFD76FDC60D41505E2A797D02DA /* MASUI.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -738,7 +732,6 @@
 			baseConfigurationReference = CD03C2B689B95660E8959501BE26DA36 /* Pods-MicroservicesDemo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -773,7 +766,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D8B2C79BAB65583B7044CF7321D4A33A /* MASProximity.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -787,7 +779,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AC2F7A42B54A5D1130008477A462D5F5 /* MASFoundation.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -803,7 +794,6 @@
 			baseConfigurationReference = 87225B714756DA8F3805085A3190D1FE /* Pods-MicroservicesDemo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -886,8 +876,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
