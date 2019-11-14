@@ -6,8 +6,8 @@ port=8080
 username="admin"
 password="Password1"
 resource="rest/default/data/v1/beers"
-import_file="BeerData.json"
-import_resource="rest/abl/admin/v2/ProjectExport"
+import_file="beer_export.json"
+import_resource="rest/abl/admin/v2/@import?namecollision=rename_new&errorhandling=standard"
 timeout=30
 
 ## Capture any command-line arguments

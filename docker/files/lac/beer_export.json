@@ -1,0 +1,582 @@
+{
+  "{d}data": {
+    "{f}api.json": {
+      "name": "Beer Data",
+      "urlFragment": "data",
+      "comments": "Insert comments here",
+      "isEnabled": true,
+      "authProviderName": "Built-in authentication"
+    },
+    "{f}exportoptions.json": {
+      "passwordStyle": "ENCRYPTED",
+      "apiOptionStyle": "EMIT_ALL",
+      "authTokenStyle": "SKIP_AUTO",
+      "skipUrlFragmentWrapping": false,
+      "libraryStyle": "EMIT_ALL",
+      "schemaCacheStyle": "DO_NOT_EMIT"
+    },
+    "{f}apioptions.json": {
+      "Aggregate Default Override": {
+        "dataType": "boolean",
+        "value": false,
+        "defaultValue": false
+      },
+      "Allow Swagger without authentication": {
+        "dataType": "boolean",
+        "value": false,
+        "defaultValue": false
+      },
+      "Audit User Transactions": {
+        "dataType": "boolean",
+        "value": false,
+        "defaultValue": false
+      },
+      "Binary Output Encoding": {
+        "dataType": "enum",
+        "value": "hex",
+        "defaultValue": "hex"
+      },
+      "Checksum Size Limit": {
+        "dataType": "integer",
+        "value": 2000,
+        "defaultValue": 2000
+      },
+      "Chunk Size Default": {
+        "dataType": "integer",
+        "value": 20,
+        "defaultValue": 20
+      },
+      "Default response format": {
+        "dataType": "enum",
+        "value": "json",
+        "defaultValue": "json"
+      },
+      "Disallow free-form filters and sorts": {
+        "dataType": "boolean",
+        "value": false,
+        "defaultValue": false
+      },
+      "Enable HTTP Basic Authentication": {
+        "dataType": "boolean",
+        "value": true,
+        "defaultValue": true
+      },
+      "Force Binary Data as an Object": {
+        "dataType": "boolean",
+        "value": false,
+        "defaultValue": false
+      },
+      "Force Consistent Pagination when no primary key": {
+        "dataType": "boolean",
+        "value": false,
+        "defaultValue": false
+      },
+      "HTTPS only": {
+        "dataType": "boolean",
+        "value": false,
+        "defaultValue": false
+      },
+      "Include metadata section in responses": {
+        "dataType": "boolean",
+        "value": true,
+        "defaultValue": true
+      },
+      "Inline Limit Default": {
+        "dataType": "integer",
+        "value": 2000,
+        "defaultValue": 2000
+      },
+      "JSON NaN (Quiet)": {
+        "dataType": "string",
+        "value": "null",
+        "defaultValue": "null"
+      },
+      "JSON NaN (Signaling)": {
+        "dataType": "string",
+        "value": "null",
+        "defaultValue": "null"
+      },
+      "JSON Negative Infinity": {
+        "dataType": "string",
+        "value": "null",
+        "defaultValue": "null"
+      },
+      "JSON Positive Infinity": {
+        "dataType": "string",
+        "value": "null",
+        "defaultValue": "null"
+      },
+      "Maximum Page Size": {
+        "dataType": "integer",
+        "value": 5000,
+        "defaultValue": 5000
+      },
+      "Metadata name": {
+        "dataType": "string",
+        "value": "@metadata",
+        "defaultValue": "@metadata"
+      },
+      "Page Size Default": {
+        "dataType": "integer",
+        "value": 20,
+        "defaultValue": 20
+      },
+      "Permit Authorization parameter in URL": {
+        "dataType": "boolean",
+        "value": true,
+        "defaultValue": false
+      },
+      "Provide detailed security debugging": {
+        "dataType": "enum",
+        "value": "0",
+        "defaultValue": "0"
+      },
+      "Realm for HTTP Basic Authentication": {
+        "dataType": "string",
+        "value": null,
+        "defaultValue": null
+      },
+      "Stored Procedure Inline Limit": {
+        "dataType": "integer",
+        "value": 2000,
+        "defaultValue": 2000
+      },
+      "Stored Procedure Row Limit": {
+        "dataType": "integer",
+        "value": 100,
+        "defaultValue": 100
+      },
+      "Tech docs URL": {
+        "dataType": "string",
+        "value": "http://docs30.liveapicreator.com/tutorial/northwind",
+        "defaultValue": null
+      },
+      "Type base URI": {
+        "dataType": "string",
+        "value": "urn:caliveapicreator:",
+        "defaultValue": "urn:caliveapicreator:"
+      },
+      "User docs URL": {
+        "dataType": "string",
+        "value": null,
+        "defaultValue": null
+      },
+      "XML Document Root Element Tag Name": {
+        "dataType": "string",
+        "value": "root",
+        "defaultValue": "root"
+      }
+    },
+    "{d}connections": {
+      "{f}ReadMe.md": "This folder contains definitions for connections\n"
+    },
+    "{d}listeners": {
+      "{f}ReadMe.md": "This folder contains definitions for listeners\n"
+    },
+    "{d}custom_endpoints": {
+      "{f}ReadMe.md": "This folder contains definitions for custom_endpoints\n"
+    },
+    "{f}relationships.json": [
+    ],
+    "{d}data_sources": {
+      "{f}ReadMe.md": "This folder contains definitions for data sources\n",
+      "{f}main.json": {
+        "name": "main",
+        "prefix": "main",
+        "title": "Database: data - beer",
+        "databaseType": "MYSQL",
+        "comments": "Created using Connect Wizard",
+        "isActive": true,
+        "isLogErrors": false,
+        "isSchemaEditable": true,
+        "isSupportBoolean": false,
+        "isReadOnly": false,
+        "useJNDIDataSource": false,
+        "url": "jdbc:mysql://mysql_beers:3306/data",
+        "catalog": "data",
+        "schema": null,
+        "username": "root",
+        "encryptedPassword": "2:PjUsnQ/riAd+0B3QYfM7/WBRME97gIHsHL0gTq8KVyCr1ipyRoIvDw==",
+        "encryptedPasswordSalt": "2BSe3Ea4Rv09Zrd/oKXXiV5F4KwJAGt7eeBnQHZ7",
+        "maximumConnections": 20,
+        "tableExcludes": null,
+        "tableIncludes": null,
+        "procedureExcludes": null,
+        "procedureIncludes": null,
+        "nonPersistentAttributes": {
+          "beers": {
+            "price_comment": {
+              "dataType": "npa_varchar",
+              "comments": null
+            }
+          }
+        },
+        "tableInfos": {
+        },
+        "viewInfos": {
+        },
+        "procedureInfos": {
+        }
+      }
+    },
+    "{d}filters": {
+      "{f}ReadMe.md": "This folder contains definitions for filters\n"
+    },
+    "{d}functions": {
+      "{f}ReadMe.md": "This folder contains definitions for functions\n",
+      "{f}etysz.json": {
+        "name": "etysz",
+        "isActive": true,
+        "comments": "This is a skeleton function, you should most likely:\n1 - Give it a proper name (the default is a randomly generated 5-letter name)\n2 - Give it a proper comment\n3 - Change the code to do something useful",
+        "returnType": "{\n  \"description\": \"This is an example of the type of data returned by this function\"\n}\n",
+        "extendedProperties": null,
+        "parameters": null,
+        "functionType": "rowLevel",
+        "appliesTo": [
+          "beers"
+        ]
+      },
+      "{f}etysz.js": "// Insert your code here\nreturn {result: 'Hello'};\n"
+    },
+    "{d}libraries": {
+      "{f}ReadMe.md": "This folder contains definitions for libraries and whether they are used.\n",
+      "{f}SystemLibraryUsage.json": [
+      ]
+    },
+    "{d}request_events": {
+      "{f}ReadMe.md": "This folder contains definitions for request events\n",
+      "{f}Request$0020logs.json": {
+        "name": "Request logs",
+        "eventType": "request",
+        "comments": null,
+        "isActive": true
+      },
+      "{f}Request$0020logs.js": "// Event handling code goes here\nvar message = req.getClientAddress() + ' [' + JSON.parse(JSON.stringify(new Date())) \n    + '] ' + '\"' + req.verb + ' ' + req.baseUrl + '\"' + ' ' + req.getHttpHeaders();\nout.println(message);\n"
+    },
+    "{d}resources": {
+      "{f}ReadMe.md": "This folder contains definitions for resources\n",
+      "{f}apiversions.json": {
+        "v1": {
+          "name": "v1",
+          "comments": null
+        }
+      },
+      "{d}v1": {
+        "{d}beers": {
+          "{f}beers.json": {
+            "name": "beers",
+            "description": null,
+            "siblingRank": 100,
+            "resourceType": "TableBased",
+            "prefix": "main",
+            "entity": "beers",
+            "isCollection": true,
+            "isCombined": false,
+            "filter": null,
+            "order": null,
+            "useSchemaAttributes": false,
+            "attributes": [
+              {
+                "attribute": "brewery",
+                "alias": "brewery",
+                "description": null,
+                "isKey": false
+              },
+              {
+                "attribute": "style",
+                "alias": "style",
+                "description": null,
+                "isKey": false
+              },
+              {
+                "attribute": "price",
+                "alias": "price",
+                "description": null,
+                "isKey": false
+              },
+              {
+                "attribute": "name",
+                "alias": "name",
+                "description": null,
+                "isKey": false
+              },
+              {
+                "attribute": "created_at",
+                "alias": "created_at",
+                "description": null,
+                "isKey": false
+              },
+              {
+                "attribute": "beer_comments_count",
+                "alias": "beer_comments_count",
+                "description": null,
+                "isKey": false
+              }
+            ]
+          },
+          "{f}extended_properties.js": null,
+          "{f}beers.js": null
+        }
+      }
+    },
+    "{d}rules": {
+      "{f}ReadMe.md": "This folder contains definitions for rules\n",
+      "{d}main": {
+        "{f}ReadMe.md": "Rules for entities in prefix main",
+        "{d}beers": {
+          "{f}formula_price_comment.json": {
+            "name": "formula_price_comment",
+            "entity": "beers",
+            "isActive": true,
+            "ruleType": "formula",
+            "attribute": "price_comment",
+            "codeType": "JavaScript",
+            "isJIT": false,
+            "isAutoTitle": false,
+            "title": "Evaluate the price",
+            "comments": null,
+            "topics": [
+            ]
+          },
+          "{f}formula_price_comment.js": "if (row.price > 7.00) {\n    return \"That's expensive\"\n} else {\n    return \"Fair price\"\n}\n"
+        }
+      }
+    },
+    "{d}security": {
+      "{f}ReadMe.md": "This folder contains definitions for security\n",
+      "{d}roles": {
+        "{f}ReadMe.md": "This contains Roles defined for the project.\nRoles define which server features are available and what the permissions\non each feature is enabled.\n",
+        "{f}API$0020Documentation.json": {
+          "name": "API Documentation",
+          "description": "This role is special and is used when generating OpenAPI(Swagger) documentation. It is recognized by the name special name 'API Documentation' and used only for documentation calls.\n Any Resources, Tables, Views, Procedures etc. that are defined and enabled by this role are used to generate the OpenAPI(Swagger) documentation.\n If this role is assigned to a user it will NOT be used for execution permissions.\n If this role is removed or otherwise unavailable, the Swagger/OpenAPI documentation will be nothing more that a name and version.",
+          "defaultTablePermission": "A",
+          "defaultViewPermission": "R",
+          "defaultFunctionPermission": "X",
+          "globals": {
+          },
+          "apiVisibility": {
+            "table": {
+              "isRestricted": false,
+              "restrictedTo": null
+            },
+            "view": {
+              "isRestricted": false,
+              "restrictedTo": null
+            },
+            "resource": {
+              "isRestricted": false,
+              "restrictedTo": null
+            },
+            "procedure": {
+              "isRestricted": false,
+              "restrictedTo": null
+            },
+            "metatable": {
+              "isRestricted": false,
+              "restrictedTo": null
+            },
+            "function": {
+              "isRestricted": true,
+              "restrictedTo": [
+              ]
+            }
+          },
+          "entityPermission": {
+          },
+          "functionPermission": {
+          }
+        },
+        "{f}Full$0020access.json": {
+          "name": "Full access",
+          "description": "Full access to everything in this project",
+          "defaultTablePermission": "A",
+          "defaultViewPermission": "R",
+          "defaultFunctionPermission": "X",
+          "globals": {
+          },
+          "apiVisibility": {
+            "table": {
+              "isRestricted": false,
+              "restrictedTo": null
+            },
+            "view": {
+              "isRestricted": false,
+              "restrictedTo": null
+            },
+            "resource": {
+              "isRestricted": false,
+              "restrictedTo": null
+            },
+            "procedure": {
+              "isRestricted": false,
+              "restrictedTo": null
+            },
+            "metatable": {
+              "isRestricted": false,
+              "restrictedTo": null
+            },
+            "function": {
+              "isRestricted": true,
+              "restrictedTo": [
+              ]
+            }
+          },
+          "entityPermission": {
+          },
+          "functionPermission": {
+          }
+        },
+        "{f}Read$0020only.json": {
+          "name": "Read only",
+          "description": "Read-only access to everything in this project",
+          "defaultTablePermission": "R",
+          "defaultViewPermission": "R",
+          "defaultFunctionPermission": "X",
+          "globals": {
+          },
+          "apiVisibility": {
+            "table": {
+              "isRestricted": false,
+              "restrictedTo": null
+            },
+            "view": {
+              "isRestricted": false,
+              "restrictedTo": null
+            },
+            "resource": {
+              "isRestricted": false,
+              "restrictedTo": null
+            },
+            "procedure": {
+              "isRestricted": false,
+              "restrictedTo": null
+            },
+            "metatable": {
+              "isRestricted": false,
+              "restrictedTo": null
+            },
+            "function": {
+              "isRestricted": true,
+              "restrictedTo": [
+              ]
+            }
+          },
+          "entityPermission": {
+            "New permission": {
+              "entity": "children:beer_comments",
+              "description": null,
+              "accessLevels": [
+                "NONE"
+              ],
+              "rowFilter": null,
+              "columnFilter": {
+                "isRestricted": false,
+                "restrictedTo": null
+              }
+            }
+          },
+          "functionPermission": {
+          }
+        }
+      },
+      "{d}authtokens": {
+        "{f}ReadMe.md": "This contains statically defined API Keys (Auth Tokens) for this project.\nDynamically created keys (using @authentication service) are NOT exported.\n",
+        "{f}Admin$0020key.json": {
+          "name": "Admin key",
+          "authToken": "ca-gateway",
+          "description": "Created as part of this API. Feel free to change or delete this auth token.",
+          "userIdentifier": null,
+          "isActive": true,
+          "expiration": null,
+          "logging": "*=FINE",
+          "roles": [
+            "Full access"
+          ],
+          "globals": {
+          }
+        }
+      },
+      "{d}users": {
+        "{f}ReadMe.md": "This contains Users defined for the system when using the default authentication provider.\nWhile this can be used for production systems, typically the authentication provider is LDAP\nor some other mechanism.\n",
+        "{f}admin.json": {
+          "name": "admin",
+          "fullname": "Admin Account with full access",
+          "email": null,
+          "isActive": true,
+          "comments": null,
+          "keyLifetimeSeconds": null,
+          "passwordHash": "LNyg9t3oWfaNcw58rdu0a58yiQA00T4qodw8CNmv2o/octLy0qZimNjtpZ8Oe1ChhXR+gj27L5kvHWdJZc5fnA==",
+          "passwordSalt": "EY+vaIPGGX971Z2Ft2HTuIB/vZ4/pCkr8ulNqvlw",
+          "roles": [
+            "Full access"
+          ],
+          "globals": {
+          }
+        },
+        "{f}demo.json": {
+          "name": "demo",
+          "fullname": "Demo Account with full access",
+          "email": null,
+          "isActive": true,
+          "comments": null,
+          "keyLifetimeSeconds": null,
+          "passwordHash": "dHur31yUKeRfBfcauYrECWqGzkzmZHfZZU8AJJxq+yAiK1qAYms/AGM15eISKDmDJn0bFtM4mrxJGs0NfuEaXw==",
+          "passwordSalt": "Q619UbsMda7MVKbJY8/oi4HjCzr0fwM53rX2Rx0/",
+          "roles": [
+            "Full access"
+          ],
+          "globals": {
+          }
+        },
+        "{f}guest.json": {
+          "name": "guest",
+          "fullname": "Guest Account with read-only access",
+          "email": null,
+          "isActive": true,
+          "comments": null,
+          "keyLifetimeSeconds": null,
+          "passwordHash": "6uXuRnPc+oW0+BllaUBaVv+iz7vKKNlZ69y8QUs0XtFl6QNfdXbTI1nEuJ10mbWBonClDEL2W4jC8HyGCKSxOw==",
+          "passwordSalt": "Fn8du5W3K2Y/7nYpuUWH5ERI1TWQWRHS6o4xA0g3",
+          "roles": [
+            "Read only"
+          ],
+          "globals": {
+          }
+        }
+      }
+    },
+    "{d}sorts": {
+      "{f}ReadMe.md": "This folder contains definitions for sorts\n"
+    },
+    "{d}timers": {
+      "{f}ReadMe.md": "This folder contains definitions for timers\n"
+    },
+    "{d}topics": {
+      "{f}ReadMe.md": "This folder contains definitions for topics\n"
+    },
+    "{d}applications": {
+      "{f}ReadMe.md": "This folder contains definitions for applications\n",
+      "{d}options": {
+        "{f}ReadMe.md": "This folder contains definitions for application options\n"
+      },
+      "{d}skins": {
+        "{f}ReadMe.md": "This folder contains definitions for application skins\n"
+      },
+      "{d}settings": {
+        "{f}ReadMe.md": "This folder contains definitions for application settings\n",
+        "{f}main$003abeers.json": {
+          "tableName": "main:beers",
+          "state": "eyJuYW1lIjoibWFpbjpiZWVycyIsImFsaWFzIjoibWFpbjpiZWVycyIsImNvbHVtbkZvcm1hdHMiOnsiaWQiOnsibmFtZSI6ImlkIiwiYWxpYXMiOiJJZCIsInR5cGUiOiJPVEhFUiIsImdlbmVyaWNfdHlwZSI6Im51bWJlciIsImlzX2VkaXRhYmxlIjp0cnVlLCJpc19udWxsYWJsZSI6ZmFsc2UsIm1hc2siOm51bGwsIm1hc2tUeXBlIjoibnVtYmVyIiwiYmluYXJ5VHlwZSI6bnVsbCwiZXh0ZW5zaW9uVHlwZSI6bnVsbCwiZXZhbCI6W10sImRhdGFTb3VyY2UiOiJpZCIsIndpZHRoIjo2Mi4yMTk4NTgxNTYwMjgzNiwiJCRoYXNoS2V5IjoiMDZBIn0sImJyZXdlcnkiOnsibmFtZSI6ImJyZXdlcnkiLCJhbGlhcyI6IkJyZXdlcnkiLCJ0eXBlIjoiVkFSQ0hBUiIsImdlbmVyaWNfdHlwZSI6InN0cmluZyIsImlzX2VkaXRhYmxlIjp0cnVlLCJpc19udWxsYWJsZSI6dHJ1ZSwibWFzayI6bnVsbCwibWFza1R5cGUiOiJzdHJpbmciLCJiaW5hcnlUeXBlIjpudWxsLCJleHRlbnNpb25UeXBlIjpudWxsLCJldmFsIjpbXSwiZGF0YVNvdXJjZSI6ImJyZXdlcnkiLCJ3aWR0aCI6MjUxLjg5MDA3MDkyMTk4NTgyLCIkJGhhc2hLZXkiOiIwNkIifSwic3R5bGUiOnsibmFtZSI6InN0eWxlIiwiYWxpYXMiOiJTdHlsZSIsInR5cGUiOiJWQVJDSEFSIiwiZ2VuZXJpY190eXBlIjoic3RyaW5nIiwiaXNfZWRpdGFibGUiOnRydWUsImlzX251bGxhYmxlIjp0cnVlLCJtYXNrIjpudWxsLCJtYXNrVHlwZSI6InN0cmluZyIsImJpbmFyeVR5cGUiOm51bGwsImV4dGVuc2lvblR5cGUiOm51bGwsImV2YWwiOltdLCJkYXRhU291cmNlIjoic3R5bGUiLCJ3aWR0aCI6MjUxLjg5MDA3MDkyMTk4NTgyLCIkJGhhc2hLZXkiOiIwNkMifSwicHJpY2UiOnsibmFtZSI6InByaWNlIiwiYWxpYXMiOiJQcmljZSIsInR5cGUiOiJERUNJTUFMIiwiZ2VuZXJpY190eXBlIjoibnVtYmVyIiwiaXNfZWRpdGFibGUiOnRydWUsImlzX251bGxhYmxlIjp0cnVlLCJtYXNrIjoiJDAsMC4wMCIsIm1hc2tUeXBlIjoibnVtZXJpYyIsImJpbmFyeVR5cGUiOm51bGwsImV4dGVuc2lvblR5cGUiOm51bGwsImV2YWwiOltdLCJkYXRhU291cmNlIjoicHJpY2UiLCIkJGhhc2hLZXkiOiIwNkQifSwibmFtZSI6eyJuYW1lIjoibmFtZSIsImFsaWFzIjoiTmFtZSIsInR5cGUiOiJWQVJDSEFSIiwiZ2VuZXJpY190eXBlIjoic3RyaW5nIiwiaXNfZWRpdGFibGUiOnRydWUsImlzX251bGxhYmxlIjp0cnVlLCJtYXNrIjpudWxsLCJtYXNrVHlwZSI6InN0cmluZyIsImJpbmFyeVR5cGUiOm51bGwsImV4dGVuc2lvblR5cGUiOm51bGwsImV2YWwiOltdLCJkYXRhU291cmNlIjoibmFtZSIsIiQkaGFzaEtleSI6IjA2RSJ9LCJjcmVhdGVkX2F0Ijp7Im5hbWUiOiJjcmVhdGVkX2F0IiwiYWxpYXMiOiJDcmVhdGVkIEF0IiwidHlwZSI6IlRJTUVTVEFNUCIsImdlbmVyaWNfdHlwZSI6InRpbWVzdGFtcCIsImlzX2VkaXRhYmxlIjp0cnVlLCJpc19udWxsYWJsZSI6dHJ1ZSwibWFzayI6bnVsbCwibWFza1R5cGUiOiJ0aW1lc3RhbXAiLCJiaW5hcnlUeXBlIjpudWxsLCJleHRlbnNpb25UeXBlIjpudWxsLCJldmFsIjpbXSwiZGF0YVNvdXJjZSI6ImNyZWF0ZWRfYXQiLCIkJGhhc2hLZXkiOiIwNkYifSwidXBkYXRlZF9hdCI6eyJuYW1lIjoidXBkYXRlZF9hdCIsImFsaWFzIjoiVXBkYXRlZCBBdCIsInR5cGUiOiJUSU1FU1RBTVAiLCJnZW5lcmljX3R5cGUiOiJ0aW1lc3RhbXAiLCJpc19lZGl0YWJsZSI6dHJ1ZSwiaXNfbnVsbGFibGUiOnRydWUsIm1hc2siOm51bGwsIm1hc2tUeXBlIjoidGltZXN0YW1wIiwiYmluYXJ5VHlwZSI6bnVsbCwiZXh0ZW5zaW9uVHlwZSI6bnVsbCwiZXZhbCI6W10sImRhdGFTb3VyY2UiOiJ1cGRhdGVkX2F0IiwiJCRoYXNoS2V5IjoiMDZHIn19LCJncmlkQ29sdW1ucyI6eyJpZCI6eyJuYW1lIjoiaWQiLCJhbGlhcyI6IklkIiwidHlwZSI6Ik9USEVSIiwiZ2VuZXJpY190eXBlIjoibnVtYmVyIiwiaXNfZWRpdGFibGUiOnRydWUsImlzX251bGxhYmxlIjpmYWxzZSwibWFzayI6bnVsbCwibWFza1R5cGUiOiJudW1iZXIiLCJiaW5hcnlUeXBlIjpudWxsLCJleHRlbnNpb25UeXBlIjpudWxsLCJldmFsIjpbXSwiZGF0YVNvdXJjZSI6ImlkIiwid2lkdGgiOjYyLjIxOTg1ODE1NjAyODM2LCIkJGhhc2hLZXkiOiIwNkEifSwiYnJld2VyeSI6eyJuYW1lIjoiYnJld2VyeSIsImFsaWFzIjoiQnJld2VyeSIsInR5cGUiOiJWQVJDSEFSIiwiZ2VuZXJpY190eXBlIjoic3RyaW5nIiwiaXNfZWRpdGFibGUiOnRydWUsImlzX251bGxhYmxlIjp0cnVlLCJtYXNrIjpudWxsLCJtYXNrVHlwZSI6InN0cmluZyIsImJpbmFyeVR5cGUiOm51bGwsImV4dGVuc2lvblR5cGUiOm51bGwsImV2YWwiOltdLCJkYXRhU291cmNlIjoiYnJld2VyeSIsIndpZHRoIjoyNTEuODkwMDcwOTIxOTg1ODIsIiQkaGFzaEtleSI6IjA2QiJ9LCJzdHlsZSI6eyJuYW1lIjoic3R5bGUiLCJhbGlhcyI6IlN0eWxlIiwidHlwZSI6IlZBUkNIQVIiLCJnZW5lcmljX3R5cGUiOiJzdHJpbmciLCJpc19lZGl0YWJsZSI6dHJ1ZSwiaXNfbnVsbGFibGUiOnRydWUsIm1hc2siOm51bGwsIm1hc2tUeXBlIjoic3RyaW5nIiwiYmluYXJ5VHlwZSI6bnVsbCwiZXh0ZW5zaW9uVHlwZSI6bnVsbCwiZXZhbCI6W10sImRhdGFTb3VyY2UiOiJzdHlsZSIsIndpZHRoIjoyNTEuODkwMDcwOTIxOTg1ODIsIiQkaGFzaEtleSI6IjA2QyJ9fSwic2NhbGFyQ29sdW1ucyI6eyJpZCI6eyJuYW1lIjoiaWQiLCJhbGlhcyI6IklkIiwidHlwZSI6Ik9USEVSIiwiZ2VuZXJpY190eXBlIjoibnVtYmVyIiwiaXNfZWRpdGFibGUiOnRydWUsImlzX251bGxhYmxlIjpmYWxzZSwibWFzayI6bnVsbCwibWFza1R5cGUiOiJudW1iZXIiLCJiaW5hcnlUeXBlIjpudWxsLCJleHRlbnNpb25UeXBlIjpudWxsLCJldmFsIjpbXSwiZGF0YVNvdXJjZSI6ImlkIiwid2lkdGgiOjYyLjIxOTg1ODE1NjAyODM2LCIkJGhhc2hLZXkiOiIwNkEifSwiYnJld2VyeSI6eyJuYW1lIjoiYnJld2VyeSIsImFsaWFzIjoiQnJld2VyeSIsInR5cGUiOiJWQVJDSEFSIiwiZ2VuZXJpY190eXBlIjoic3RyaW5nIiwiaXNfZWRpdGFibGUiOnRydWUsImlzX251bGxhYmxlIjp0cnVlLCJtYXNrIjpudWxsLCJtYXNrVHlwZSI6InN0cmluZyIsImJpbmFyeVR5cGUiOm51bGwsImV4dGVuc2lvblR5cGUiOm51bGwsImV2YWwiOltdLCJkYXRhU291cmNlIjoiYnJld2VyeSIsIndpZHRoIjoyNTEuODkwMDcwOTIxOTg1ODIsIiQkaGFzaEtleSI6IjA2QiJ9LCJzdHlsZSI6eyJuYW1lIjoic3R5bGUiLCJhbGlhcyI6IlN0eWxlIiwidHlwZSI6IlZBUkNIQVIiLCJnZW5lcmljX3R5cGUiOiJzdHJpbmciLCJpc19lZGl0YWJsZSI6dHJ1ZSwiaXNfbnVsbGFibGUiOnRydWUsIm1hc2siOm51bGwsIm1hc2tUeXBlIjoic3RyaW5nIiwiYmluYXJ5VHlwZSI6bnVsbCwiZXh0ZW5zaW9uVHlwZSI6bnVsbCwiZXZhbCI6W10sImRhdGFTb3VyY2UiOiJzdHlsZSIsIndpZHRoIjoyNTEuODkwMDcwOTIxOTg1ODIsIiQkaGFzaEtleSI6IjA2QyJ9LCJwcmljZSI6eyJuYW1lIjoicHJpY2UiLCJhbGlhcyI6IlByaWNlIiwidHlwZSI6IkRFQ0lNQUwiLCJnZW5lcmljX3R5cGUiOiJudW1iZXIiLCJpc19lZGl0YWJsZSI6dHJ1ZSwiaXNfbnVsbGFibGUiOnRydWUsIm1hc2siOiIkMCwwLjAwIiwibWFza1R5cGUiOiJudW1lcmljIiwiYmluYXJ5VHlwZSI6bnVsbCwiZXh0ZW5zaW9uVHlwZSI6bnVsbCwiZXZhbCI6W10sImRhdGFTb3VyY2UiOiJwcmljZSIsIiQkaGFzaEtleSI6IjA2RCJ9LCJuYW1lIjp7Im5hbWUiOiJuYW1lIiwiYWxpYXMiOiJOYW1lIiwidHlwZSI6IlZBUkNIQVIiLCJnZW5lcmljX3R5cGUiOiJzdHJpbmciLCJpc19lZGl0YWJsZSI6dHJ1ZSwiaXNfbnVsbGFibGUiOnRydWUsIm1hc2siOm51bGwsIm1hc2tUeXBlIjoic3RyaW5nIiwiYmluYXJ5VHlwZSI6bnVsbCwiZXh0ZW5zaW9uVHlwZSI6bnVsbCwiZXZhbCI6W10sImRhdGFTb3VyY2UiOiJuYW1lIiwiJCRoYXNoS2V5IjoiMDZFIn0sImNyZWF0ZWRfYXQiOnsibmFtZSI6ImNyZWF0ZWRfYXQiLCJhbGlhcyI6IkNyZWF0ZWQgQXQiLCJ0eXBlIjoiVElNRVNUQU1QIiwiZ2VuZXJpY190eXBlIjoidGltZXN0YW1wIiwiaXNfZWRpdGFibGUiOnRydWUsImlzX251bGxhYmxlIjp0cnVlLCJtYXNrIjpudWxsLCJtYXNrVHlwZSI6InRpbWVzdGFtcCIsImJpbmFyeVR5cGUiOm51bGwsImV4dGVuc2lvblR5cGUiOm51bGwsImV2YWwiOltdLCJkYXRhU291cmNlIjoiY3JlYXRlZF9hdCIsIiQkaGFzaEtleSI6IjA2RiJ9LCJ1cGRhdGVkX2F0Ijp7Im5hbWUiOiJ1cGRhdGVkX2F0IiwiYWxpYXMiOiJVcGRhdGVkIEF0IiwidHlwZSI6IlRJTUVTVEFNUCIsImdlbmVyaWNfdHlwZSI6InRpbWVzdGFtcCIsImlzX2VkaXRhYmxlIjp0cnVlLCJpc19udWxsYWJsZSI6dHJ1ZSwibWFzayI6bnVsbCwibWFza1R5cGUiOiJ0aW1lc3RhbXAiLCJiaW5hcnlUeXBlIjpudWxsLCJleHRlbnNpb25UeXBlIjpudWxsLCJldmFsIjpbXSwiZGF0YVNvdXJjZSI6InVwZGF0ZWRfYXQiLCIkJGhhc2hLZXkiOiIwNkcifX0sInBhcmVudFNldHRpbmdzIjp7fSwiZGVmYXVsdFRhYmxlIjpmYWxzZSwid2luZG93cyI6WyJtYWluIiwiY2hpbGQiLCJmb3JtIl0sImNoaWxkcmVuU2V0dGluZ3MiOnt9LCJncm91cHMiOltdLCJsYWJlbFBsYWNlbWVudCI6IkxlZnQifQ==",
+          "objectType": "table"
+        }
+      },
+      "{f}application.json": {
+        "name": "Default app",
+        "language": "eng",
+        "description": null
+      }
+    },
+    "{f}issues.json": [
+    ]
+  }
+}

@@ -25,7 +25,7 @@ services:
       - CA_ACCEPT_LICENSE=ENU
       - LAC_DEFAULT_LICENSE_FILE=/usr/local/tomcat/bin/lac_license.json
     volumes:
-      - ${PWD}/files/lac/BeerData.json:/usr/local/tomcat/bin/BeerData.json
+      - ${PWD}/files/lac/beer_export.json:/usr/local/tomcat/bin/beer_export.json
       - ${PWD}/config/lac_license.json:/usr/local/tomcat/bin/lac_license.json
       - ${PWD}/files/lac/import_data.sh:/usr/local/tomcat/bin/import_data.sh
       - ${PWD}/files/lac/StartLiveAPICreator.sh:/usr/local/tomcat/bin/StartLiveAPICreator.sh
@@ -46,7 +46,7 @@ services:
       - CA_ACCEPT_LICENSE=ENU
       - LAC_DEFAULT_LICENSE_FILE=/usr/local/tomcat/bin/lac_license.json
     volumes:
-      - ${PWD}/files/lac/BeerData.json:/usr/local/tomcat/bin/BeerData.json
+      - ${PWD}/files/lac/beer_export.json:/usr/local/tomcat/bin/beer_export.json
       - ${PWD}/config/lac_license.json:/usr/local/tomcat/bin/lac_license.json
       - ${PWD}/files/lac/import_data.sh:/usr/local/tomcat/bin/import_data.sh
       - ${PWD}/files/lac/StartLiveAPICreator.sh:/usr/local/tomcat/bin/StartLiveAPICreator.sh

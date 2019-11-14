@@ -5,7 +5,7 @@
 #  of the MIT license. See the LICENSE file for details.
 #
 ## Unlock cURL in LAC
-FROM caliveapicreator/5.1.00
+FROM caliveapicreator/5.3.00
 
 USER root
 
