@@ -1,0 +1,336 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:9:1-48:12
+INJECTED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:9:1-48:12
+INJECTED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:9:1-48:12
+INJECTED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:9:1-48:12
+MERGED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:9:1-77:12
+MERGED from [com.android.support:design:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/e3decd5bf9fbc8536b88bb6c57360e20/design-28.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/bbf07aa1da9ab954374e693dfcc335b9/appcompat-v7-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:multidex:1.0.3] /Users/aricday/.gradle/caches/transforms-2/files-2.1/a3da8d41b3ed412ca7a181946d074225/multidex-1.0.3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.ca:mas-foundation:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/bbd2a127566bd1932837843f5615a376/mas-foundation-2.0.00/AndroidManifest.xml:9:1-36:12
+MERGED from [com.android.support:gridlayout-v7:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/197dcce730d7312cc2bf4ebfe8bde526/gridlayout-v7-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [net.openid:appauth:0.7.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/2ebe55037bbd98b9f7797a475682b0db/appauth-0.7.0/AndroidManifest.xml:15:1-46:12
+MERGED from [com.android.support:customtabs:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/c26210d788edab061aedde42a0e27336/customtabs-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/59df75d251431efe4d450d41cc6b083b/support-fragment-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/967e8d778145ef395ac0dc868ec88b33/recyclerview-v7-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/45d50504f4c11c4f549bb8efafb39de8/animated-vector-drawable-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/ee7de4c472f1da0a0213606950b8c4e7/support-core-ui-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/e6827550b79bb297911c95f109ecf5ac/support-core-utils-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/59d80c73e01a8a21b995581cfc9074c0/transition-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/cd2aa2e9401906350c2bd9da065e1f33/support-vector-drawable-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/00866cffd6a67b64ccbc8d2d951560dc/viewpager-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/5d3c4801a740528a85d2e670b2dd23b7/coordinatorlayout-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/109e2debe5d47fa4d8f7fe1f15c611f3/drawerlayout-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/640954c0bd14789761b1de9b02daedae/slidingpanelayout-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/8c3534d87178de95eb9cb75f77214055/customview-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/49f9e7bd74012c3341e4a938529d56fe/swiperefreshlayout-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/699e03d2cbc668da0d189768d4447a8b/asynclayoutinflater-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/e8e201b21520ad3812ed914e69a9b405/loader-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/dd1cf78f22bdd94f550130b281f27c97/support-compat-28.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/8bb2478d12c0baf5b421024800cd7dbb/versionedparcelable-28.0.0/AndroidManifest.xml:17:1-25:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/aricday/.gradle/caches/transforms-2/files-2.1/2a54fb7d4a09e43fd13a659c38a9bf2a/runtime-1.1.1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/a8e7153660f0642982a76d40bd652b71/cardview-v7-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/525bf97e52a2b96ba94f7509a71e8a56/interpolator-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/aricday/.gradle/caches/transforms-2/files-2.1/b5f1a18436322a4d6243b4d563cfece4/livedata-1.1.1/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/aricday/.gradle/caches/transforms-2/files-2.1/6104c576404b17797d5f42ae60105d1d/livedata-core-1.1.1/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/aricday/.gradle/caches/transforms-2/files-2.1/7c5e711cb7599bc18a19cc1df98bc8d6/runtime-1.1.1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/406adf1b047a0fb17968819a70f96dd9/cursoradapter-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/d86ffcf39ba8aec22a7ebfd4c1172e3f/documentfile-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/7f3ed6ce49569e0dbf9accf24b63a15b/localbroadcastmanager-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/707c6356496c3791d321c055fe777af8/print-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/aricday/.gradle/caches/transforms-2/files-2.1/426821499609b124edd91485548e30d0/viewmodel-1.1.1/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:9:1-48:12
+INJECTED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:9:1-48:12
+INJECTED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:9:1-48:12
+	package
+		ADDED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:11:11-54
+		INJECTED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml
+		INJECTED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml
+	android:sharedUserId
+		ADDED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:10:5-45
+	android:versionName
+		INJECTED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml
+		ADDED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:9:1-48:12
+		INJECTED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml
+		ADDED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:9:1-48:12
+		INJECTED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:9:11-69
+application
+ADDED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:13:5-46:19
+MERGED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:19:5-75:19
+MERGED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:19:5-75:19
+MERGED from [com.android.support:design:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/e3decd5bf9fbc8536b88bb6c57360e20/design-28.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/e3decd5bf9fbc8536b88bb6c57360e20/design-28.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.ca:mas-foundation:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/bbd2a127566bd1932837843f5615a376/mas-foundation-2.0.00/AndroidManifest.xml:27:5-34:19
+MERGED from [com.ca:mas-foundation:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/bbd2a127566bd1932837843f5615a376/mas-foundation-2.0.00/AndroidManifest.xml:27:5-34:19
+MERGED from [net.openid:appauth:0.7.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/2ebe55037bbd98b9f7797a475682b0db/appauth-0.7.0/AndroidManifest.xml:26:5-44:19
+MERGED from [net.openid:appauth:0.7.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/2ebe55037bbd98b9f7797a475682b0db/appauth-0.7.0/AndroidManifest.xml:26:5-44:19
+MERGED from [com.android.support:support-compat:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/dd1cf78f22bdd94f550130b281f27c97/support-compat-28.0.0/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/dd1cf78f22bdd94f550130b281f27c97/support-compat-28.0.0/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/8bb2478d12c0baf5b421024800cd7dbb/versionedparcelable-28.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/8bb2478d12c0baf5b421024800cd7dbb/versionedparcelable-28.0.0/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/dd1cf78f22bdd94f550130b281f27c97/support-compat-28.0.0/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:17:9-35
+	android:label
+		ADDED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:16:9-41
+	android:icon
+		ADDED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:15:9-43
+	android:allowBackup
+		ADDED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:14:9-35
+	android:theme
+		ADDED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:18:9-40
+activity#com.ca.mas.massessionunlocksample.activity.SessionUnlockSampleActivity
+ADDED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:19:9-27:20
+	android:label
+		ADDED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:21:13-45
+	android:name
+		ADDED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:20:13-65
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:22:13-26:29
+action#android.intent.action.MAIN
+ADDED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:23:17-68
+	android:name
+		ADDED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:23:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:25:17-76
+	android:name
+		ADDED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:25:27-74
+service#com.ca.mas.core.storage.sharedstorage.MASAuthenticatorService
+ADDED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:31:9-44:19
+	android:exported
+		ADDED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:33:13-37
+	android:name
+		ADDED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:32:13-89
+intent-filter#action:name:android.accounts.AccountAuthenticator
+ADDED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:34:13-36:29
+action#android.accounts.AccountAuthenticator
+ADDED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:35:17-80
+	android:name
+		ADDED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:35:25-77
+meta-data#account.name
+ADDED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:38:13-40:55
+	android:resource
+		ADDED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:40:17-52
+	android:name
+		ADDED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:39:17-44
+meta-data#android.accounts.AccountAuthenticator
+ADDED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:41:13-43:66
+	android:resource
+		ADDED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:43:17-63
+	android:name
+		ADDED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:42:17-69
+uses-sdk
+INJECTED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml
+MERGED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:15:5-17:41
+MERGED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:15:5-17:41
+MERGED from [com.android.support:design:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/e3decd5bf9fbc8536b88bb6c57360e20/design-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/e3decd5bf9fbc8536b88bb6c57360e20/design-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/bbf07aa1da9ab954374e693dfcc335b9/appcompat-v7-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/bbf07aa1da9ab954374e693dfcc335b9/appcompat-v7-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:multidex:1.0.3] /Users/aricday/.gradle/caches/transforms-2/files-2.1/a3da8d41b3ed412ca7a181946d074225/multidex-1.0.3/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:multidex:1.0.3] /Users/aricday/.gradle/caches/transforms-2/files-2.1/a3da8d41b3ed412ca7a181946d074225/multidex-1.0.3/AndroidManifest.xml:20:5-43
+MERGED from [com.ca:mas-foundation:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/bbd2a127566bd1932837843f5615a376/mas-foundation-2.0.00/AndroidManifest.xml:14:5-16:41
+MERGED from [com.ca:mas-foundation:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/bbd2a127566bd1932837843f5615a376/mas-foundation-2.0.00/AndroidManifest.xml:14:5-16:41
+MERGED from [com.android.support:gridlayout-v7:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/197dcce730d7312cc2bf4ebfe8bde526/gridlayout-v7-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:gridlayout-v7:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/197dcce730d7312cc2bf4ebfe8bde526/gridlayout-v7-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [net.openid:appauth:0.7.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/2ebe55037bbd98b9f7797a475682b0db/appauth-0.7.0/AndroidManifest.xml:20:5-22:41
+MERGED from [net.openid:appauth:0.7.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/2ebe55037bbd98b9f7797a475682b0db/appauth-0.7.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.android.support:customtabs:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/c26210d788edab061aedde42a0e27336/customtabs-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customtabs:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/c26210d788edab061aedde42a0e27336/customtabs-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/59df75d251431efe4d450d41cc6b083b/support-fragment-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/59df75d251431efe4d450d41cc6b083b/support-fragment-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/967e8d778145ef395ac0dc868ec88b33/recyclerview-v7-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/967e8d778145ef395ac0dc868ec88b33/recyclerview-v7-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/45d50504f4c11c4f549bb8efafb39de8/animated-vector-drawable-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/45d50504f4c11c4f549bb8efafb39de8/animated-vector-drawable-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/ee7de4c472f1da0a0213606950b8c4e7/support-core-ui-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/ee7de4c472f1da0a0213606950b8c4e7/support-core-ui-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/e6827550b79bb297911c95f109ecf5ac/support-core-utils-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/e6827550b79bb297911c95f109ecf5ac/support-core-utils-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/59d80c73e01a8a21b995581cfc9074c0/transition-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/59d80c73e01a8a21b995581cfc9074c0/transition-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/cd2aa2e9401906350c2bd9da065e1f33/support-vector-drawable-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/cd2aa2e9401906350c2bd9da065e1f33/support-vector-drawable-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/00866cffd6a67b64ccbc8d2d951560dc/viewpager-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/00866cffd6a67b64ccbc8d2d951560dc/viewpager-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/5d3c4801a740528a85d2e670b2dd23b7/coordinatorlayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/5d3c4801a740528a85d2e670b2dd23b7/coordinatorlayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/109e2debe5d47fa4d8f7fe1f15c611f3/drawerlayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/109e2debe5d47fa4d8f7fe1f15c611f3/drawerlayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/640954c0bd14789761b1de9b02daedae/slidingpanelayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/640954c0bd14789761b1de9b02daedae/slidingpanelayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/8c3534d87178de95eb9cb75f77214055/customview-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/8c3534d87178de95eb9cb75f77214055/customview-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/49f9e7bd74012c3341e4a938529d56fe/swiperefreshlayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/49f9e7bd74012c3341e4a938529d56fe/swiperefreshlayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/699e03d2cbc668da0d189768d4447a8b/asynclayoutinflater-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/699e03d2cbc668da0d189768d4447a8b/asynclayoutinflater-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/e8e201b21520ad3812ed914e69a9b405/loader-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/e8e201b21520ad3812ed914e69a9b405/loader-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/dd1cf78f22bdd94f550130b281f27c97/support-compat-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/dd1cf78f22bdd94f550130b281f27c97/support-compat-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/8bb2478d12c0baf5b421024800cd7dbb/versionedparcelable-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/8bb2478d12c0baf5b421024800cd7dbb/versionedparcelable-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/aricday/.gradle/caches/transforms-2/files-2.1/2a54fb7d4a09e43fd13a659c38a9bf2a/runtime-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/aricday/.gradle/caches/transforms-2/files-2.1/2a54fb7d4a09e43fd13a659c38a9bf2a/runtime-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/a8e7153660f0642982a76d40bd652b71/cardview-v7-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/a8e7153660f0642982a76d40bd652b71/cardview-v7-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/525bf97e52a2b96ba94f7509a71e8a56/interpolator-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/525bf97e52a2b96ba94f7509a71e8a56/interpolator-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/aricday/.gradle/caches/transforms-2/files-2.1/b5f1a18436322a4d6243b4d563cfece4/livedata-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/aricday/.gradle/caches/transforms-2/files-2.1/b5f1a18436322a4d6243b4d563cfece4/livedata-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/aricday/.gradle/caches/transforms-2/files-2.1/6104c576404b17797d5f42ae60105d1d/livedata-core-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/aricday/.gradle/caches/transforms-2/files-2.1/6104c576404b17797d5f42ae60105d1d/livedata-core-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/aricday/.gradle/caches/transforms-2/files-2.1/7c5e711cb7599bc18a19cc1df98bc8d6/runtime-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/aricday/.gradle/caches/transforms-2/files-2.1/7c5e711cb7599bc18a19cc1df98bc8d6/runtime-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/406adf1b047a0fb17968819a70f96dd9/cursoradapter-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/406adf1b047a0fb17968819a70f96dd9/cursoradapter-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/d86ffcf39ba8aec22a7ebfd4c1172e3f/documentfile-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/d86ffcf39ba8aec22a7ebfd4c1172e3f/documentfile-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/7f3ed6ce49569e0dbf9accf24b63a15b/localbroadcastmanager-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/7f3ed6ce49569e0dbf9accf24b63a15b/localbroadcastmanager-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/707c6356496c3791d321c055fe777af8/print-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/707c6356496c3791d321c055fe777af8/print-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/aricday/.gradle/caches/transforms-2/files-2.1/426821499609b124edd91485548e30d0/viewmodel-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/aricday/.gradle/caches/transforms-2/files-2.1/426821499609b124edd91485548e30d0/viewmodel-1.1.1/AndroidManifest.xml:20:5-44
+INJECTED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:17:9-38
+	android:minSdkVersion
+		INJECTED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml
+		ADDED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml
+		INJECTED from /Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml
+activity#com.ca.mas.ui.MASEnterpriseWebApplicationActivity
+ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:23:9-26:54
+	android:exported
+		ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:26:13-51
+	android:name
+		ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:24:13-77
+activity#com.ca.mas.ui.MASSessionUnlockActivity
+ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:27:9-36:20
+	android:exported
+		ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:29:13-37
+	android:theme
+		ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:30:13-69
+	android:name
+		ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:28:13-66
+intent-filter#action:name:MASUI.intent.action.SessionUnlock+category:name:android.intent.category.DEFAULT
+ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:31:13-35:29
+action#MASUI.intent.action.SessionUnlock
+ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:32:17-76
+	android:name
+		ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:32:25-73
+category#android.intent.category.DEFAULT
+ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:34:17-76
+	android:name
+		ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:34:27-73
+activity#net.openid.appauth.RedirectUriReceiverActivity
+ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:37:9-56:20
+REJECTED from [net.openid:appauth:0.7.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/2ebe55037bbd98b9f7797a475682b0db/appauth-0.7.0/AndroidManifest.xml:32:9-43:20
+	tools:node
+		ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:39:13-33
+	android:name
+		ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:38:13-74
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:camsso
+ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:40:13-47:29
+action#android.intent.action.VIEW
+ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:41:17-69
+	android:name
+		ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:41:25-66
+category#android.intent.category.BROWSABLE
+ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:44:17-78
+	android:name
+		ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:44:27-75
+data
+ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:46:17-49
+	android:scheme
+		ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:46:23-46
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:camssoras
+ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:48:13-55:29
+activity#com.ca.mas.ui.MASOAuthRedirectActivity
+ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:57:9-60:72
+	android:exported
+		ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:59:13-37
+	android:theme
+		ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:60:13-69
+	android:name
+		ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:58:13-66
+activity#com.ca.mas.ui.MASAppAuthRedirectHandlerActivity
+ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:61:9-63:60
+	android:theme
+		ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:63:13-57
+	android:name
+		ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:62:13-75
+activity#com.ca.mas.ui.MASFinishActivity
+ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:64:9-68
+	android:name
+		ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:64:19-65
+activity#com.ca.mas.ui.MASLoginActivity
+ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:65:9-69:60
+	android:launchMode
+		ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:68:13-43
+	android:exported
+		ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:67:13-37
+	android:theme
+		ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:69:13-57
+	android:name
+		ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:66:13-58
+activity#com.ca.mas.ui.otp.MASOtpActivity
+ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:70:9-74:67
+	android:launchMode
+		ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:73:13-43
+	android:exported
+		ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:72:13-37
+	android:theme
+		ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:74:13-64
+	android:name
+		ADDED from [com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:71:13-60
+uses-permission#android.permission.AUTHENTICATE_ACCOUNTS
+ADDED from [com.ca:mas-foundation:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/bbd2a127566bd1932837843f5615a376/mas-foundation-2.0.00/AndroidManifest.xml:18:5-20:38
+	android:maxSdkVersion
+		ADDED from [com.ca:mas-foundation:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/bbd2a127566bd1932837843f5615a376/mas-foundation-2.0.00/AndroidManifest.xml:20:9-35
+	android:name
+		ADDED from [com.ca:mas-foundation:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/bbd2a127566bd1932837843f5615a376/mas-foundation-2.0.00/AndroidManifest.xml:19:9-64
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from [com.ca:mas-foundation:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/bbd2a127566bd1932837843f5615a376/mas-foundation-2.0.00/AndroidManifest.xml:21:5-23:38
+	android:maxSdkVersion
+		ADDED from [com.ca:mas-foundation:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/bbd2a127566bd1932837843f5615a376/mas-foundation-2.0.00/AndroidManifest.xml:23:9-35
+	android:name
+		ADDED from [com.ca:mas-foundation:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/bbd2a127566bd1932837843f5615a376/mas-foundation-2.0.00/AndroidManifest.xml:22:9-55
+uses-permission#android.permission.INTERNET
+ADDED from [com.ca:mas-foundation:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/bbd2a127566bd1932837843f5615a376/mas-foundation-2.0.00/AndroidManifest.xml:24:5-67
+MERGED from [net.openid:appauth:0.7.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/2ebe55037bbd98b9f7797a475682b0db/appauth-0.7.0/AndroidManifest.xml:24:5-67
+MERGED from [net.openid:appauth:0.7.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/2ebe55037bbd98b9f7797a475682b0db/appauth-0.7.0/AndroidManifest.xml:24:5-67
+	android:name
+		ADDED from [com.ca:mas-foundation:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/bbd2a127566bd1932837843f5615a376/mas-foundation-2.0.00/AndroidManifest.xml:24:22-64
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.ca:mas-foundation:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/bbd2a127566bd1932837843f5615a376/mas-foundation-2.0.00/AndroidManifest.xml:25:5-68
+	android:name
+		ADDED from [com.ca:mas-foundation:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/bbd2a127566bd1932837843f5615a376/mas-foundation-2.0.00/AndroidManifest.xml:25:22-65
+service#com.ca.mas.core.service.MssoService
+ADDED from [com.ca:mas-foundation:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/bbd2a127566bd1932837843f5615a376/mas-foundation-2.0.00/AndroidManifest.xml:30:9-33:72
+	android:exported
+		ADDED from [com.ca:mas-foundation:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/bbd2a127566bd1932837843f5615a376/mas-foundation-2.0.00/AndroidManifest.xml:32:13-37
+	android:permission
+		ADDED from [com.ca:mas-foundation:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/bbd2a127566bd1932837843f5615a376/mas-foundation-2.0.00/AndroidManifest.xml:33:13-69
+	android:name
+		ADDED from [com.ca:mas-foundation:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/bbd2a127566bd1932837843f5615a376/mas-foundation-2.0.00/AndroidManifest.xml:31:13-63
+activity#net.openid.appauth.AuthorizationManagementActivity
+ADDED from [net.openid:appauth:0.7.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/2ebe55037bbd98b9f7797a475682b0db/appauth-0.7.0/AndroidManifest.xml:27:9-31:75
+	android:launchMode
+		ADDED from [net.openid:appauth:0.7.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/2ebe55037bbd98b9f7797a475682b0db/appauth-0.7.0/AndroidManifest.xml:30:13-44
+	android:exported
+		ADDED from [net.openid:appauth:0.7.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/2ebe55037bbd98b9f7797a475682b0db/appauth-0.7.0/AndroidManifest.xml:29:13-37
+	android:theme
+		ADDED from [net.openid:appauth:0.7.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/2ebe55037bbd98b9f7797a475682b0db/appauth-0.7.0/AndroidManifest.xml:31:13-72
+	android:name
+		ADDED from [net.openid:appauth:0.7.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/2ebe55037bbd98b9f7797a475682b0db/appauth-0.7.0/AndroidManifest.xml:28:13-78

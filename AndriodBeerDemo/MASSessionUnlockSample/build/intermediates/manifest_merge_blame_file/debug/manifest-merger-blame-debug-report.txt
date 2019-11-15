@@ -1,0 +1,226 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3  ~ Copyright (c) 2016 CA. All rights reserved.
+4  ~
+5  ~ This software may be modified and distributed under the terms
+6  ~ of the MIT license.  See the LICENSE file for details.
+7  ~
+8-->
+9<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+10    package="com.ca.mas.massessionunlocksample"
+11    android:sharedUserId="com.ca.mas.shared"
+12    android:versionCode="1"
+13    android:versionName="1.0" >
+14
+15    <uses-sdk
+16        android:minSdkVersion="21"
+16-->/Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml
+17        android:targetSdkVersion="29" />
+17-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:17:9-38
+18
+19    <uses-permission
+19-->[com.ca:mas-foundation:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/bbd2a127566bd1932837843f5615a376/mas-foundation-2.0.00/AndroidManifest.xml:18:5-20:38
+20        android:name="android.permission.AUTHENTICATE_ACCOUNTS"
+20-->[com.ca:mas-foundation:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/bbd2a127566bd1932837843f5615a376/mas-foundation-2.0.00/AndroidManifest.xml:19:9-64
+21        android:maxSdkVersion="22" />
+21-->[com.ca:mas-foundation:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/bbd2a127566bd1932837843f5615a376/mas-foundation-2.0.00/AndroidManifest.xml:20:9-35
+22    <uses-permission
+22-->[com.ca:mas-foundation:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/bbd2a127566bd1932837843f5615a376/mas-foundation-2.0.00/AndroidManifest.xml:21:5-23:38
+23        android:name="android.permission.GET_ACCOUNTS"
+23-->[com.ca:mas-foundation:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/bbd2a127566bd1932837843f5615a376/mas-foundation-2.0.00/AndroidManifest.xml:22:9-55
+24        android:maxSdkVersion="22" />
+24-->[com.ca:mas-foundation:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/bbd2a127566bd1932837843f5615a376/mas-foundation-2.0.00/AndroidManifest.xml:23:9-35
+25    <uses-permission android:name="android.permission.INTERNET" />
+25-->[com.ca:mas-foundation:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/bbd2a127566bd1932837843f5615a376/mas-foundation-2.0.00/AndroidManifest.xml:24:5-67
+25-->[com.ca:mas-foundation:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/bbd2a127566bd1932837843f5615a376/mas-foundation-2.0.00/AndroidManifest.xml:24:22-64
+26    <uses-permission android:name="android.permission.WAKE_LOCK" />
+26-->[com.ca:mas-foundation:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/bbd2a127566bd1932837843f5615a376/mas-foundation-2.0.00/AndroidManifest.xml:25:5-68
+26-->[com.ca:mas-foundation:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/bbd2a127566bd1932837843f5615a376/mas-foundation-2.0.00/AndroidManifest.xml:25:22-65
+27
+28    <application
+28-->/Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:13:5-46:19
+29        android:allowBackup="true"
+29-->/Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:14:9-35
+30        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+30-->[com.android.support:support-compat:28.0.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/dd1cf78f22bdd94f550130b281f27c97/support-compat-28.0.0/AndroidManifest.xml:22:18-91
+31        android:debuggable="true"
+32        android:icon="@mipmap/ic_launcher"
+32-->/Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:15:9-43
+33        android:label="@string/app_name"
+33-->/Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:16:9-41
+34        android:supportsRtl="true"
+34-->/Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:17:9-35
+35        android:testOnly="true"
+36        android:theme="@style/AppTheme" >
+36-->/Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:18:9-40
+37        <activity
+37-->/Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:19:9-27:20
+38            android:name="com.ca.mas.massessionunlocksample.activity.SessionUnlockSampleActivity"
+38-->/Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:20:13-65
+39            android:label="@string/app_name" >
+39-->/Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:21:13-45
+40            <intent-filter>
+40-->/Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:22:13-26:29
+41                <action android:name="android.intent.action.MAIN" />
+41-->/Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:23:17-68
+41-->/Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:23:25-66
+42
+43                <category android:name="android.intent.category.LAUNCHER" />
+43-->/Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:25:17-76
+43-->/Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:25:27-74
+44            </intent-filter>
+45        </activity>
+46
+47        <!-- Require for Android P Support -->
+48        <service
+48-->/Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:31:9-44:19
+49            android:name="com.ca.mas.core.storage.sharedstorage.MASAuthenticatorService"
+49-->/Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:32:13-89
+50            android:exported="false" >
+50-->/Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:33:13-37
+51            <intent-filter>
+51-->/Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:34:13-36:29
+52                <action android:name="android.accounts.AccountAuthenticator" />
+52-->/Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:35:17-80
+52-->/Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:35:25-77
+53            </intent-filter>
+54
+55            <meta-data
+55-->/Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:38:13-40:55
+56                android:name="account.name"
+56-->/Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:39:17-44
+57                android:resource="@string/acc_name" />
+57-->/Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:40:17-52
+58            <meta-data
+58-->/Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:41:13-43:66
+59                android:name="android.accounts.AccountAuthenticator"
+59-->/Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:42:17-69
+60                android:resource="@xml/massharedauthenticator" />
+60-->/Users/aricday/Projects/PublicGithub/mpls_ms_demo/AndriodBeerDemo/MASSessionUnlockSample/src/main/AndroidManifest.xml:43:17-63
+61        </service>
+62
+63        <activity
+63-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:23:9-26:54
+64            android:name="com.ca.mas.ui.MASEnterpriseWebApplicationActivity"
+64-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:24:13-77
+65            android:exported="false"
+65-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:25:13-37
+66            android:theme="@style/Theme.AppCompat" />
+66-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:26:13-51
+67        <activity
+67-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:27:9-36:20
+68            android:name="com.ca.mas.ui.MASSessionUnlockActivity"
+68-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:28:13-66
+69            android:exported="false"
+69-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:29:13-37
+70            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+70-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:30:13-69
+71            <intent-filter>
+71-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:31:13-35:29
+72                <action android:name="MASUI.intent.action.SessionUnlock" />
+72-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:32:17-76
+72-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:32:25-73
+73
+74                <category android:name="android.intent.category.DEFAULT" />
+74-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:34:17-76
+74-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:34:27-73
+75            </intent-filter>
+76        </activity>
+77        <activity android:name="net.openid.appauth.RedirectUriReceiverActivity" >
+77-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:37:9-56:20
+77-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:38:13-74
+78            <intent-filter>
+78-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:40:13-47:29
+79                <action android:name="android.intent.action.VIEW" />
+79-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:41:17-69
+79-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:41:25-66
+80
+81                <category android:name="android.intent.category.DEFAULT" />
+81-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:34:17-76
+81-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:34:27-73
+82                <category android:name="android.intent.category.BROWSABLE" />
+82-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:44:17-78
+82-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:44:27-75
+83
+84                <data android:scheme="camsso" />
+84-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:46:17-49
+84-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:46:23-46
+85            </intent-filter>
+86            <intent-filter>
+86-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:48:13-55:29
+87                <action android:name="android.intent.action.VIEW" />
+87-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:41:17-69
+87-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:41:25-66
+88
+89                <category android:name="android.intent.category.DEFAULT" />
+89-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:34:17-76
+89-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:34:27-73
+90                <category android:name="android.intent.category.BROWSABLE" />
+90-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:44:17-78
+90-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:44:27-75
+91
+92                <data android:scheme="camssoras" />
+92-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:46:17-49
+92-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:46:23-46
+93            </intent-filter>
+94        </activity>
+95        <activity
+95-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:57:9-60:72
+96            android:name="com.ca.mas.ui.MASOAuthRedirectActivity"
+96-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:58:13-66
+97            android:exported="false"
+97-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:59:13-37
+98            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+98-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:60:13-69
+99        <activity
+99-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:61:9-63:60
+100            android:name="com.ca.mas.ui.MASAppAuthRedirectHandlerActivity"
+100-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:62:13-75
+101            android:theme="@style/Theme.AppCompat.Light" />
+101-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:63:13-57
+102        <activity android:name="com.ca.mas.ui.MASFinishActivity" />
+102-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:64:9-68
+102-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:64:19-65
+103        <activity
+103-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:65:9-69:60
+104            android:name="com.ca.mas.ui.MASLoginActivity"
+104-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:66:13-58
+105            android:exported="false"
+105-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:67:13-37
+106            android:launchMode="singleTop"
+106-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:68:13-43
+107            android:theme="@style/Theme.AppCompat.Light" />
+107-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:69:13-57
+108        <activity
+108-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:70:9-74:67
+109            android:name="com.ca.mas.ui.otp.MASOtpActivity"
+109-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:71:13-60
+110            android:exported="false"
+110-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:72:13-37
+111            android:launchMode="singleTop"
+111-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:73:13-43
+112            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+112-->[com.ca:masui:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/1e2b44993685dc5192761ad634a4d8af/masui-2.0.00/AndroidManifest.xml:74:13-64
+113
+114        <service
+114-->[com.ca:mas-foundation:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/bbd2a127566bd1932837843f5615a376/mas-foundation-2.0.00/AndroidManifest.xml:30:9-33:72
+115            android:name="com.ca.mas.core.service.MssoService"
+115-->[com.ca:mas-foundation:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/bbd2a127566bd1932837843f5615a376/mas-foundation-2.0.00/AndroidManifest.xml:31:13-63
+116            android:exported="false"
+116-->[com.ca:mas-foundation:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/bbd2a127566bd1932837843f5615a376/mas-foundation-2.0.00/AndroidManifest.xml:32:13-37
+117            android:permission="android.permission.BIND_JOB_SERVICE" />
+117-->[com.ca:mas-foundation:2.0.00] /Users/aricday/.gradle/caches/transforms-2/files-2.1/bbd2a127566bd1932837843f5615a376/mas-foundation-2.0.00/AndroidManifest.xml:33:13-69
+118
+119        <activity
+119-->[net.openid:appauth:0.7.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/2ebe55037bbd98b9f7797a475682b0db/appauth-0.7.0/AndroidManifest.xml:27:9-31:75
+120            android:name="net.openid.appauth.AuthorizationManagementActivity"
+120-->[net.openid:appauth:0.7.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/2ebe55037bbd98b9f7797a475682b0db/appauth-0.7.0/AndroidManifest.xml:28:13-78
+121            android:exported="false"
+121-->[net.openid:appauth:0.7.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/2ebe55037bbd98b9f7797a475682b0db/appauth-0.7.0/AndroidManifest.xml:29:13-37
+122            android:launchMode="singleTask"
+122-->[net.openid:appauth:0.7.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/2ebe55037bbd98b9f7797a475682b0db/appauth-0.7.0/AndroidManifest.xml:30:13-44
+123            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+123-->[net.openid:appauth:0.7.0] /Users/aricday/.gradle/caches/transforms-2/files-2.1/2ebe55037bbd98b9f7797a475682b0db/appauth-0.7.0/AndroidManifest.xml:31:13-72
+124    </application>
+125
+126</manifest>
