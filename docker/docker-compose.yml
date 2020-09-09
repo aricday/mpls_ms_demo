@@ -28,7 +28,7 @@ services:
      - ${PWD}/config/certs/mas.cert.pem:/etc/nginx/ssl/dev-console.crt
      - ${PWD}/config/certs/mas.key:/etc/nginx/ssl/dev-console.key
   mas:
-    image: aricday/mas:4.2
+    image: aricday/mas:4.2.10
     build:
       context: ./files/mas
       dockerfile: Dockerfile

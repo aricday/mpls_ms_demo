@@ -1,4 +1,4 @@
-FROM caapim/gateway:9.4.00
+FROM caapim/gateway:10.0.00
 
 USER root
 
