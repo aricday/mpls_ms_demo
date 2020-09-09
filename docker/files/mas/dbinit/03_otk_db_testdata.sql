@@ -45,8 +45,8 @@ VALUES ('TestClient2.0', 'OAuth2Client', 'OAuth 2.0 test client hosted on the ss
 INSERT INTO oauth_client_key (client_key, secret, status, created_by, client_ident, client_name, custom)
 VALUES ('acf89db2-994e-427b-ac2c-88e6101f9433', '74d5e0db-cd8b-4d8e-a989-95a0746c3343', 'ENABLED', 'admin', 'TestClient1.0', 'OAuth1Client', '{}');
 
-INSERT INTO oauth_client_key (client_key, secret, status, created_by, client_ident, client_name, callback, custom)
-VALUES ('54f0c455-4d80-421f-82ca-9194df24859d', 'a0f2742f-31c7-436f-9802-b7015b8fd8e6', 'ENABLED', 'admin', 'TestClient2.0', 'OAuth2Client', 'https://mas.docker.local:443/oauth/v2/client/authcode?auth=done,https://mas.docker.local:443/oauth/v2/client/implicit?auth=done', '{}');
+INSERT INTO oauth_client_key (client_key, secret, status, created_by, client_ident, client_name, callback, scope, custom)
+VALUES ('54f0c455-4d80-421f-82ca-9194df24859d', 'a0f2742f-31c7-436f-9802-b7015b8fd8e6', 'ENABLED', 'admin', 'TestClient2.0', 'OAuth2Client', 'https://mas.docker.local:443/oauth/v2/client/authcode?auth=done,https://mas.docker.local:443/oauth/v2/client/implicit?auth=done', 'mas_storage oob', '{}');
 
 --
 -- Create MDC client
